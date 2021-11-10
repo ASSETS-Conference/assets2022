@@ -1,0 +1,9 @@
+Title: "Connection: Assisting Neurodiverse Individuals in Forming Lasting Relationships Through a Digital Meduim". Authors: Elliot Fox, Shane Baden, Nick Ziegler, Justin Greene, and Dr. Moushumi Sharmin.
+
+ A significantly high number of adults on the neurodiverse spectrum have been found to experience social isolation. This appears to stem from their common difficulty forming and maintaining relationships through traditional face-to-face methods. 
+
+ Our goal is to create an online socialization platform that can aid neurodiverse individuals in forming and maintaining long term relationships, both platonic and romantic, by including features specifically tailored to their needs. After creating an initial prototype backed by a secondary study on related works, we interviewed 10 indivduals, 5 neurotypical, 5 neurodiverse, to find what features they found most useful.
+
+ Feedback on the prototype was very positive and included suggestion to improve existing features like our emotion intelligent messagin system, the appearance, and our matching algorithm.
+
+ In the future we will be further implementing our prototype to begin user testing on a physical device.

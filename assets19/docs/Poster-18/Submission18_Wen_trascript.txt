@@ -1,0 +1,9 @@
+Title:
+Teacher Perspectives on Math E-Learning Tools for Students with Specific Learning Disabilities
+
+Authors and Affiliations:
+Zikai Alex Wen, Anjelika Lynne S. Amog, and Shiri Azenkot, from Cornell Tech and Cornell University.
+Katherine Garnett from Hunter College, CUNY
+
+Content:
+Many students with specific learning disabilities, SLDs, struggle in learning math. Students with SLDs need special pedagogies to gain math proficiency, but few math e-learning tools are designed for them. Therefore, we interviewed fifth-to-eighth grade math teachers for students with SLDs to study two research questions: (1) what are the challenges faced by students with SLDs in a math class and (2) whether existing math e-learning tools help them overcome the challenges. We found that existing e-learning tools do not work for these students and we present our findings with the help of figures.

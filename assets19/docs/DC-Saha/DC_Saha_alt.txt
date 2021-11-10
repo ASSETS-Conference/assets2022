@@ -1,0 +1,7 @@
+Figure 1. Headshot of Manaswi Saha
+
+Figure 2. Screenshot of Project Sidewalk interface. The image shows an intersection marked with a curb ramp label with an open context menu showing severity rated as 1
+
+Figure 3. Screenshot of a prototype of an interactive visualization tool. The image shows a map of DC colored by the accessibility score. The neighborhoods are colored on a scale of blues indicating high accessibility to greens and yellows indicating poor accessibility.
+
+Figure 4. Bottom banner containing logos of Project Sidewalk, Makeability Lab, DUB and Paul Allen School of Computer Science and Engineering

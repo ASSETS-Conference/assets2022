@@ -1,0 +1,13 @@
+Figure 1: An image showing what bananas may look like to a person with unimpaired vision
+Figure 2: An image showing what bananas may look like to a person with protanopia
+Figure 3: An image showing what bananas may look like to a person with deuteranopia
+Figure 4: A visualization of HaptiColor
+Figure 5: A visualization describing the vibration patterns of HaptiColor
+Figure 6: An image of various unique pencil crayons
+Figure 7: An image of various unique pencil crayons when given the task to find the yellow pencil, using ColourPopper
+Figure 8: An image of ColourWrist with some solenoids labelled
+Figure 9: An image of a person wearing ColourVest
+Figure 10: An image of the colour labelled keypad used by ColourVest
+Figure 11: A screenshot of the colour identification task used for evaluating the devices
+Figure 12: A table containing the participants' colour vision deficiency type and severity. Participant 1, inconclusive, none-mild. Participant 2, deutan, strong.
+Figure 13: A table of the results of both participants using three methods: unaided, ColourWrist, and ColourVest. Participant 1, unaided 85%, ColourWrist 100%, ColourVest 98.8%. Participant 2, unaided 61.3%, ColourWrist 98.8%, ColourVest 96.0%.

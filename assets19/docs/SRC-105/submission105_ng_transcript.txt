@@ -1,0 +1,11 @@
+User Perspectives on Robotics for Post-stroke Hand Rehabilitation
+
+Besides clinical effectiveness, user perception of rehabilitative devices is an important criterion to consider when designing such devices, especially when the rehabilitation is performed at home by the patients without monitoring of physiotherapists. 
+
+There are few research on the user experience of patients and caregivers, who are the primary users of home-based devices. One such device for post-stroke hand rehabilitation is evaluated in this study.
+
+This is a preliminary study aiming to elicit user perception of a post-stroke rehabilitation device. We specifically studied the perception of primary user (patient), secondary user (carer) as well as design expert in rehabilitative device so as to give an overall picture of how users perceive the device.
+
+We combined in-depth interviews with participants and quantitative measures from the Credibility and Expectancy Questionnaire and Intrinsic Motivation Inventory to assess users’ subjective opinions in this study. Results help understand which factors each stakeholders prioritize for a rehab robotics, and revealed split attitudes across stakeholders.
+
+Overall, the results show that having stroke patients and caregivers in subjective evaluation is crucial as it might yield differing views from domain experts. This is especially important for portable or home-based device in which user motivation and perceived effectiveness play a large role in the rehabilitation journey. In addition, due to the limited research in user evaluation of rehabilitative device, especially in the hand motor function domain, this study provided a reference point for future research in subjective evaluation of rehabilitative device.

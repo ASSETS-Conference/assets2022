@@ -1,0 +1,11 @@
+Title: Dynamic Sensor Orientation Unit for the Intelligent Mobility Cane 
+Authors: Manu Suresh, Jagannadh Pariti, and Tae Oh 
+Affiliation: Golisano College of Computing and Information Sciences at Rochester Institute of Technology  
+ 
+Smart cane prototypes use fixed sensor and tactile vibration feedback methods to inform cane users of upcoming obstacles. However, users are forced to change their preferred grasping techniques. Any change in the grasping technique affects the angle of the cane and obstacle detection accuracy.  
+ 
+The study introduces a Dynamic Sensor Orientation Unit (DSOU), that is mounted on a walking cane prototype called the Intelligent Mobility Cane (IMC). The DSOU maintains an extended ground level obstacle detection range irrespective of the user’s grasping technique and the angle the cane makes with the ground.  
+ 
+11 participants were recruited from the Association for the Blind and Visually Impaired (ABVI) in Rochester, NY to provide their feedback on the DSOU. 3 of the 11 participants were people who were visually impaired. The remaining 8 participants were people who were blind.  
+ 
+The study discovered that a single user will not only hold the cane differently but will hold at different locations on the handle as well. However, the DSOU maintains the obstacle detection range from the cane to notify users of upcoming obstacles regardless of their grasping technique. Future studies include evaluating a DSOU for overhead and side drop off detections and performance improvement. 

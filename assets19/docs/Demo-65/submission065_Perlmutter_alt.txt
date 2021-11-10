@@ -1,0 +1,14 @@
+﻿Figure: GestureCalc
+Closeup of an iPhone running the GestureCalc app and a user's hands. The right hand is touching the screen with index, middle, and ring fingers in a row. White circles appear on the screen where the fingers touch. The phone is in portrait orientation and the top of the screen displays in small white text "Input: 12+3" and "Result: 15.0". The left hand holds the phone. 
+
+
+Figure: ClassicCalc
+Closeup of an iPhone running the baseline ClassicCalc app and a user's hands. The bottom three quarters of the screen shows a keypad with digits and operators. The right hand index finger is extended and touching the 5 button while the left hand holds the phone. The top of the screen shows "12+3" in the first line and "15.0" in the second line.
+
+
+Figure: Speed Graph
+Line graph showing that GestureCalc had a higher average Characters Per Second in every session than ClassicCalc had in any session and the effect of Session on Characters Per Second was different for ClassicCalc versus GestureCalc. Graph has Session (1, 2, 3) on the x-axis and Characters Per Second (0.3 to 1.0) on the y-axis. There is a line for ClassicCalc sloping slightly upward and a line for GestureCalc that is higher and sloping upward more steeply. The lines do not cross. Both lines slope upward more steeply between sessions 1 and 2 than between sessions 2 and 3.
+
+
+Figure: Error Graph
+Line graph showing that ClassicCalc had a higher average number of erroneous calculations in every session than GestureCalc had in any session. Graph has Session (1, 2, 3) on the x-axis and Number of Erroneous Calculations (0 to 35) on the y-axis.  There is a line for ClassicCalc and a line for GestureCalc that is higher. The lines do not cross. Both lines are lower in the middle than on either end.

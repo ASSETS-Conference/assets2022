@@ -1,0 +1,3 @@
+Our project involves the development of a tactile code skimming tool designed to help blind and visually-impaired programmers skim code faster. While sighted programmers can skim new code by observing indentation, the same task can be time consuming for blind and visually-impaired programmers with a screen reader. 
+
+Based on demo feedback on our prototype, we found that such a device should provide more context about control structure, should support scaling and shifting for deeply indented code, should be editor agnostic, and could also function as an indentation editor.

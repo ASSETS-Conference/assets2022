@@ -1,0 +1,9 @@
+Title: Syncing Pre-Recorded Audio Description to a Live Musical Theater Performance using a Reference Audio Recording
+Authors: Dirk Vander Wilt and Mary Farbood
+Affiliation: New York University
+
+Poster Images:
+
+The first image is an 8-by-8 grid that visualizes how Dynamic Time Warping works. Both axes of the grid represent one of the two audio signals to be aligned, and each cell in the grid is the cumulative path cost from the lower-left (the first frame of each time series) to the location of that cell. A line weaves through the grid to show an example of how Dynamic Time Warping might find the best match between two signals.
+
+The second image is two line graphs that compare how accurately our system can find the correct AD trigger marks in our two experiments. The results show that H.M.S. Pinafore experiment was more accurate in finding the AD triggers at the correct time than the Legally Blonde experiment.

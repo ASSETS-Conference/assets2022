@@ -1,0 +1,11 @@
+The problem we are addressing is that of individuals who have difficulty or who cannot use computers due to disability, literacy, digital literacy, age or, many other causes.
+
+We created an open source tool that extends the operating system, and makes it so that a person could automatically take their settings to any other computer. Thus once they'd set up one computer, they could automatically have all of the other computers set up like this. 
+
+However, this was not sufficient. Many of the other computers did not have the AT on them the user needed. So, we developed Installation on Demand, which causes the assistive technologies they need to be downloaded and installed whenever their needs and preferences call for it. 
+
+This also did not meet the demand, in that many individuals did not know what settings were even possible, nor how to set them up. So we created a QuickStrip which allows individuals to easily discover new features and also to easily apply them on new computers.  
+
+We added a Save and a Capture button that will automatically capture all of the settings of the computer the operating system and their AT.
+
+Now an individual can sit down to a computer at a library, or school, or work, and have that computer set up for them.  And when they start a new job, or an internship, their computer can be set up the first hour of the first day, rather than weeks or sometimes months later.

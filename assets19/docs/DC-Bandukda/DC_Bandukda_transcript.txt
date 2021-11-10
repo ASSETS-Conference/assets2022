@@ -1,0 +1,13 @@
+Title: Technology mediated nature interaction for blind and partially sighted people.
+Author: Maryam Bandukda, PhD Student at UCL Interaction Centre London UK.
+Supervisors: Dr. Catherine Holloway and Professor Nadia Berthouze.
+
+The goal of my research is to explore the use of technology in mediating nature interactions for blind and partially sighted people. I have conducted interviews, focus group, and online survey to develop an in-depth understanding of how BPSP experience nature and investigate the barriers that affect their engagement.
+
+The main findings from the qualitative research were;
+
+1.	The sense of freedom and connection with nature was an important motivator; the experience of nature involved the sensory and affective impact of the sounds, smells, and touch. 
+2.	As many people visited parks with family or friends, the social Interaction and descriptions of the visual aspects of the environment provided an enriched experience.
+3.	Opportunities for technology are immense as people were interested in exploring ways to get information about nature near to them and further away. Technology has the potential to support BPSP in improving planning by learning about the space prior to visiting and through ubiquitous interactions while in the environment.
+
+I am currently planning dyadic interviews with BPSP and their companions to investigate how they collaboratively explore and engage with nature. Next steps will be the design and evaluation of a mobile app to support collaborative nature exploration.

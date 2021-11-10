@@ -1,0 +1,8 @@
+Our research poster is called, "Insights for More Usable VR for People with Amblyopia". 
+This poster is by Ocean Hurd, an undergradute computer engineering student and Sri Kurniawan, 
+a professor of computational media, both from UC Santa Cruz.
+
+We created a virtual reality (VR) video game and tested how comfortable it was for people with Amblyopia, a neurological eye disorder, to use.
+Our research found some recurring themes from our user base of people with Amblyopia that suggests VR games should be created 
+with some design features in mind to keep them usable, particularly when it comes using VR video game as therapy for Amblyopia, 
+which has become so popular. 

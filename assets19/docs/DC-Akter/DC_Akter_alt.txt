@@ -1,0 +1,20 @@
+Privacy Concerns of the Visually Impaired with Camera-based Assistive
+Applications
+Taslima Akter
+
+Image 1: Indiana University logo. 
+
+Cluster of images (2-4): Image 2: Screen shot of the app BeSpecular identifying objects.
+Image 3: Screen shot of the app Aira recognizing people.
+Image 4: Screen shot of the app Be My Eyes identifying objects.
+
+Cluster of images (5-10): Top row: Images of credit card, medicine bottle, and a person wearing scurf. 
+Bottom row: Images of a pop corn and a picture of a baby in the background, laptop screen with a reflection of a person, soda can with a person in the background. 
+
+Cluster of images (11-14): Top row: Graphs representing comfort level for different human assistants (friends, family, volunteers) with 95 percent confidence interval, comfort level for different information group (personally identifiable information, impression management, laptop screen, general objects) with 95 percent confidence interval.  
+Bottom row: Graphs representing comfort level for sharing information about people (bysnader, self) with 95 percent confidence interval, interaction between different objects and human-assistants with 95 percent confidence interval. 
+
+Image 15, 16: Icon of a man, Icon of a woman
+Image 17: NSF logo. 
+Image 18, 19: Screen shot of inaccurate information given by Seeing AI, Screen shot of lack of description given by Seeing AI. 
+

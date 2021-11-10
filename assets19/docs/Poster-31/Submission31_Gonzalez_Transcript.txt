@@ -1,0 +1,20 @@
+
+Title.  Tactiled: Towards More and Better Tactile Graphics Using Machine Learning
+
+Authors: Ricardo Gonzalez Penuela, Carlos Gonzalez and John Guerra-Gomez  from Universidad de los Andes and North Eastern University.
+
+In this poster We present Tactiled, a tool designed to identify high-quality images that can be transformed into Tactile Graphics. 
+Tactile graphics is the main way for people with visual disabilities access to visual concepts.
+Through our literature review, we found out that one of the biggest barriers to using more tactile graphics is that they are time-consuming to make, thus not highly available. 
+In order to make tactile graphics more available, we designed a system that lets users evaluate standard images to check if they can be transformed, through standard algorithms, into a reliable version of a tactile graphic.
+
+Tactiled is a system formed by: 
+(1) A Machine learning model trained with 800 images collected from the American printing House Tactile Library and the researchers; and 
+(2) a web application that lets teachers of the visually impaired retrain the model by feeding new images and helping with the classification.
+
+The ML model determines whether an image can be transformed into a reliable version of a tactile graphic or not, this is why we use the APH tactile library. 
+In the web app we leverage users provided information by retraining the ML model in a collaborative manner: Teachers of the visually impaired identify and provide images that make the ML model classification more reliable.
+
+In the future, we will work on improving our ML model by feeding it a bigger database of images and improving the platform usability. 
+Currently, the web-platform only provides images on simple concepts (animals). 
+We plan on creating multiple models to simplify and improve the classification accuracy, by making models specialized on certain concepts (e.g., animals, buildings, maps, objects). 

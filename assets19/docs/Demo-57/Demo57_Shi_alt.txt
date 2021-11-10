@@ -1,0 +1,17 @@
+Figure 1 - 4 show a sample design process using Molder.
+
+Figure 1. This figure shows the user interface of the map creation website. The website has a large yellow banner that says “Map Creation” followed by instructions to enter nominatim of a desired area to generate a draft map. 
+
+Figure 2. This figure shows a 3D printed shallow draft model of a map with six buildings that is placed in printed accessories.
+
+Figure 3. This figure shows a designer using Molder. She is selecting the Dot function by touching the corresponding piece on the Tangible Widget with her finger. An iPad on a stand tracks the designer’s index finger as she chooses the function.  
+
+Figure 4. This figure shows a final model of the map with six buildings, which has a variety of tactile patterns (braille label, lined grooves patterns, and random dot patterns) and a bigger size based the designers’ editing with Molder. 
+
+Figure 5 - 7 show some sample functions.
+
+Figure 5. This figure demonstrates the function of adding tactile patterns. There are three representations of the same building shown in yellow on a dark grey background. Each building has a different tactile pattern represented in light grey. The tactile patterns from left to right are: Icon, Line, and Dot. 
+
+Figure 6. This figure presents the function of adding a braille label. An iPad Screen showing the Molder displays of a draft model with eight buildings labeled in different colors. One of the building has a braille label saying “Hotel.” 
+
+Figure 7. This figure shows the function of resizing a model. The figure shows a white 3D printed shallow draft model of a map with 8 buildings that is placed in the Physical Rulers. The Indicator is positioned above and to the left of the top ruler. A small blue square is overlaid on top of the draft model with its right side aligned with the right edge of the Indicator, indicating the target size the user is adjusting to. A red line labels the right end of the indicator. The target size is smaller than the current model size.

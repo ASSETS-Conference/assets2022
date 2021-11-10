@@ -1,0 +1,6 @@
+We created iCETA-, an inclusive interactive system for math learning suitable for young children. iCETA was co-designed with young children with visual impairments and their educators. It combines tangible interaction with haptic and auditory feedback.
+
+It consists of a set of blocks detected by a camera towards the working area.  Blocks vary in size, texture, braille and colors. Children use blocks representing numbers from 1 to 5 to solve additive compositions tasks as part of the game Logarin.  
+
+iCETA has been piloted in schools and was welcomed by both children and educators.  It provides a playful and rich multi-sensorial environment for children with different visual abilities to learn math. 
+

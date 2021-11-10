@@ -1,0 +1,11 @@
+Image showing backspace button.
+Image showing person using their thumb.
+Figure 1:Image showing phalanx bones on the human hand
+Figure 2: Glove mechanism layout with key values of each button labelled
+Figure 3: Images of blind participants of different age groups using the mechanism
+Table 1: Session numbers and example of corresponding reference text used as test cases in each session.
+Figure 4: Comparison of our mechanism's CER%, BPT and Entry Rate with those of the Braillesketch device, the device described in Gaines' paper and the BrailleType device.
+Figure 5: Speedometer showing the average entry rate of our mechanism at 3.7 WPM and the maximum at 6.0 WPM.
+Figure 6: Line Graph showing values of CER% at each session of the participant, indicating a downward trend overall.
+Figure 6: Line Graph showing values of BPT at each session of the participant, indicating a downward trend overall.
+

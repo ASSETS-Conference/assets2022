@@ -1,0 +1,14 @@
+ASSETS Poster. Titled DanceCraft: A Whole-body Interactive System for Children with Autism.
+Authors: Kathryn E. Ringland of Northwestern University, Christine T. Wolf of IBM, Almaden, LouAnne Boyd of Chapman University, Jamie K. Brown of University of California Irvine, Andrew Palermo of University of California Irvine, Kimberley Lakes of University of California Riverside, and Gillian R. Hayes of University of California Irvine.
+
+Using natural user interfaces, we can augment therapeutic dance programs for autistic children and children with sensory processing challenges with the Microsoft Kinect. The goals of this research project were to evaluate a system, DanceCraft, for feasibility in augmenting dance therapy for these children.
+
+The study used a 1 week at-home deployment with 9 families. 10 children in total, aged 7 to 12, participated in the study. Each used the DanceCraft program at home up to 3 times during the week. The system allowed for three different dance themes: birds, cars, and snow, pictured on poster.
+
+Implications for desing of this study are as follows. Simplicity. Reduce sensory overload for users. Configurability. Allow for variation in the program to allow for a child's individual needs and goals. Inclusive support. Need to include accessibilty for other disabilities of the users, including the parent and child using the system.
+
+Implications for study design are as follows. Feasibility of the system. Needs to match the other at-home systems, like video gaming systems. Understanding HCI measure of engagement. This includes how and when chidlren used the system and their own personal work-arounds. Messiness of at-home deployment. Home deployment is better for understanding real-world use, but it is hard to anticipate and react to problems.
+
+The future goals of this work are to create a more robust system and test on a longer, larger scale.
+
+

@@ -1,0 +1,7 @@
+1) Upper left corner: A smartphone screenshot of the questionnaire used in the study. At the top of the questionnaire is the participant number (P55) and the question (Which is the most comfortable target size for you to tap with your index finger?). Below the question is a submit button and a 3x4 table with the targets decreasing in size from top left to bottom right.
+
+2) To the right of (1): A smartphone screenshot showing the performance test used in the study. There is one target displayed against a white background.
+
+3) Bottom left corner: Two boxplots depicting the level of accuracy older and younger adults achieved on their chosen "smallest" target size. Older adults had a median accuracy of 100%, while younger adults had a median accuracy of around 85%.
+
+4) To the right of (3): Two boxplots depicting the level of accuracy older and younger adults achieved on their chosen "most comfortable" target size. Older adults had a median accuracy of 100%, while younger adults also a median accuracy of 100%.

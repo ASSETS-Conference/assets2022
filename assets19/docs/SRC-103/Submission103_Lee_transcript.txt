@@ -1,0 +1,17 @@
+Intelligent Decision Support for Stroke Rehabilitation Assessment
+
+Rehabilitation assessment is important to determine personalized intervention for post-stroke survivors. 
+However, assessment relies on therapist's subjective knowledge and is infrequently executed due to the limited availability of therapists. 
+
+This research presents an interactive multimodal approach that augments data-driven model with therapist's knowledge for personalized rehabilitation assessment.
+This approach first automatically identifies salient features to predict the quality of motion and generate user-specific analysis to provide insights on patient's performance.
+After reviewing user-specific analysis, therapists can provide feature-based feedback on each patient to iteratively update an assessment model. 
+
+For the evaluation, the dataset of three upper-limb exercises is collected from 15 post-stroke and 11 healthy subjects, which are annotated by two therapists.
+Five therapists participated to provide 9 feature-based feedback on each patient.
+
+While accommodating therapist's feedback, a generic model is tuned to a personalized model, which improves agreement with therapist's evaluation from 0.83 to 0.91 average F1-scores. 
+Specifically, an interactive model achieves significantly better agreement with therapist's evaluation than average therapist's agreement levels and non-interactive models.
+
+This result describes the importance of an interactive approach to augment therapist's feedback for more accurate and personalized rehabilitation assessment.
+In future, we plan to evaluate the effectiveness of user-specific analysis to provide insights on patient's performance for therapists and corrective feedback for post-stroke subjects.

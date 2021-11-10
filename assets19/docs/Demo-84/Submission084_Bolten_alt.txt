@@ -1,0 +1,32 @@
+Figure 1 (top right): Three screenshots of the AccessMap website, showing maps of three
+municipalities: Seattle, Bellingham, and Mount Vernon, all in Washington State. The
+maps show greens, yellow, and reds where sidewalks exist for each city, corresponding
+to steepness. Each shows variety of sidewalk existence and steepness. There is a
+black line (convex hull) drawn around the regions for which data exists for each
+municipality.
+
+Figure 2 (middle right): Three screenshots of the AccessMap website from mobile
+devices. Each screenshot shows the same overhead map view of approximately one
+block in Seattle, Washington, along with an automatically planned route from a point
+on the bottom left to a point on the bottom right of the map view. The leftmost
+screenshots shows personal map settings of 10% uphill and downhill maximum inclines
+and no requirement for curb ramps, resulting in a route that travels on the North side of
+a nearby street. The middle screenshot has an uphill setting of 8%, downhill of 10%,
+and no requirement for curb ramps, resulting in a route that travels far North around
+the block to avoid a sidewalk that's greater than 8% grade. That sidewalk has changed
+in appearance and is now a dashed red line rather than filled in with a color gradient.
+The right screenshot has 10% uphill and downhill settings, but the user has indicated a
+requirement for curb ramps, with a route that travels along sidewalks on the South side
+of a nearby street, making use of crossing locations known to have curb ramps.
+
+Table 1 (bottom right): This table reflects a preliminary user study where pedestrians
+were asked to rank the usefulness of several pedestrian-targeted maps. The mean rating
+is presented to give a sense of the average score given, while the standard deviation
+of ratings is presented to give a sense for disagreement between participants. The
+mean ratings are 2.0 for a barriers-only map that calls out sidewalk problems only,
+3.9 for an "assets-only" map that displays municipal assets over the map, 2.2 for
+Google Maps, 4.6 for AccessMap without automatic route finding, and 4.9 for AccessMap
+with automatic route finding. The standard deviations were 0.71 for the barriers-only
+map, 0.55 for the "municipal assets only" map, 0.84 for Google Maps, 0.55 for
+AccessMap without automatic route finding, and 0.22 for AccessMap with automatic route
+finding.

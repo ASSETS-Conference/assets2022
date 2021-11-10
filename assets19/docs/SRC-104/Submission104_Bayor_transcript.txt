@@ -1,0 +1,8 @@
+This research addresses the social participation and independent skills development challenges of young adults with Intellectual Disability by supporting them to learn life skills of interest using videos.
+
+The research explored co-designing an accessible app that could be used by many young adults with intellectual disability in a support centre, to enable them access videos on their life skills interests. As all participants participated in social media, we investigated their participation competencies (i.e., shared proficiencies at performing specific activities) through workshops and leveraged them in designing the app. 
+
+The findings show that participants associated functional familiarity with the app’s social media-inspired design icons and features, which fostered usability, and mediated engagement between participants and their networks. 
+
+Based on these findings, this research reflects on a competency-based design approach that leverages the existing technology competencies in designing with people with intellectual disabilities.
+

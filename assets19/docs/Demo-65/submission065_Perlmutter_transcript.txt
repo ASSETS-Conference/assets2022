@@ -1,0 +1,16 @@
+﻿GestureCalc is an eyes-free, target-free calculator app for touch screens.
+
+
+A traditional calculator app makes itself accessible to blind and low vision users by employing a screen reader to help the user find targets in the app's spatial layout. GestureCalc has a target-free interface: the gestures can be performed at any location on the screen.
+
+
+Each character code consists of 1 to 2 simple gestures. The app reads out the input as it is entered.
+
+
+We conducted a study with 8 screen reader users, and found that they were 40% faster and made 52% fewer erroneous calculations with GestureCalc than with a traditional touch screen calculator.
+
+
+We recommend more exploration of target-free interfaces in the future.
+
+
+Please visit demo #65 to try GestureCalc for yourself! Instructions for the character codes are available in Braille and in print.

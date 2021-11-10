@@ -1,0 +1,12 @@
+Development of a real time Bionic Voice system for people without a larynx
+
+By Farzaneh Ahmadi and Tomoki Toda (Nagoya University) 
+
+People who lose their larynx due to cancer, lose their ability to generate a natural voice for ever. In this specific problem "voice" is different with speech.
+Voice is the sound that human vocal folds generate. We can then shape this sound into speech by moving our face and lips muscles.
+People who lose their larynx can still move their face and lips muscles. But they don't have a voice source that sounds like natural human voice anymore.
+
+We have introduced Bionic Voice, the first and only wearable electronic voice prosthesis that generates a high quality voice for these people using respiration. Inside the device, there an Artificial Intelligence or AI algorithm that can be trained to generate a voice similar to the natural vocal folds sound. We have developed and trained this algorithm in our offline Bionic voice method before.
+
+In this paper, we implement the AI algorithm online or in real-time and we demonstrate its performance compared to the offline system. You are welcome to listen to audio samples of this real-time Bionic Voice.
+

@@ -1,0 +1,4 @@
+TitLe: Exploring Accessible Designs to Support Independent Practice of Skills in Everyday RoutinesAuthor: Varsha Koushik
+Affiliation: University of Colorado BoulderContact: varsha.koushik@colorado.eduFigure 1 displays an example diagram of the current support system for people with cognitive disabilities in performing everyday tasks. the first stage is routine demonstration done by caregivers as part of the training. The second and final stage is routine execution by users with some assistance using planners, digital assistants, reminders, and schedulers. One stage that's missing and could help is routine practice.  Figure 2 displays a storyboard of an example scenario, where a user is using an augmented reality game to learn about recycling a bottle. In the game, when the user asks the system, where to recycle the bottle, the system matches the color of the bottle and the bin, to help users throw the bottle into the right bin.
+
+ 

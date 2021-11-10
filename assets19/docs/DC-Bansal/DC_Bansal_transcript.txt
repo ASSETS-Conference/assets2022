@@ -1,0 +1,7 @@
+Hi, My name is Akashdeep Bansal. I am a PhD student at IIT Delhi. My dissertation topic is "Comprehensive Accessibility of Equations by Visually Impaired".
+
+As we know, persons with visual impairment can access digital content using screen reading software. Still, accessing equations is challenging due to their non-linear visual representation. We proposed to improve the accessibility of equations by associating a cogntive complexity metric with each equation and then to use this metric to modify their audio rendering.
+
+We planned to start with finding the relation between various cognitive complexity parameters (such as number of attempts, mistakes, and time taken, etc.) and structural complexity parameters (such as height, weight, total number of nodes, etc.) through a series of user studies. This will provide us a way to compute cognitive complexity of an equation using structural complexity parameters.
+
+Apart from the structural complexity parameters and their associated weights, complexity of an equation will also depend on the various user characteristics (such as IQ, Education, etc.) and semantic of the equation on the basis of the context in the document. Further, we propose to improve the delivery of complex equations using appropriate variable substitution.

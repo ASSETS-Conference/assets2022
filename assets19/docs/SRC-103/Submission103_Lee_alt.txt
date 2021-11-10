@@ -1,0 +1,11 @@
+The figure at the middle section of the poster describes the flow diagram and visualization interface of the presented approach.
+The presented approach first automatically identifies the salient features to derive a data-driven, prediction model for assessment.
+The visualization interace presents user-specific analysis with the predicted quality of motion, three salient feature values on unaffected and affected side, buttons to collect therapist's feature-based feedback.
+After reviewing user-specific analysis, a therapist can provide feature-based feedback to update rule-based Knowledge Model.
+This upated rule-based Knowledge and data-driven model are integrated into an interactive Multimodal using a weighted average.
+
+The figure at the botton left describes an example of feature-based rules from a therapists, which checks whether a wrist joint is placed higher than subject's top of spine joint. 
+Three figures at the botton right describe the results of the presented approach.
+The first figure describes the validation of feature selection: the presented approach can increase correct prediction while reducing the number of features for assessment.
+The second figure shows that the presented interactive approach increases its performance while accomodating therapist's feature-based feedback over 10 iterations.
+The third  figure summarizes the performance of the presented interactive approach outperformed non-interactive approach and therapist's agreement level.

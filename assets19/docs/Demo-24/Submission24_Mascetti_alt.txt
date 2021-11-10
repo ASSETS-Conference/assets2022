@@ -1,0 +1,48 @@
+The poster contains 7 areas:
+
+1:
+Word Melodies
+- Didactic game supporting acquisition of basic literacy skills
+- Accessible to children with visual impairments
+- Prototype implementing 8 types of exercises
+
+2:
+Contributions
+- Participatory approach involving three domain experts
+- Definition of design criteria
+- Implementation with cross-platform developing technique
+
+3:
+The Design Challenge
+- Inclusiveness: The app should be easy to learn and use for children with and without visual impairments.
+- Entertaining: Besides allowing the user to practice literacy skills, the app should also be entertaining.
+- Independence: The app should be usable by all users without requiring support from other people.
+- Consistency: Key interaction elements should always be in the same area, close to the screen borders.
+- Beyond tap: The app should use and teach common interaction gestures to children (Drag & Drop).
+- Scalable: It should be possible to add new exercises and content with limited development effort.
+IMG1: "Complete the word" game screen with lion audio-icon on the left, the word to complete "l_on" is above, while three draggable letters "i", "e", "o" are under. Done, back and menu buttons are on the bottom.
+IMG2: "Select the rhyme" game screen with the word "sing" above, and selectable words "beam", "dish", "king" are under. Done, back and menu buttons are on the bottom.
+IMG3: "Reorder the days of the week" game screen with three empty fields above, and three draggable days "friday", "wednesday", "thursday" are under. Done, back and menu buttons are on the bottom.
+IMG4: "Complete the word" game screen with dog audio-icon on the left, the word to complete "d_g" is above, while three draggable letters "o", "a", "e" are under. Done, back and menu buttons are on the bottom.
+
+4:
+The technical challenge
+- App developed with ReactNative, a cross-platform developing tool
+- WordMelodies runs:
+-- on iOS and Android
+-- on smartphones and tablets
+- Additional issues need to be addressed to make the app accessible on both platforms:
+-- one accessibility problem still remains: tab order on iOS
+
+5 (Huge):
+Try the WordMelodies Demo With Us
+
+6:
+Future work
+- Include children and parents in the design process
+- Develop a native component to fix the tab order problem
+- Develop new exercises and a tool to allow teachers to create new content
+- Publish the app
+
+7 (bottom right corner):
+Qr code to access the paper

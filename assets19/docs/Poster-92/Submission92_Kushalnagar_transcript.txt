@@ -1,0 +1,40 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Assets Poster. A Classroom Accessibility Analysis App for Deaf Students. Authors: Raja Kushalnagar (Gallaudet University). \
+Educational Disparity\
+Prior to visual accommodation laws in the 1970s, 7 of 3000+ institutions had accommodations for  DHH.\
+After visual accommodations laws passed, nearly all educational institutions had accommodations, and DHH college graduation greatly increased. Yet, 16% DHH graduate, compared to 30% hearing.\
+\
+Classroom Design\
+Prioritize aural over visual access: In most classrooms, students sit in rows, to maximize use of space. While this preserves aural access, it does not preserve visual access. \
+\
+Classroom Accessibility for Visual Learning\
+Visual access: directed view of 2 degrees width\
+Aural access: global view with nearly 360 degrees width\
+\
+Recommended Classroom Layout for Visual Learning\
+Rearrange seating to establish 360 degree radial spatial distribution.\
+\
+Challenge\
+How to measure and document 360 degree radial spatial distribution?\
+\
+Classroom Accessibility Analysis App for DHH\
+App analyzes and reports percentage of faces visible from center of room\
+\
+App: 360 degree camera and Video Analysis script\
+\
+Participant Ratings\
+Participants rated the circular layout as being more accessible than either the row or hybrid layout. For the circular layout, the participants rated it as being very accessible: 5.0 (SD=0), and for the row layout, the participants rated it as being somewhat not accessible: 1.86 (SD=0.74). Finally, for the hybrid layout, the participants rated it as being somewhat accessible: 3.2 (SD=0.88). \
+\
+App Scores\
+The script analysis of classroom layouts indicated more participants and their faces were visible for the circular layout compared to the hybrid layout and more visibility than the row layout. For the circular layout, the script returned 15 bodies and 15 faces (100%). For the hybrid layout, the script reported 13 bodies (87%) and 6 faces (40%). For the row layout, the script reported 6 bodies (40%) and 2 faces (13%).\
+\
+Conclusion\
+The Classroom Accessibility Analysis app correlates well with self-reported accessibility ratings. All participants noted in their open-ended responses that it was important to see the faces and body language of other participants during discussion, and their ratings were consistent with their comments. The Classroom Accessibility App provides DHH students, faculty or staff a quick way to assess, document and report classroom accessibility.\
+\
+}

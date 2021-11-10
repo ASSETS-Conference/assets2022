@@ -1,0 +1,9 @@
+Twitter A11y is a browser extension that makes images on Twitter accessible. 
+Currently only 0.1% of images on Twitter have alt text. 
+Twitter A11y adds alt text to images on Twitter using two components: the extension and the server. 
+As the user browses their Twitter timeline, the Twitter A11y browser extension scrapes URLs of images without alt text and sends them to the server. 
+Once the server receives a tweet image, the server classifies what type of image it is in order to choose the best way to create alt text. 
+If the image came from a news article, we use a technique called url following that searches the original news page for visually similar images with alt text. 
+If the image is classified as text, then we put the image through Google Cloud Vision’s optical character recognition. 
+Finally, if the image is not a news article or primarily text, then we obtain alt text using Amazon Mechanical Turk. 
+After the server receives alt text, the server sends the new alt text to the extension and Twitter A11y updates the image tag HTML with the generated alt text.

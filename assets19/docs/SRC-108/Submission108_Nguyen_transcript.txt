@@ -1,0 +1,11 @@
+Exploring Haptic Colour Identification Aids by Richard Nguyen and Connor Geddes, from the University of Guelph.
+
+People with Colour Vision Deficiency (CVD) have difficulty with day-to-day colour identification tasks such as determining the ripeness of fruit or cooking meat. While also facing long-term challenges such as career restrictions and work impediments.
+
+The current gold standard of haptic colour identification aids is a wrist-based aid, HaptiColor. HaptiColor, as well as other haptic colour identification aids, exist but are slow to learn. To address this, we developed two new colour identification aids - ColourWrist and ColourVest.
+
+ColourWrist was developed to improve upon the shortcomings of HaptiColor, training time and colour selection diversity. To achieve this we used four solenoids to create sixteen unique patterns compared to the twelve HaptiColor can convey.
+
+ColourVest was developed on the idea of conveying colour information of an area rather than from a single point, while also seeking to improve upon the same shortcomings. ColourVest is equipped with a ten by eight array of vibrotactile motors to convey spatial colour information. Users select a colour from a labelled keypad, then the colour is "highlighted".
+
+Our participants were pleased with both ColourWrist's and ColourVest's assistance in identifying colours. While our participants reported that while they could see themselves using the aids in the future, there was still room for improvement. Based on participants' feedback we will be improving both devices and study the real-world effectiveness of our colour identification aids.

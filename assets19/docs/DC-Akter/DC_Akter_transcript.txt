@@ -1,0 +1,8 @@
+Privacy Concerns of the Visually Impaired with Camera-based Assistive
+Applications
+Taslima Akter
+The goal of this work is to understand the privacy concerns of people with visual impairments with camera-based assistive technologies. Nowadays they are using both artificial and human intelligence-based assistive technologies in their daily life to identify objects, reading texts, etc. In such camera-based assistive technologies, they usually capture and share a photo or video either with a human assistant or AI. It is possible to share sensitive content with assistive technology while getting information. They may either share the sensitive information unintentionally (background object) or intentionally (foreground object). In this work, we focus on the unintentional sharing behavior of people with visual impairments with human-assisted technologies. 
+
+We conducted an online survey with 155 people with visual impairments and asked their comfort level in sharing different information with different human assistants or audiences (friends, family members, volunteers). We observed selective disclosure practices based on the information and audiences. For example, people expressed the highest concerns about maintaining their impression with friends than volunteers and family members. They were more concerned about capturing bystanders in the images rather than themselves. People also shared higher trust for Aira than Be My Eyes because of professionalism. However, despite having privacy concerns people with visual impairments still prefer human-assistants because of the reliability and accuracy of the information.  Future technologies can consider making the systems more humanized to make them more accessible for people with visual impairments.   
+
+ 

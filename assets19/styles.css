@@ -1,0 +1,1263 @@
+/* 
+    styles.css
+    by Lourdes Morales-Villaverde
+    modified by Anhong Guo
+*/
+
+/* ASSETS 2019 WEBSITE STYLES
+	
+	
+    FONT: Raleway (https://www.google.com/fonts/specimen/Raleway). 
+    
+    Raleway has 9 differnt font weights. We will use: 
+
+    - for the Light/Thin text (e.g., italics): 200 (100 too thin)
+    - for Normal text: 400, and
+    - for Bold: 700
+
+    All fonts should be picked from sizes in the 
+    Fibinacci Sequence (1,1,2,3,5,8,13,21,34,...) and 
+    the Fibinacci Sequence Doubled (2,2,4,6,10,16,26,...) 
+
+    When in doubt, choose a font size from one these 
+    sequences combined (1,2,3,4,5,6,8,10,13,16,21,26...)
+
+    If the fonts are too large/small, just shift all the fonts on that 
+    page/section up or down.
+
+    1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377
+    2, 2, 4, 6, 10, 16, 26, 42, 68, 110, ...
+
+*/
+
+html, body{
+	width: auto; 
+	height: auto;
+	font-family: 'Raleway', sans-serif; 
+	margin-left: auto; 
+	margin-right: auto;
+	margin-top: auto;
+	/*background-color: #f2f2f2;*/
+    background-color: white;
+}
+
+*:focus {
+    outline:none !important;
+}
+
+/*============================*/
+/*    STYLES FOR HEADER     */
+/*============================*/
+
+/*----- Styles for skip navigation link -----*/
+#skip_nav a
+{
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow: hidden;
+    z-index: 999;
+}
+
+#skip_nav a:focus
+{
+    height:auto;
+    width: auto;
+    left: auto;
+    overflow: auto;
+}
+
+/*----- Styles for HEADER_TITLE_BAR -----*/
+
+#header_title_bar {
+    width: 100%;
+}
+
+/*------------ Styles for the HEADER = logo, date, and venue -----------*/
+
+header{
+    /*min-height: 200px;
+    height: 200px;
+    max-height: 200px;*/
+	
+    background-image: url('images/assets19_banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 240px;
+    height: 240px;
+	display: table;
+    background-color: #f2f2f2;
+	color: #f2f2f2;
+}
+
+#venue{
+    margin: 0px;
+    padding: 0px;
+    display: table-cell;
+    vertical-align: bottom;
+    text-align: right;
+    min-width: 100%;
+    min-height: 100%;
+    /*border: 3px solid greenyellow;
+    background-color: red;*/
+    font-size: 14pt;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    /*text-shadow: 0px 10px 12px #320f52, 2px 0px 0px #320f52, 0px 0px 4px #320f52, 2px 2px 2px #320f52;*/
+}
+
+#venue p{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*--------- Styles for menu bar -------*/
+
+/* Menu bar implementation adapted from: http://webdesign.tutsplus.com/tutorials/building-a-responsive-layout-with-skeleton-navigation--webdesign-6385 */
+
+#menu_bar /*div*/
+{
+	display: table;
+	width: 100%;
+	height: auto;
+	/*background-color: black;*/
+    background-color: #1d82d2;
+    /*border-top: 1px solid black;*/
+
+	-webkit-box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+	box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+}
+
+#menu_bar nav ul, 
+#menu_bar nav ul li{
+	margin: 0px;
+	padding: 0px;
+}
+
+.mb_cell{ /*li <-  #menu_bar nav ul li*/
+	display: inline;
+    float: left;
+    padding: 0;
+    width: auto;
+	height: auto;
+	position: relative;
+	border-left: 1px solid #B3C2BD; /*#B3C2BD is a tone of gray*/
+	border-right: 1px solid #B3C2BD;
+}
+
+.mb_link{ /* a <- .mb_cell a = #menu_bar nav ul li a */
+	display: inline-block;
+	height: auto;
+	/*text-transform: uppercase;*/
+	letter-spacing: 0.03em;
+	padding: 5px 5px;
+	font-size: 16pt;
+	font-weight: 700;
+	text-decoration: none;
+	color: #f2f2f2; /*text color for links is the same light gray as the background color for body and content*/
+}
+
+.mb_link:hover, 
+.mb_link:focus, 
+.mb_cell:hover > a
+{
+    text-decoration: underline;
+	/* A: Green on white */
+    /*color: #004d00; 
+	background-color: white;*/
+    /* B: White on green */
+    color: white; 
+    /*background-color: #008000;*/
+    /*background-color: #0086e6;*/
+    background-color: #092642;
+}
+
+.mb_drop_menu_link:hover, 
+.mb_drop_menu_link:focus{
+   /*background-color: #0086e6; *//*#4c4c4c*/
+   background-color: #092642;
+   text-decoration: underline;
+}
+
+.mb_dd_menu{ /* ul (drop-down menu) <- #menu_bar nav ul ul */
+	position: absolute;
+	z-index: 999;
+	min-width: 100%;
+	visibility: hidden;
+
+	-webkit-box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+	box-shadow: 0px 2px 2px rgba(0,0,0,0.3);
+
+	opacity: 0;
+	filter: alpha(opacity=0);
+
+	-webkit-transition: opacity 0.2s ease-out;
+	-moz-transition: opacity 0.2s ease-out;
+	-o-transition: opacity 0.2s ease-out;
+	-ms-transition: opacity 0.2s ease-out;
+	transition: opacity 0.2s ease-out;
+}
+
+.mb_dd_menu li{ /* li <- #menu_bar nav ul ul li */
+	display: list-item;
+	float: none;
+	border-top: 1px solid #B3C2BD;
+	list-style: none;
+	white-space: nowrap;
+}
+
+#sponsors li{
+	white-space: normal;
+}
+
+.mb_drop_menu_link{ /* a <- #menu_bar nav ul ul li a */
+	display: block;
+	/*background-color: black;*/ /*#262626*/
+    background-color: #1d82d2;
+	text-decoration: none;
+	color: white;
+	font-size: 13pt;
+	padding: 3px 6px;
+}
+	
+.external_link_img{
+	vertical-align: text-top;
+}
+/*
+.selected_link{
+	color: #F9959D; #1d82d2
+}*/
+
+/*----------- Styles for drop-down menu "drop_down_menu" (for smaller devices) --------*/
+
+#drop_down_menu{
+	display: table;
+	width: 100%;
+	/*background-color: #262626;*/
+    background-color: #1d82d2;
+}
+
+#drop_down_menu, 
+#drop_down_menu nav{
+	text-align: center;
+}
+
+#drop_down_menu select{
+	display: none;
+    font-size: 16pt;
+}
+
+/*============================*/
+/*     STYLES FOR FOOTER      */
+/*============================*/
+#footer{
+    padding-top: 20px;
+    /*height: 416px;*/
+    /*background-image: url('images/CITY_VIEW_FROM SHERATON_INNER_HARBOR_HOTEL.jpg');
+    opacity: 0.4;
+    background-size: cover;
+    background-repeat :repeat-x; 
+    background-position: center;*/
+    width: 100%;
+}
+/*img resources-01-original.png width="1443" height="416"*/
+/*img resources-07.png width="1300" height="225"*/
+
+#footer p{
+    text-align: center;
+    font-size: 32pt;
+    font-weight: 700;
+    /*color: #320f52;*/
+    color: #1d82d2;
+    padding-top: 100px; 
+}
+
+/*===============================*/
+/*     STYLES FOR CONTENT div    */
+/*===============================*/
+
+#content{
+    max-width: 72%;
+    width: auto;
+	height: auto;
+    margin: auto;
+    /*background-color: #f2f2f2;*/
+    background-color: white;
+}
+
+#content p, 
+#content ul, 
+#content ol{
+	font-size: 16pt;
+	font-weight: 400; /*200 was too thin*/
+	color: #333333;
+}
+
+#content ul li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#content ol li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#content h1, 
+#content h2, 
+#content h3, 
+#content h4, 
+#content h5,
+#content a{
+    font-weight: 700;
+}
+ 
+#content h2, 
+#content h3, 
+#content h4, 
+#content h5, 
+#content a{
+    color: #1d82d2;
+    font-weight: 700;
+}
+
+#content h1{
+	font-size: 32pt;
+    color: black;
+}
+
+#content h2{
+	font-size: 24pt;
+}
+
+#content h3{
+	font-size: 21pt;
+}
+
+#content h4{
+	font-size: 18pt;
+}
+
+#content h5{
+    font-size: 15pt;
+}
+
+#content a{
+	font-size: 16pt;
+}
+
+/*============================================*/
+/*    STYLES FOR HOME PAGE (index.html)       */
+/*============================================*/
+
+#content #sigaccess_small_logo_link{
+    width: 200px;
+    border: 1px solid #1d82d2;
+}
+
+#content #home_h1{
+    color: #144476;
+}
+
+#home_scope_reg_sections{
+    display:table;
+    width: 100%;
+}
+
+#home_scope_section, 
+#home_logo_section{
+    display: table-cell;
+    vertical-align: top;
+}
+
+#home_logo_section{
+    /*text-align: center;*/
+}
+
+#flyer{
+    text-align: center;
+    background-color: #1d82d2;
+    padding: 5px;
+    margin-top: 50px;
+}
+
+#flyer p, #flyer h2, #flyer a{
+    color: white;
+}
+
+#home_scope_section{
+    width: auto;
+}
+
+/* In the scope section there will be three images/links that need not be underlined */
+.image_link{ 
+	text-decoration: none;
+}
+
+#home_logo_section{
+    display: inline-block;
+    /*width: auto;*/
+	/*width: 461px;*/
+    max-width: 361px;
+    padding: 20px 0px;
+    padding-right: 5%;
+}
+
+#home_logo_section, 
+#home_logo_section_2, 
+#home_venue_section, 
+#home_important_dates_section{
+    text-align: center;
+}
+
+#home_venue_section p{
+    text-align: left;
+}
+
+#home_logo_section_2{ /*for smaller devices*/
+    display: none;
+}
+
+#content h2.home_section_title
+{
+	text-align: center;
+	font-size: 42pt;
+	font-weight: 700;
+	color: #1d82d2;
+	/*text-transform: uppercase;*/
+	padding-top: 5px;
+}
+
+#important_dates{ /*img*/
+    padding-top: 30px;
+}
+
+#home_important_dates_section{  
+	/*background-image:url('images/resources-01-original.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;*/
+	width: 100%;
+}
+
+.important_dates_caption, 
+.important_dates_list, 
+#home_important_dates_section_2{
+    text-align: left;
+}
+
+#home_committee_section{
+    text-align: center;
+    width: 100%;
+}
+
+#home_committee_section h3{
+    font-size: 26pt;
+}
+
+#home_committee_section div.home_committee_member_container{
+    display: inline-block;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+#home_committee_section div.home_committee_member, 
+#home_committee_section div.org_committee_link{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 50%;
+    border: 3px solid #1d82d2;
+    text-wrap: normal;
+    height: 210px;
+    width: 210px;
+    padding: 10px 20px;
+}
+
+#home_committee_section div.home_committee_member{
+    background-color: #1d82d2;
+}
+
+#home_committee_section div.org_committee_link{
+   /* background-color: #f2f2f2;*/
+   background-color: white;
+}
+
+#home_committee_section p.home_committee_member_title{
+    font-weight: 700;
+    color: white;
+    font-size: 18pt;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+/*#content */
+#home_committee_section p.home_committee_member_name{
+    font-size: 16pt;
+    color: white;
+    padding-top: 10px;
+    margin-top: 0px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+}
+/*#content */
+#home_committee_section p.home_committee_member_affiliation{
+    font-style: italic;
+    font-size: 13pt;
+    padding-top: 0px;
+    margin-top: 0px;
+    color: white;
+}
+/*#content #home_committee_section*/
+#org_committee_link p{
+    color: black;
+}
+/*#content #home_committee_section*/
+#org_committee_link a{
+    color: #1d82d2;
+    font-weight: 700;
+}
+
+/*=======================================*/
+/*=======================================*/
+/*           Styles for IMAGES           */
+/*=======================================*/
+/*=======================================*/
+
+.logo, #important_dates, #venue_img{
+    max-width: 100%;
+    height: auto;
+}
+
+.centered_img{
+    text-align: center;
+}
+
+.centered_img img{
+    max-width: 90%;
+}
+
+.inline_img{
+    display: inline;
+}
+
+.inline_img img{
+    width: auto;
+    max-width: 100%;
+}
+
+.left_img{
+    float: left;
+    padding-right: 12px;
+}
+
+.right_img{
+    float: right;
+    padding-left: 12px;
+}
+/*=======================================*/
+/*=======================================*/
+
+/*=======================================*/
+/*         STYLES FOR SOON.HTML          */
+/*=======================================*/
+
+#message p{
+    font-size: 32pt;
+    font-weight: 700;
+    text-align: center;
+    color:black;
+}
+
+/*=====================================*/
+/*        STYLES FOR VENUE PAGE        */
+/*=====================================*/
+
+/*#venue_content{
+	background-color: #B3C2BD;
+}*/
+
+#venue_content{
+	/*text-align: center;*/
+}
+
+#venue_img_map{
+    display: table;
+    width: 100%;
+}
+
+#small_venue_img, #venue_map{
+	text-align: center;
+	display: table-cell;
+	width: 50%;
+	vertical-align: middle;
+}
+
+#map, #map iframe{
+	max-width: 100%;
+    text-align: center;
+}
+
+#content .quote{
+    max-width: 90%;
+    display: block;
+    font-style: italic;
+    font-size: 16pt;
+    font-weight: 400; /*200 was too thin*/
+    color: #333333;
+    /*text-align: center;*/
+    margin-top: 40px;
+    margin-bottom: 40px;
+    /*margin-left: 50px;
+    margin-right: 50px;*/
+    padding: 30px;
+    /*border-radius: 10px;*/
+    background-color: #e0e0e0;
+    border-left: 20px solid #ccc;
+}
+
+#content div.note{
+    max-width: 90%;
+    display: block;
+    font-size: 16pt;
+    font-weight: 400; /*200 was too thin*/
+    color: #333333;
+    /*text-align: center;*/
+    margin-top: 40px;
+    margin-bottom: 40px;
+    /*margin-left: 50px;
+    margin-right: 50px;*/
+    padding: 30px;
+    /*border-radius: 10px;*/
+    background-color: #f2f2f2;
+    border-left: 20px solid #ccc;
+}
+
+#content .source{
+    font-style: normal;
+    text-align: right;
+    padding-top: 20px;
+}
+
+/*#content .source a{
+    color: white;
+}*/
+
+/*===============================================*/
+/* STYLES FOR VENUE AND BECOMING A PARTNER PAGES */
+/*===============================================*/
+
+#sponsor_benefits, #hotel_rates{
+    width: 100%;
+}
+
+#hotel_rates{
+    empty-cells: show;
+}
+
+#sponsor_benefits caption, #hotel_rates caption{
+    font-size: 21pt;
+    color: #400800;
+    padding: 10px;
+    font-weight: 700;
+}
+
+#sponsor_benefits, #hotel_rates, #sponsor_benefits th, #hotel_rates th, #sponsor_benefits td, #hotel_rates td {
+    border-collapse: collapse;
+    border: 1px solid #262626;
+    font-size: 16pt;
+}
+
+#sponsor_benefits th, #sponsor_benefits td, #hotel_rates th, #hotel_rates td{
+    padding: 10px;
+}
+
+.col_header{
+    text-align: left;
+}
+
+.row_header{
+    color: black; /*#400800*/
+}
+
+.contribution{
+    text-align: center;
+}
+
+/*=====================================*/
+/*        STYLES FOR TRAVEL PAGE        */
+/*=====================================*/
+
+/*.multicol {
+      position:relative;
+      left:8%;
+      width:84%;
+      height: auto;
+      background-color:#ccff88;
+      column-width:20em;
+      column-gap:2em;
+}
+*/
+/*==============================================================*/
+/*           STYLES FOR ORGANIZING & PROGRAM COMMITTEE          */
+/*==============================================================*/
+
+#content div.committee_member{
+    display: block;
+}
+
+#content div.committee_member p{
+    display: table-cell;
+    font-size:21pt;
+    font-weight:400; /*200 was too thin*/
+    color: black;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+/*------Organizing Committee Styles--------*/
+
+#content div.committee_member p a{
+    font-weight:400; 
+    display:block;
+}
+
+#content p.committee_member_img img{
+    height: 116px;
+    width: 116px;
+	display:inline;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+/*------Program Committee Styles--------*/
+
+#content div.committee_member div{
+    display: block;
+    font-size:21pt;
+    font-weight:200;
+    color: black;
+    vertical-align: middle;
+    padding: 5px;
+    padding-bottom: 30px;
+    font-style: italic;
+}
+
+#content div.committee_member div a{
+    display: block;
+    font-style: normal;
+    padding-top: 20px;
+    font-size:21pt;
+}
+
+/*=====================================*/
+/*        STYLES FOR SRC PAGE        */
+/*=====================================*/
+
+#src_sponsor
+{
+    padding-top: 40px;
+    text-align: center;
+    padding-bottom: 40px;
+    background-color:white;
+    border-left: 20px solid #1d82d2; /*------------------------------ change COLOR */
+    border-right: 20px solid #1d82d2;
+}
+
+#src_sponsor_text{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#src_sponsor_img{
+    max-width: 100%;
+    height: auto;
+    /*padding-bottom: 5px;*/
+    padding-top: 20px;
+}
+
+.src_reviewer{
+    padding-left: 5px;
+    margin-bottom: 0px;
+}
+
+.src_reviewer_affiliation{
+    margin-top: 0px;
+    font-size: 16pt;
+    font-style: italic;
+    font-weight: 200; /*200 is thin*/
+    color: #262626;
+}
+
+/*==============================================================*/
+/*                 STYLES FOR SPONSORS PAGE                     */
+/*==============================================================*/
+
+#content .sponsor
+{
+    text-align: left;
+}
+
+#content .sponsor_img{
+    max-width: 50%;
+    height: auto;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: left;
+}
+
+.sponsor_type{
+    font-weight: 700;
+    font-style: italic;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*==============================================================*/
+/*             STYLES FOR CAPTIONING CHALLENGE PAGE             */
+/*==============================================================*/
+
+#captioning_challenge_img
+{
+    max-width: 100%;
+    height: auto;
+    float: right;
+    padding-left: 15px;
+}
+
+/*=====================================*/
+/*    STYLES FOR REGISTRATION PAGE     */
+/*=====================================*/
+
+#registration_fees{
+    border: 1px solid #262626;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 16pt;
+}
+
+/*#registration_fees caption{
+    font-size: 18pt;
+    padding: 10px;
+    font-weight: 700;
+}*/
+
+#registration_fees td, #registration_fees th{
+    padding: 10px;
+    border: 1px solid #262626;
+}
+
+.column_header{
+    color: black; /*#400800*/
+    overflow-x: auto;
+    max-width: 210px;
+}
+
+/*===============================================*/
+/*        STYLES FOR ACCEPTED PAPERS PAGE        */
+/*===============================================*/
+.paper{
+	display: block;
+	font-size: 16pt;
+	font-weight: 400;
+	padding-bottom: 30px;
+}
+
+.authors{
+    font-style: italic;
+    font-weight: 200;
+    color: #262626;
+}
+
+.inner{
+    display: inline-block;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  display: inline-block;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 21px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  font-size: 16px;
+}
+
+.posterscript h5{
+    line-height: 0px;
+    margin-bottom: -2px;
+    /*font-weight: 150;
+    color: #262626;
+    font-size: 10px;*/
+}
+
+/*===============================================*/
+/*        STYLES FOR WORKSHOP ABSTRACTS PAGE        */
+/*===============================================*/
+.abstract{
+    display: block;
+    font-size: 16pt;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+.abstractauthors{
+    font-style: italic;
+    font-weight: 200;
+    color: #262626;
+}
+
+#workshop_keynote{
+    padding-left: 5%;
+}
+
+/*===============================================*/
+/*             STYLES FOR PROGRAM PAGEs           */
+/*===============================================*/
+
+.program
+{
+	text-align: left;
+	vertical-align: top;
+	border-collapse: collapse;
+    border: 1px solid #262626;
+    max-width: 100%;
+    /*display: block;*/
+}
+
+.program th, .program td{
+	padding: 10px;
+	border: 1px solid #262626;
+}
+
+#content .program th p{
+    font-weight: 700;
+}
+
+.list_chairs{
+    list-style: none;
+}
+
+a#monday, a#tuesday, a#wednesday{
+	font-size: 21pt;
+}
+
+#content .program_h2{
+    color: #333333;
+    /*font-size: 26pt;*/
+}
+
+/*#keynote_speaker{
+   float: right; 
+   padding-left: 10px; 
+   max-width: 90%;
+}*/
+
+#keynote_speaker_profile_pic{
+    display: inline;
+}
+
+#keynote_speaker_profile_pic img{
+    float: left; 
+    width: 40%;
+    padding: 5px; 
+    padding-right: 20px;
+}
+
+#keynote_announcement{
+    display: block; 
+    margin-bottom: 5px;
+
+    /*border: solid 1px #ff0000;*/
+    zoom: 1; /* IE6&7 */
+}
+
+#keynote_announcement:before,
+#keynote_announcement:after {
+    content: "";
+    display: table;
+}
+
+#keynote_announcement:after {
+    clear: both;
+}
+
+#about_speaker{
+    display: block; 
+    margin-top: 5px;
+
+    /*border: solid 1px #ff0000;*/
+    zoom: 1; /* IE6&7 */
+}
+
+#uxp_logos{
+    text-align: center;
+}
+
+#uxp_logos img{
+    display: inline-block;
+    max-width: 30%;
+}
+
+/*For img in paragraph - float left */
+
+/*  MEDIA QUERIES =========================================================================================================== */
+/*
+	Idea from: http://webdesign.tutsplus.com/tutorials/building-a-responsive-layout-with-skeleton-navigation--webdesign-6385
+	Original queries:
+   
+	For smaller than standard 960 (devices and browsers)
+	@media only screen and (max-width: 959px){}
+
+	For tablet portrait size to standard 960 (devices and browsers) 
+	@media only screen and (min-width: 768px) and (max-width: 959px){}
+
+	For all mobile sizes (devices and browsers) 
+	@media only screen and (max-width: 767px){}
+
+	For mobile landscape size to tablet portrait (devices and browsers) 
+	@media only screen and (min-width: 480px) and (max-width: 767px){}
+
+	For all mobile sizes (devices and browsers) 
+	@media only screen and (max-width: 479px){}
+
+============================================================================================================================== */
+
+/* 
+    Note, if menu items are added or removed, then the 
+    max-width needs to changed. 
+
+    Use Responsive Design Mode in Firefox and check 
+    how wide the screen needs to be for the menu bar to fit.
+
+    Remember to check it in portrait mode AND landscape!
+*/
+
+/* The following is for when the menu bar doesn't fit */
+@media only screen and (max-width: 500px) {
+
+    #skip_nav {
+        display: none;
+    }
+
+    #drop_down_menu select {
+        display: block;
+        width: 100%;
+        background-color: #262626;
+        color: white;
+        font-weight: 700;
+    }
+
+    #menu_bar {
+        display: none;
+    }
+
+    #keynote_speaker_profile_pic{
+        display: block;
+        text-align: center;
+    }
+
+    #keynote_speaker_profile_pic img{
+        float: none;
+    }
+
+}
+/* 
+    The following is for everything else that needs to be modified 
+    for smaller screens.
+
+    max-width is 414px because that is the width of the iPhone6+ in
+    portrait mode and that was the device with the largest width.
+    So for any screen with a width less than or equeal to that, the
+    following will apply.
+ */
+
+@media only screen and (max-width: 600px) {
+    header{
+        background-image: url('images/assets19_banner_phone.png');
+    }
+}
+
+@media only screen and (max-width: 600px) { /*414px, 568px*/
+
+    #skip_nav{
+        display: none;
+    }
+    
+    #drop_down_menu select{
+        display: block;
+        width: 100%;
+        background-color: #262626;
+        color: white;
+        font-weight: 700;
+    }
+
+    #menu_bar{
+        display: none;
+    }
+
+    /*------------------*/
+
+    #content
+    {
+        max-width: 100%;
+        margin: 15px 15px;
+        padding: 0px;
+    }
+
+    /*------------------*/
+    
+    #home_logo_section{
+        display: none;
+    }
+
+    #home_logo_section_2{
+        display: block;
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    /*------------------*/ 
+    
+    #content h1, #content h2.home_section_title{
+        font-size: 18pt;
+    }
+
+    #content #home_scope_reg_sections #home_scope_section #home_h1{
+        font-size: 16pt;
+    }
+
+    #home_h2{
+        font-size: 14pt;
+    }
+
+    #content h2.home_section_title{
+        padding: 5px 0px;
+    }
+
+    #content h2{
+        font-size: 16pt;
+    }
+
+    #content h3{
+        font-size: 14pt;
+    }
+
+    #content, #content a, #content p, #content li,  #content h4{
+        font-size: 12pt;
+    }
+
+    /*------------------*/
+
+    #content .program tr p, #content .program th p, #content .program td p, #content .program td ul li{
+        font-size: 14pt;
+    }
+
+    #content .program th, #content .program td{
+        padding: 10px 5px 10px 5px;
+    }
+
+    #content .program{
+        padding: 0px;
+    }
+
+    /*------------------*/
+
+    #home_committee_section h3{
+        font-size: 12pt;
+    }
+
+    #home_committee_section p.home_committee_member_name {
+    }
+
+    #home_committee_section p.home_committee_member_title{
+        /*font-size: 12pt;*/
+    }
+
+    .inline_img{
+        display: block;
+        text-align: center;
+    }
+
+    .inline_img img{
+        height: auto;
+        width: auto;
+        max-width: 100%;
+    }
+
+    .left_img{
+        float: none;
+        padding-right: 0px;
+    }
+
+    .right_img{
+        float: none;
+        padding-left: 0px;
+    }
+
+    #keynote_speaker{
+       float: none;
+       padding-right: 10px; 
+    }
+
+    #content div.committee_member p.committee_member_info{
+        font-size: 16pt;
+    }
+
+    #content div.committee_member p.committee_member_info a{
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        -ms-word-break: break-all;
+        word-break: break-word;
+        /*text-overflow: ellipsis;*/
+    }
+
+    #about_speaker, #content a{
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        -ms-word-break: break-all;
+        word-break: break-word;
+    }
+
+    #map{
+        /*display: none;*/
+        text-align: center;
+    }
+
+    #map iframe{
+       width: 300px; 
+       height: 250px;
+       max-width: 90%;
+    }
+/*
+    #uxp_logos img{
+        display: block;
+        max-width: 90%;
+    }*/
+
+}

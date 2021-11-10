@@ -1,0 +1,16 @@
+Alternate text of figures in the findings section.
+
+Fig 1: Competency-based Approach
+The first figure of the findings section shows a flow diagram of the competency-based design approach the study proposes for designing with people with intellectual disability. It shows the three stages of the approach. Stage one reveals the competencies of people with intellectual disability, stage 2 designes the technology leveraging these competencies and stage three enhances competencies by developing abilities further. These new competencies can then be reflected upon for designing other technologies.
+
+
+Fig 2: Search and sharing Interface of the HowToApp
+The first figure shows the search interface of the app. It shows the search bar, where participants can type in their search queries and a microphone where those that have challenges with 
+spelling can record their search query.An example of a search query "make pan" is displayed on the search bar, and alternate search suggestion including make pancakes, make pancake mix, 
+make pancakes without egg, make paneer and make panna cotta. The top of the figure shows the social media icons (magnifying glass, two heads, a star and a bell) depicting searching, 
+friends, favourites/playlist and notifications respectively.
+The second figure shows a still video with a pancake, and displays the share and save buttons at the button for users to be able to either save the video if they like it or share it with their friends. The top of the figure shows the social media icons (magnifying glass, two heads, a star and a bell) depicting searching, friends, favourites/playlist and notifications respectively.
+
+Fig 3: TechShops sessions
+This figures shows two separate picture with about nine participants apiece engaged on tablets around a table. The figure illustrate the context of the workshop-based approach referred to 
+as TecShops, the study employed to engage participants on Facebook and YouTube to identify their competencies for leverage in the app's design.

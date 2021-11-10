@@ -1,0 +1,21 @@
+Figure 1 is composed of two screenshots of the virtual reality video game we created. 
+The two images are shown, one on top of the other, to demonstrate a comparison for a more 
+heavily visually crowded area and a less visually crowded one. 
+The images both showcase gems and take place inside a cave. 
+However, the lower image has around 50 small, semi-transparent, white floating particles. 
+The upper image contains around 90 of these puff-like particles.
+
+Figure 2 is composed of two models of the set up of the virtual reality playspace. 
+
+    The first model shows the sizes of the play space, virtual axe and spawning range for targets to hit with the axe. 
+    The play space, being the space in which users can move around in the real world is 3 meters by 2.5 meters.
+    The virtual axe is around 1 meter long and the gem's (being the targets to hit with the axe) spawning range is in front of the virtual play space.
+    The spawning range is 3 meters long. 
+
+    The second model shows the location of the speed up, slow down and exit game options with relation to the play space. 
+    The exit option in dead center on the opposite side of the play space from the gem spawning range.
+    The speed up and slow down options are also on this side of the play space, but in the left and right corner of the rectangle as opposed to the center.
+
+Figure 3 is a screenshot of the virtual reality video game we created.
+It is the instructional screen, and one can see gems shooting out of the ground with instructions corresponding to that gem hovering above.
+The overall virtual setting is a cave. 

@@ -1,0 +1,17 @@
+The first two figures shows the exoskeleton robotic device evaluated in this study. 
+Figure 1 shows HandyRehab, the exoskeleton robotic device used in this study
+Figure 2 shows a Myo armband for EMG detection.
+
+The third figure shows the four passive movements we asked participants to perform with the robotic device. The movements are: ‘open and close’, ‘cylindrical grip and close’, ‘three-finger grip and close’ and ‘two-finger grip and close’. 
+
+Figure 4 to 6 are located under the thematic analysis highlight session.
+Figure 4 shows a stroke patient’s open hand without assistance: the patient would feel embarrassed in social situations whenever a handshake was initiated due to his right hand “always clenching into a fist”. 
+Figure 5 shows the stroke patient's open hand assisted by an object, that is a table.
+Figure 6 shows the stroke patient's open hand assisted by the exoskeleton.
+
+Figure 7 shows Credibility/Expectancy Questionnaire Results.
+
+Figure 8 shows one of the movement with the robotic device - Cylindrical grip in use.
+Figure 9 shows one of the movement with the robotic device - Three-finger grip in use.
+
+Figure 10 shows the results of IMI completed by the stroke patient after using the device.

@@ -1,0 +1,12 @@
+﻿A Wearable Input Mechanism for Blind users of Computers based on Mental Mapping of Thumb-To- Phalanx Distances 
+
+
+The problem:
+Accuracy of typing has a major impact on the quality of work produced in work environments. Past studies into accessible typing mechanisms have focused on the typing speed at the expense of accuracy and production cost. We propose an affordable mechanism which uses memory of thumb - to - phalanx distances to provide accurate input.
+
+
+The solution we propose:
+Our solution consists of a glove to be worn by the user, which would have buttons over every phalanx bone of the wearer’s hand. The uncovered thumb on each hand would be used to tap each button, for which a corresponding letter output would appear on the screen. 
+
+
+Our Study involved giving 5 participants our mechanism for 5 sessions of up to 20 minutes each. In each session participants had to type longer words and we measured Character Error Rate, Backspaces per Tap and Entry Rate. We found that our mechanism achieves comparable rates with existing systems and results improve in each session.

@@ -1,0 +1,15 @@
+Figure 1 
+
+Comparative grid with the title "Example of scores for different images". 
+On the left side there are four images showing simple pencil drawings with little details and well defined lines. Two of them are white with black borders, the other two are entirely black.
+On the right side there are four images showing either colored drawings or drawings with confusing angles and separated lines
+
+Figure 2
+
+Graph composed of 6 bullet points showing the 6 main steps of the Tactiled process, each one with an image and an explanation of the step:
+1) Image: Logo of the Tensorflow ML library. Text: "Use a pre-exisisting Machine Learning model to classify images"
+2) Image: Magnifying glass with a question mark in it. Text: "Find good and bad images for Tactile Graphics transformation."
+3) Image: a red dot cornered by arrows pointing at it. Text: "Insert the new categories in the Machine Learning model and re-train it."
+4) Image: a colored bar chart. Text: "Load model on browser."
+5) Image: a text bubble. Text: "Show Tactile Graph score of any image the user inputs"
+6) Image: three bullet points with different tags, implying categorization. Text: "Provide a proper image of the desired class if the user is looking for TG's"

@@ -1,0 +1,9 @@
+Figure 1. Two screenshots of the smartwatch touchscreen app, one showing a rectangular yellow target in the bottom right and the second showing a smaller rectangular in the middle-left of the screen.
+
+Figure 2. Two screenshots of the smartwatch bezel input app, one showing a yellow bar at the top of the screen to indicate input on the top edge, and the second showing a yellow target in the top-left corner of the screen to indicate input on the top-left bezel corner of the watch. There are also two close-up images of participants’ hands and the watch, one pressing the lower large bezel target and one pressing the bottom right corner bezel target.
+
+Figure 3: Boxplot of trial completion times. The graph shows higher completion times for trials in the bezel conditions and lower times for touchscreen conditions. The touchscreen conditions took on average 1.2s per trial, whereas the bezel conditions took on average 1.7s per trial.
+
+Figure 4: Boxplot of error rates. The graph shows higher error rates for the touchscreen with 8-target layout and similar but low error rates for the other three conditions. The touchscreen trials resulted on average in a 10% error rate, whereas the bezel trials yielded on average a 3.5% error rate.
+
+

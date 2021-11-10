@@ -1,0 +1,18 @@
+Title: BrailleBlocks: Smart Toys for Cross-Ability Collaboration
+Authors: Vinitha Gadiraju and Shaun K. Kane
+Institution: University of Colorado, Boulder
+Contact: vinitha.gadiraju@colorado.edu
+
+Alternative text for the figures in the BrailleBlocks poster. 
+
+Figure 1.
+An overhead view of the BrailleBlocks system. There are eight green blocks in a white cardboard frame. Each block has six holes in it, so that each block represents a single Braille cell. There is a cup filled with red pegs to the left. The blocks have pegs in them that spell out "lovelace" in Braille.
+
+Figure 2.
+ A screenshot of the BrailleBlocks interface. This is the animal selection chart from the Animal Name game. There are 4 animals side by side to choose from: a dog, elephant, duck, and sheep. There are cartoons of each animal in the chart. Above the chart are instructions on what to do on this page of the interface. Below the chart is a button that takes you to the home page.
+
+Figure 3.
+A close-up of a dialog box from the BrailleBlocks interface. The dialog box says "'ELEPHANT'". Below the dialog box is an enlarged visual representation of the word "elephant" in Grade 1 Braille.
+
+Figure 4.
+This is an image of a participant family during the user study. The mother sits to the right with the laptop interface in front of her. She is watching her son (to the left) and daughter (in the middle) place red pegs into the green BrailleBlocks.

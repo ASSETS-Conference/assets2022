@@ -1,0 +1,29 @@
+Doctoral consortium poster.
+Empowering people with dementia to share and socialize.
+Author: Jia Min Dai.
+Supervisor: Professor Karyn Moffatt.
+School of Information Studies, McGill University.
+
+My overarching research goal is to explore technologies to empower people with dementia in social sharing.
+To date, I have completed the fieldwork and investigated the challenges people with dementia encounter when sharing stories and socializing in a small group, as well as effective materials and prompts in supporting their storytelling.
+
+My fieldwork is situated at Tales & Travels, a storytelling and social program in a local public library.
+It invites people with dementia to explore a country every week.
+Each session consists of a 1-hour story time, a 20-minute coffee break with featured snacks, and a 20-minute video time.
+I conducted dyad interviews with people with dementia and their family caregivers, as well as individual interviews with caregivers and facilitators. 
+I also observed the sessions and took field notes.
+I performed thematic analysis on interview transcripts and observation notes.
+
+The fieldwork findings show that people with dementia are able to enjoy social sharing and contribute to the story telling and discussions.
+But a successful social sharing program requires proper framing and careful crafting.
+I have identified the following best practices:
+Exploring community settings,
+Encouraging peer collaboration,
+Choosing mature and intellectual materials and activities,
+Furthering tangible interactions and multisensory experiences,
+Adopting technologies carefully,
+Facilitating properly and professionally.
+
+My next steps are the design and evaluation of a new social sharing tool for people with dementia. 
+
+

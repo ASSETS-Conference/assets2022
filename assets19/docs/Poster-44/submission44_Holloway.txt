@@ -1,0 +1,13 @@
+Building Capacity: eTextile Tactile StoryBook Workshops
+By Leona Holloway, Kirsten Ellis and Louise Curtin (Monash University) 
+Tactile literacy is a key to success, and the first step is active touch stimulated by engaging tactile diagrams. 
+eTextiles offer an easy and affordable means of enhancing tactile story book pages. We used Lilypad components, conductive thread, LED lights and vibration motors. 
+We ran three public workshops, each with up to 23 adults and children. After a brief explanation and exposure to sample materials, participants were supported to create their own story book page with a sewn circuit. Everyone was able to complete the task within the 2-3 hour workshop, and a surprising number incorporated switches for greater interactivity.  
+Based on our experiences, we offer seven guiding principles for running Tactile eTextile Workshops: 
+1. Get people making as quickly as possible; 
+2. Provide Inspirational materials such as rhymes and picture story books;
+3. Provide examples of the finished product;
+4. Encourage people to check their work by touch;
+5. Keep it simple for success, starting with a very simple circuit;
+6. Intervene early with a higher ratio of helpers; and 
+7. Use collaborative learning. 

@@ -1,0 +1,9 @@
+Tetraplegia is a condition in which people have limited motor ability in their legs and arms. Voice assistants are currently designed as a general purpose tool, with limited attention to people with disabilities.
+
+We performed contextual need finding activities with the participants with tetraplegia,  mostly in their own homes.  We conducted semi-structured interviews along with wizard- of-oz prototyping or a contextual inquiry. 
+
+People with tetraplegia use voice activation
+when lying down on their bed, when on the floor, or while in
+transit. 
+
+We suggest a physical convenience approach, distributing microphones on the bed frame, on the floor and even in the bathroom (with caution about privacy, and permission) in order to accommodate for the locations that the people will want to use the voice assistant technology. In future work, we plan to examine novel uses of the wizarded voice-activated drone or chair (i.e., scratching the nose, checking who is at the door, picking up mail). Additionally, we plan to extend this work to include more participants.
