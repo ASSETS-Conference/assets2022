@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  @@include('_head.html')
+</head>
+<body>
+  <div class="content-wrapper">
+    <header class="wrapper bg-soft-primary">
+      @@include('_navbar.html', {
+        "classList": "center-nav transparent navbar-light",
+        "otherClassList": "w-100 d-flex ms-auto",
+        "otherLanguageSelect": true,
+        "otherBtn": true,
+        "otherBtnClassList": "btn-sm btn-primary rounded-pill",
+        "otherBtnText": "Contact",
+        "otherBtnLink": "@@webRoot/contact.html"
+      })
+    </header>
+    <!-- /header -->
+    <section class="wrapper bg-soft-primary">
+      <div class="container pt-10 pb-12 pt-md-14 pb-md-16 text-center">
+        <div class="row">
+          <div class="col-md-9 col-lg-7 col-xl-5 mx-auto">
+            <h1 class="display-1 mb-3">Progressbar</h1>
+            <p class="lead px-xxl-11">Examples and instructions on how to add colorful progressbars on your website.</p>
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+    <div class="container">
+      <div class="row">
+        @@include('docs/_sidebar.html', {"page": "elements-progressbar"})
+        <div class="col-xl-8 order-xl-2">
+          <section id="snippet-1" class="wrapper py-16">
+            <h2 class="mb-3">Examples</h2>
+            <p class="lead">Available color options:</p>
+            <p class="lead mb-8"><code class="code">primary</code>, <code class="code">aqua</code>, <code class="code">green</code>, <code class="code">leaf</code>, <code class="code">navy</code>, <code class="code">orange</code>, <code class="code">pink</code>, <code class="code">purple</code>, <code class="code">red</code>, <code class="code">violet</code>, <code class="code">yellow</code>, <code class="code">soft-primary</code>, <code class="code">soft-aqua</code>, <code class="code">soft-green</code>, <code class="code">soft-leaf</code>, <code class="code">soft-navy</code>, <code class="code">soft-orange</code>, <code class="code">soft-pink</code>, <code class="code">soft-purple</code>, <code class="code">soft-red</code>, <code class="code">soft-violet</code>, <code class="code">soft-yellow</code></p>
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-lg-7">
+                    <ul class="progress-list mb-10">
+                      <li>
+                        <p>Marketing</p>
+                        <div class="progressbar line blue" data-value="100"></div>
+                      </li>
+                      <li>
+                        <p>Strategy</p>
+                        <div class="progressbar line green" data-value="80"></div>
+                      </li>
+                      <li>
+                        <p>Development</p>
+                        <div class="progressbar line red" data-value="85"></div>
+                      </li>
+                      <li>
+                        <p>Stabilization</p>
+                        <div class="progressbar line yellow" data-value="75"></div>
+                      </li>
+                    </ul>
+                    <!-- /.progress-list -->
+                    <ul class="progress-list">
+                      <li>
+                        <p>Marketing</p>
+                        <div class="progressbar line soft-blue" data-value="100"></div>
+                      </li>
+                      <li>
+                        <p>Strategy</p>
+                        <div class="progressbar line soft-green" data-value="80"></div>
+                      </li>
+                      <li>
+                        <p>Development</p>
+                        <div class="progressbar line soft-red" data-value="85"></div>
+                      </li>
+                      <li>
+                        <p>Stabilization</p>
+                        <div class="progressbar line soft-yellow" data-value="75"></div>
+                      </li>
+                    </ul>
+                    <!-- /.progress-list -->
+                  </div>
+                  <!-- /column -->
+                </div>
+                <!-- /.row -->
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-1">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-1" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;ul class=&quot;progress-list&quot;&gt;
+  &lt;li&gt;
+    &lt;p&gt;Marketing&lt;/p&gt;
+    &lt;div class=&quot;progressbar line blue&quot; data-value=&quot;100&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Strategy&lt;/p&gt;
+    &lt;div class=&quot;progressbar line green&quot; data-value=&quot;80&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Development&lt;/p&gt;
+    &lt;div class=&quot;progressbar line red&quot; data-value=&quot;85&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Stabilization&lt;/p&gt;
+    &lt;div class=&quot;progressbar line yellow&quot; data-value=&quot;75&quot;&gt;&lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- /.progress-list --&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+        </div>
+        <!-- /column -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.content-wrapper -->
+  @@include('docs/_footer.html')
+  @@include('_page-progress.html')
+  @@include('_scripts.html')
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  @@include('_head.html')
+</head>
+<body>
+  <div class="content-wrapper">
+    <header class="wrapper bg-soft-primary">
+      @@include('_navbar.html', {
+        "classList": "center-nav transparent navbar-light",
+        "otherClassList": "w-100 d-flex ms-auto",
+        "otherLanguageSelect": true,
+        "otherBtn": true,
+        "otherBtnClassList": "btn-sm btn-primary rounded-pill",
+        "otherBtnText": "Contact",
+        "otherBtnLink": "@@webRoot/contact.html"
+      })
+    </header>
+    <!-- /header -->
+    <section class="wrapper bg-soft-primary">
+      <div class="container pt-10 pb-12 pt-md-14 pb-md-16 text-center">
+        <div class="row">
+          <div class="col-md-9 col-lg-7 col-xl-6 mx-auto">
+            <h1 class="display-1 mb-3">Tabs</h1>
+            <p class="lead px-xxl-15">Use our custom tabs to add tabbed interfaces on your website. <a href="https://getbootstrap.com/docs/5.1/components/navs-tabs/#javascript-behavior" target="_blank" class="hover more">Bootstrap docs</a></p>
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+    <div class="container">
+      <div class="row">
+        @@include('docs/_sidebar.html', {"page": "elements-tabs"})
+        <aside class="col-xl-2 order-xl-3 sidebar sticky-sidebar mt-md-0 py-16 d-none d-xl-block">
+          <div class="widget">
+            <h6 class="widget-title fs-17 mb-2 ps-xl-5">On this page</h6>
+            <nav class="ps-xl-5">
+              <ul class="list-unstyled fs-sm lh-sm text-reset">
+                <li><a class="scroll" href="#snippet-1">Simple</a></li>
+                <li><a class="scroll" href="#snippet-2">Justified</a></li>
+              </ul>
+            </nav>
+          <!-- /nav -->
+          </div>
+          <!-- /.widget -->
+        </aside>
+        <!-- /column -->
+        <div class="col-xl-8 order-xl-2">
+          <section id="snippet-1" class="wrapper pt-16">
+            <h2 class="mb-5">Simple</h2>
+            <div class="card">
+              <div class="card-body">
+                <ul class="nav nav-tabs nav-pills">
+                  <li class="nav-item"> <a class="nav-link active" data-bs-toggle="tab" href="#tab1-1"><i class="uil uil-phone-volume pe-1"></i><span>Support</span></a> </li>
+                  <li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#tab1-2"><i class="uil uil-shield-exclamation pe-1"></i><span>Payments</span></a> </li>
+                  <li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#tab1-3"><i class="uil uil-laptop-cloud pe-1"></i><span>Updates</span></a> </li>
+                </ul>
+                <!-- /.nav-tabs -->
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="tab1-1">
+                    <p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vestibulum id ligula porta felis euismod semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <p>Donec sed odio dui. Donec sed odio dui. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas faucibus mollis interdum.</p>
+                    <ul class="icon-list bullet-bg bullet-soft-primary mb-0">
+                      <li><i class="uil uil-check"></i>Aenean eu leo quam. Pellentesque ornare.</li>
+                      <li><i class="uil uil-check"></i>Nullam quis risus eget urna mollis ornare.</li>
+                      <li><i class="uil uil-check"></i>Donec id elit non mi porta gravida at eget.</li>
+                      <li><i class="uil uil-check"></i>Fusce dapibus, tellus ac cursus commodo.</li>
+                    </ul>
+                  </div>
+                  <!--/.tab-pane -->
+                  <div class="tab-pane fade" id="tab1-2">
+                    <p>Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum. Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis euismod.</p>
+                    <p> Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor vel scelerisque nisl consectetur et.</p>
+                    <p class="mb-0">Maecenas faucibus mollis interdum. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus.</p>
+                  </div>
+                  <!--/.tab-pane -->
+                  <div class="tab-pane fade" id="tab1-3">
+                    <p>Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <p class="mb-0">Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+                  </div>
+                  <!--/.tab-pane -->
+                </div>
+                <!-- /.tab-content -->
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-1">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-1" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;ul class=&quot;nav nav-tabs nav-pills&quot;&gt;
+  &lt;li class=&quot;nav-item&quot;&gt; 
+    &lt;a class=&quot;nav-link active&quot; data-bs-toggle=&quot;tab&quot; href=&quot;#tab1-1&quot;&gt;
+      &lt;i class=&quot;uil uil-phone-volume pe-1&quot;&gt;&lt;/i&gt;
+      &lt;span&gt;Tab 1&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt; 
+    &lt;a class=&quot;nav-link&quot; data-bs-toggle=&quot;tab&quot; href=&quot;#tab1-2&quot;&gt;
+      &lt;i class=&quot;uil uil-shield-exclamation pe-1&quot;&gt;&lt;/i&gt;
+      &lt;span&gt;Tab 2&lt;/span&gt;
+    &lt;/a&gt; 
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt; 
+    &lt;a class=&quot;nav-link&quot; data-bs-toggle=&quot;tab&quot; href=&quot;#tab1-3&quot;&gt;
+      &lt;i class=&quot;uil uil-laptop-cloud pe-1&quot;&gt;&lt;/i&gt;
+      &lt;span&gt;Tab 3&lt;/span&gt;
+    &lt;/a&gt; 
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- /.nav-tabs --&gt;
+
+&lt;div class=&quot;tab-content&quot;&gt;
+  &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;tab1-1&quot;&gt;
+    ...
+  &lt;/div&gt;
+  &lt;!--/.tab-pane --&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;tab1-2&quot;&gt;
+    ...
+  &lt;/div&gt;
+  &lt;!--/.tab-pane --&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;tab1-3&quot;&gt;
+    ...
+  &lt;/div&gt;
+  &lt;!--/.tab-pane --&gt;
+&lt;/div&gt;
+&lt;!-- /.tab-content --&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="snippet-2" class="wrapper py-16">
+            <h2 class="mb-3">Justified</h2>
+            <p class="lead mb-8">Check out a live example: <a href="@@webRoot/demo9.html" class="external" target="_blank">Demo 9</a>.</p>
+            <div class="card">
+              <div class="card-body">
+                <ul class="nav nav-tabs nav-tabs-bg nav-tabs-shadow-lg d-flex justify-content-between nav-justified flex-lg-row flex-column">
+                  <li class="nav-item"> <a class="nav-link d-flex flex-row active" data-bs-toggle="tab" href="#tab2-1">
+                    <div><img src="@@webRoot/assets/img/icons/rocket.svg" class="svg-inject icon-svg icon-svg-md text-yellow me-4" alt="" /></div>
+                    <div>
+                      <h4 class="mb-1">Easy Usage</h4>
+                      <p>Duis mollis commodo luctus cursus commodo tortor mauris.</p>
+                    </div>
+                  </a> </li>
+                <li class="nav-item"> <a class="nav-link d-flex flex-row" data-bs-toggle="tab" href="#tab2-2">
+                    <div><img src="@@webRoot/assets/img/icons/savings.svg" class="svg-inject icon-svg icon-svg-md text-green me-4" alt="" /></div>
+                    <div>
+                      <h4 class="mb-1">Fast Transactions</h4>
+                      <p>Vivamus sagittis lacus augue fusce dapibus tellus nibh.</p>
+                    </div>
+                  </a> </li>
+                </ul>
+                <!-- /.nav-tabs -->
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="tab2-1">
+                    <p class="mb-0">Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam quis risus eget urna. Curabitur blandit tempus porttitor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                  </div>
+                  <!--/.tab-pane -->
+                  <div class="tab-pane fade" id="tab2-2">
+                    <p class="mb-0">Etiam porta sem malesuada magna mollis euismod. Donec ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam quis risus eget urna. Curabitur blandit tempus porttitor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                  </div>
+                  <!--/.tab-pane -->
+                </div>
+                <!-- /.tab-content -->
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-2">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-2" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;ul class=&quot;nav nav-tabs nav-tabs-bg nav-tabs-shadow-lg d-flex justify-content-between nav-justified flex-lg-row flex-column&quot;&gt;
+  &lt;li class=&quot;nav-item&quot;&gt; 
+    &lt;a class=&quot;nav-link d-flex flex-row active&quot; data-bs-toggle=&quot;tab&quot; href=&quot;#tab2-1&quot;&gt;
+      &lt;div&gt;&lt;img src=&quot;./assets/img/icons/rocket.svg&quot; class=&quot;svg-inject icon-svg icon-svg-md text-yellow me-4&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;
+      &lt;div&gt;
+        &lt;h4 class=&quot;mb-1&quot;&gt;Tab 1&lt;/h4&gt;
+        &lt;p&gt;Description&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/a&gt; 
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt; 
+    &lt;a class=&quot;nav-link d-flex flex-row&quot; data-bs-toggle=&quot;tab&quot; href=&quot;#tab2-2&quot;&gt;
+      &lt;div&gt;&lt;img src=&quot;./assets/img/icons/savings.svg&quot; class=&quot;svg-inject icon-svg icon-svg-md text-green me-4&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;
+      &lt;div&gt;
+        &lt;h4 class=&quot;mb-1&quot;&gt;Tab 2&lt;/h4&gt;
+        &lt;p&gt;Description&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/a&gt; 
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- /.nav-tabs --&gt;
+&lt;div class=&quot;tab-content&quot;&gt;
+  &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;tab2-1&quot;&gt;
+    ...
+  &lt;/div&gt;
+  &lt;!--/.tab-pane --&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;tab2-2&quot;&gt;
+    ...
+  &lt;/div&gt;
+  &lt;!--/.tab-pane --&gt;
+&lt;/div&gt;
+&lt;!-- /.tab-content --&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+        </div>
+        <!-- /column -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.content-wrapper -->
+  @@include('docs/_footer.html')
+  @@include('_page-progress.html')
+  @@include('_scripts.html')
+</body>
+</html>

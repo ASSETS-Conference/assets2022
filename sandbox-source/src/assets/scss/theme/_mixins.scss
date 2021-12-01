@@ -1,0 +1,160 @@
+//----------------------------------------------------------//
+//	BUTTON VARIANT
+//----------------------------------------------------------//
+@mixin button-variant-custom($background,
+  $border,
+  $color: $white,
+  $hover-background: $background,
+  $hover-border: if($color==$color-contrast-light,
+    shade-color($border, 10%),
+    tint-color($border, 5%)),
+  $hover-color: $white,
+  $active-background: $background,
+  $active-border: if($color==$color-contrast-light,
+    shade-color($border, 12.5%),
+    tint-color($border, 5%)),
+  $active-color: $white,
+  $disabled-background: $background,
+  $disabled-border: $border,
+  $disabled-color: color-contrast($disabled-background)) {
+  color: $color;
+  @include gradient-bg($background);
+  border-color: $border;
+  &:hover {
+    color: $hover-color;
+    @include gradient-bg($background);
+    border-color: $border;
+  }
+  .btn-check:focus + &,
+  &:focus {
+    color: $hover-color;
+    @include gradient-bg($background);
+    border-color: $border;
+  }
+  .btn-check:checked + &,
+  .btn-check:active + &,
+  &:active,
+  &.active,
+  .show > &.dropdown-toggle {
+    color: $active-color;
+    background-color: $active-background;
+    // Remove CSS gradients if they're enabled
+    background-image: if($enable-gradients, none, null);
+    border-color: $active-border;
+  }
+  &:disabled:not(.btn-circle):not(.btn-block),
+  &.disabled:not(.btn-circle):not(.btn-block) {
+    color: $disabled-color;
+    background-color: $disabled-background;
+    // Remove CSS gradients if they're enabled
+    background-image: if($enable-gradients, none, null);
+    border-color: $disabled-border;
+  }
+}
+@mixin button-outline-variant-custom($color,
+  $color-hover: $white,
+  $active-background: $color,
+  $active-border: $color,
+  $active-color: $color) {
+  color: $color;
+  border-color: $color;
+  &:hover {
+    color: $color-hover;
+    background-color: $active-background;
+    border-color: $active-border;
+  }
+  .btn-check:focus + &,
+  &:focus {
+    box-shadow: none;
+  }
+  .btn-check:checked + &,
+  .btn-check:active + &,
+  &:active,
+  &.active,
+  &.dropdown-toggle.show {
+    color: $active-color;
+    background-color: $active-background;
+    border-color: $active-border;
+    &:focus {
+      @if $enable-shadows {
+        @include box-shadow($btn-active-box-shadow,
+          0 0 0 $btn-focus-width rgba($color, 0.5));
+      }
+      @else {
+        // Avoid using mixin so we can pass custom focus shadow properly
+        box-shadow: 0 0 0 $btn-focus-width rgba($color, 0.5);
+      }
+    }
+  }
+  &:disabled,
+  &.disabled {
+    color: $color;
+    background-color: transparent;
+  }
+}
+//----------------------------------------------------------//
+//	CARET
+//----------------------------------------------------------//
+@mixin caret-custom-down {
+  content: $icon-caret-down;
+}
+@mixin caret-custom-up {
+  content: $icon-caret-up;
+}
+@mixin caret-custom-right {
+  content: $icon-caret-right;
+}
+@mixin caret-custom-left {
+  content: $icon-caret-left;
+}
+@mixin caret-custom($direction: down) {
+  @if $enable-caret {
+    &::after {
+      font-family: $font-family-custom-icons;
+      display: inline-block;
+      @include font-size($caret-width);
+      margin-left: $caret-spacing;
+      vertical-align: $caret-vertical-align;
+      content: $icon-caret-down;
+      color: $main-color;
+      @if $direction==down {
+        @include caret-custom-down();
+      }
+      @else if $direction==up {
+        @include caret-custom-up();
+      }
+      @else if $direction==right {
+        @include caret-custom-right();
+      }
+    }
+    @if $direction==left {
+      &::after {
+        display: none;
+      }
+      &::before {
+        display: inline-block;
+        margin-right: $caret-spacing;
+        vertical-align: $caret-vertical-align;
+        content: "";
+        @include caret-custom-left();
+      }
+    }
+    &:empty::after {
+      margin-left: 0;
+    }
+  }
+}
+//----------------------------------------------------------//
+//	SHAPES
+//----------------------------------------------------------//
+@mixin bg-dot-variant($color) {
+  background-image: radial-gradient($color 2px, transparent 2.5px);
+}
+@mixin bg-line-variant($color) {
+  background: repeating-linear-gradient(-55deg,
+      rgba($white, 0) 0.8px,
+      $color 1.6px,
+      $color 3px,
+      rgba($white, 0) 3.8px,
+      rgba($white, 0) 10px);
+}

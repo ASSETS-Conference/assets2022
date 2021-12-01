@@ -1,0 +1,46 @@
+//----------------------------------------------------------//
+//	PROCESS
+//----------------------------------------------------------//
+@media (min-width: 992px) {
+  .process-wrapper.line [class*="col-"] {
+    position: relative;
+    &:after {
+      width: 100%;
+      position: absolute;
+      content: "";
+      height: 1px;
+      background: none;
+      border-top: 1px solid $border-light;
+      top: 1.5rem;
+      z-index: 1;
+      left: 3rem;
+    }
+    &:last-child:after {
+      display: none;
+    }
+  }
+  .process-wrapper.line.text-center [class*="col-"]:before,
+  .process-wrapper.line.text-center [class*="col-"]:after {
+    width: 50%;
+    position: absolute;
+    content: "";
+    height: 1px;
+    background: $border-light;
+    border: 0;
+    top: 1.5rem;
+    z-index: 1;
+    left: 0;
+  }
+  .process-wrapper.line.text-center [class*="col-"]:after {
+    right: 0;
+    left: auto;
+  }
+  .process-wrapper.line.text-center [class*="col-"]:first-child:before,
+  .process-wrapper.line.text-center [class*="col-"]:last-child:after {
+    display: none;
+  }
+}
+.process-wrapper.line .btn-circle {
+  position: relative;
+  z-index: 2;
+}

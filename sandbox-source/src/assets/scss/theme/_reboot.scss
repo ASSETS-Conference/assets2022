@@ -1,0 +1,503 @@
+//----------------------------------------------------------//
+//	BODY
+//----------------------------------------------------------//
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  word-spacing: 0.05rem;
+  overflow-x: hidden !important;
+}
+//----------------------------------------------------------//
+//	SELECTION
+//----------------------------------------------------------//
+::-moz-selection {
+  background: rgba($main-color, 0.7);
+  color: $white;
+}
+::selection {
+  background: rgba($main-color, 0.7);
+  color: $white;
+}
+//----------------------------------------------------------//
+//	BUTTON
+//----------------------------------------------------------//
+button:focus {
+  outline: 0;
+}
+//----------------------------------------------------------//
+//	LINKS
+//----------------------------------------------------------//
+a {
+  @include transition($btn-transition);
+}
+a.hover {
+  position: relative;
+  &::before {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: currentColor;
+    top: 100%;
+    left: 0;
+    pointer-events: none;
+  }
+  &::before {
+    content: '';
+    transform-origin: 100% 50%;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+  }
+  &:hover::before {
+    transform-origin: 0% 50%;
+    transform: scale3d(1, 1, 1);
+    transition-timing-function: cubic-bezier(0.4, 1, 0.8, 1);
+  }
+}
+.text-reset a {
+  color: inherit !important;
+}
+.link-dark:hover,
+a.text-reset:hover,
+.text-reset a:hover {
+  color: $link-color !important;
+}
+[class*="text-"] .text-reset:hover {
+  color: inherit !important;
+}
+.link-body {
+  color: $body-color;
+}
+.link-inverse {
+  color: $inverse;
+}
+//----------------------------------------------------------//
+//	TEXT INVERSE
+//----------------------------------------------------------//
+.text-inverse,
+.link-inverse,
+.text-inverse a:not(.btn) {
+  color: $white;
+}
+.bg-dark.text-inverse,
+.bg-dark.link-inverse,
+.bg-dark.text-inverse a:not(.btn):not([class*="link-"]),
+[class*="offcanvas-"].text-inverse a:not(.btn):not([class*="link-"]) {
+  color: $inverse;
+}
+.text-inverse a:not(.btn):hover,
+.bg-dark.text-inverse a:not(.btn):not([class*="link-"]):hover,
+[class*="offcanvas-"].text-inverse a:not(.btn):not([class*="link-"]):hover {
+  color: $link-color;
+}
+.text-inverse a:not(.btn):hover {
+  border-color: $link-color;
+}
+//----------------------------------------------------------//
+//	BADGES
+//----------------------------------------------------------//
+.badge.bg-light {
+  background: $border-light !important;
+}
+//----------------------------------------------------------//
+//	MORE
+//----------------------------------------------------------//
+.more {
+  font-weight: 700;
+  letter-spacing: -0.01rem;
+  display: inline-block;
+  &:after {
+    font-family: $font-family-custom-icons;
+    content: $icon-caret-right;
+    padding-left: 0.05rem;
+    @include font-size($caret-size + 0.05);
+    font-weight: normal;
+    vertical-align: -2px;
+    margin-right: -0.25rem;
+    display: inline-block;
+  }
+}
+//----------------------------------------------------------//
+//	DIVIDERS
+//----------------------------------------------------------//
+hr.double {
+  background: none;
+  border-style: double;
+  border-color: $hr-color;
+}
+_:default:not(:root:root),
+hr.double {
+  border-bottom-width: 3px;
+}
+.divider-icon {
+  border: 0;
+  position: relative;
+  margin: $hr-margin-y 0;
+}
+.divider-icon i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @include font-size(1.2rem);
+  color: $hr-color;
+}
+.divider-icon:before,
+.divider-icon:after {
+  position: absolute;
+  top: 50%;
+  content: "";
+  border-top: 1px solid $hr-color;
+  width: calc(50% - 1.5rem);
+}
+.divider-icon:before {
+  left: 0;
+}
+.divider-icon:after {
+  right: 0;
+}
+//----------------------------------------------------------//
+//	HEADING
+//----------------------------------------------------------//
+%heading {
+  margin-top: 0; // 1
+  margin-bottom: $headings-margin-bottom;
+  font-family: $headings-font-family;
+  font-style: $headings-font-style;
+  font-weight: $headings-font-weight;
+  color: $headings-color;
+  word-spacing: 0.1rem;
+  letter-spacing: $letter-spacing;
+}
+%heading {
+  &.text-uppercase {
+    letter-spacing: $letter-spacing-lg;
+  }
+}
+h1 {
+  line-height: $h1-line-height;
+}
+h2 {
+  line-height: $h2-line-height;
+}
+h3 {
+  line-height: $h3-line-height;
+}
+h4 {
+  line-height: $h4-line-height;
+}
+h5 {
+  line-height: $h5-line-height;
+}
+h6 {
+  line-height: $h6-line-height;
+}
+.display-1 {
+  line-height: 1.2;
+}
+.display-2,
+.display-3 {
+  line-height: 1.25;
+}
+.display-4,
+.display-5 {
+  line-height: 1.3;
+}
+.display-6 {
+  line-height: 1.35;
+}
+//----------------------------------------------------------//
+//	LETTER SPACING
+//----------------------------------------------------------//
+.ls-sm {
+  letter-spacing: $letter-spacing-sm !important;
+}
+.ls-md {
+  letter-spacing: $letter-spacing !important;
+}
+.ls-lg {
+  letter-spacing: $letter-spacing-lg !important;
+}
+.ls-xl {
+  letter-spacing: $letter-spacing-xl !important;
+}
+.ls-normal {
+  letter-spacing: normal;
+}
+//----------------------------------------------------------//
+//	LEAD
+//----------------------------------------------------------//
+.lead {
+  line-height: 1.65;
+  &.fs-lg {
+    @include font-size(1.05rem);
+    line-height: 1.6;
+  }
+}
+//----------------------------------------------------------//
+//	TEXT LINE
+//----------------------------------------------------------//
+.text-line {
+  position: relative;
+  vertical-align: top;
+  padding-left: 1.4rem;
+  &:not(.text-gradient) {
+    display: inline-flex;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-60%);
+    left: 0;
+    width: 0.75rem;
+    height: 0.05rem;
+    background: $main-color;
+  }
+  @each $color,
+  $value in $colors {
+    &.text-#{$color}:before {
+      background-color: $value;
+    }
+  }
+  &.text-muted:before {
+    background-color: $gray-400;
+  }
+}
+//----------------------------------------------------------//
+//	UNDERLINE
+//----------------------------------------------------------//
+.underline {
+  position: relative;
+  z-index: 2;
+  white-space: nowrap;
+  &:after {
+    content: "";
+    display: block;
+    background: rgba($main-color, 0.12);
+    border-radius: 5rem;
+    position: absolute;
+    width: calc(100% + 2.5%);
+    height: 30%;
+    left: -1.5%;
+    bottom: 9%;
+    z-index: -1;
+    margin-top: 0;
+    @include transition($btn-transition);
+  }
+  @each $color,
+  $value in $colors {
+    &.#{$color}:after {
+      background: rgba($value, 0.12);
+    }
+  }
+}
+.underline-2 {
+  position: relative;
+  z-index: 2;
+  white-space: nowrap;
+  &:after {
+    content: "";
+    display: block;
+    background: $main-color;
+    border-radius: 5rem;
+    position: absolute;
+    width: calc(100% + 2.5%);
+    height: 20%;
+    left: -1.5%;
+    bottom: -10%;
+    z-index: -1;
+    margin-top: 0;
+    @include transition($btn-transition);
+  }
+  @each $color,
+  $value in $colors {
+    &.#{$color}:after {
+      background: $value;
+    }
+  }
+}
+@each $gradient,
+$value in $gradients {
+  .underline-#{$gradient}:after {
+    background: $value;
+  }
+}
+//----------------------------------------------------------//
+//	MARK
+//----------------------------------------------------------//
+.mark, 
+mark {
+  color: inherit;
+  border-radius: $border-radius;
+}
+//----------------------------------------------------------//
+//	ROUNDED
+//----------------------------------------------------------//
+.rounded img {
+  @include border-radius($border-radius);
+}
+@media (min-width: 992px) {
+  .map.rounded-lg-start iframe,
+  .image-wrapper.rounded-lg-start {
+    border-bottom-left-radius: $border-radius !important;
+    border-top-left-radius: $border-radius !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+  .image-wrapper.rounded-4-lg-start {
+    border-bottom-left-radius: $border-radius-xl !important;
+    border-top-left-radius: $border-radius-xl !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+}
+@media (max-width: 991.98px) {
+  .map.rounded-top iframe,
+  .image-wrapper.rounded-top {
+    border-top-left-radius: $border-radius !important;
+    border-top-right-radius: $border-radius !important;
+  }
+  .image-wrapper.rounded-4-top {
+    border-top-left-radius: $border-radius-xl !important;
+    border-top-right-radius: $border-radius-xl !important;
+  }
+  .image-wrapper.bg-cover {
+    min-height: 15rem;
+  }
+}
+//----------------------------------------------------------//
+//	FIGURE
+//----------------------------------------------------------//
+figure {
+  margin: 0;
+  padding: 0;
+}
+figure img {
+  width: 100%;
+  max-width: 100%;
+  height: auto !important;
+}
+//----------------------------------------------------------//
+//	BLOB IMAGE MASK
+//----------------------------------------------------------//
+.img-blob {
+  img {
+    mask-position: center center;
+    mask-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    -webkit-mask-size: auto auto;
+  }
+  &.blob1 img {
+    mask-image: url(../../assets/img/blob.svg);
+  }
+  &.blob2 img {
+    mask-image: url(../../assets/img/blob2.svg);
+  }
+}
+//----------------------------------------------------------//
+//	MAP
+//----------------------------------------------------------//
+.map iframe {
+  display: block;
+}
+.map.map-full {
+  height: 100%;
+  min-height: 15rem;
+}
+//----------------------------------------------------------//
+//	ADDITIONAL MARGINS
+//----------------------------------------------------------//
+[class*="mt-n"],
+[class*="mb-n"] {
+  position: relative;
+  z-index: 3;
+}
+.mb-n50p {
+  transform: translateY(50%);
+}
+.mt-n50p {
+  transform: translateY(-50%);
+}
+@media screen and (min-width: 576px) {
+  .mb-sm-n50p {
+    transform: translateY(50%);
+  }
+  .mt-sm-n50p {
+    transform: translateY(-50%);
+  }
+}
+@media screen and (min-width: 768px) {
+  .mb-md-n50p {
+    transform: translateY(50%);
+  }
+  .mt-md-n50p {
+    transform: translateY(-50%);
+  }
+}
+@media screen and (min-width: 992px) {
+  .mb-lg-n50p {
+    transform: translateY(50%);
+  }
+  .mt-lg-n50p {
+    transform: translateY(-50%);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mb-xl-n50p {
+    transform: translateY(50%);
+  }
+  .mt-xl-n50p {
+    transform: translateY(-50%);
+  }
+}
+@media screen and (min-width: 1400px) {
+  .mb-xxl-n50p {
+    transform: translateY(50%);
+  }
+  .mt-xxl-n50p {
+    transform: translateY(-50%);
+  }
+}
+//----------------------------------------------------------//
+//	BORDER RADIUS
+//----------------------------------------------------------//
+@media (max-width: 1199.98px) {
+  .border-radius-lg-top {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+  }
+}
+//----------------------------------------------------------//
+//	POSITION
+//----------------------------------------------------------//
+@media (min-width: 992px) {
+  .position-lg-absolute {
+    position: absolute !important;
+  }
+}
+//----------------------------------------------------------//
+//	CSS COLUMNS
+//----------------------------------------------------------//
+@media (min-width: 992px) {
+  .cc-2 {
+    column-count: 2;
+    li {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+  .cc-3 {
+    column-count: 3;
+    li {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+}
+//----------------------------------------------------------//
+//	ROW COLUMNS
+//----------------------------------------------------------//
+

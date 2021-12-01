@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  @@include('_head.html')
+</head>
+<body>
+  <div class="content-wrapper">
+    <header class="wrapper bg-soft-primary">
+      @@include('_navbar.html', {
+        "classList": "center-nav transparent navbar-light",
+        "otherClassList": "w-100 d-flex ms-auto",
+        "otherLanguageSelect": true,
+        "otherBtn": true,
+        "otherBtnClassList": "btn-sm btn-primary rounded-pill",
+        "otherBtnText": "Contact",
+        "otherBtnLink": "@@webRoot/contact.html"
+      })
+    </header>
+    <!-- /header -->
+    <section class="wrapper bg-soft-primary">
+      <div class="container pt-10 pb-12 pt-md-14 pb-md-16 text-center">
+        <div class="row">
+          <div class="col-md-9 col-lg-7 col-xl-5 mx-auto">
+            <h1 class="display-1 mb-3">Blocks - Process</h1>
+            <p class="lead px-xxl-10">Copy any custom block snippet below and paste it on your page to build your website easily.</p>
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+    @@include('docs/_blocks-menu.html', {"page": "blocks-process"})
+    <section id="snippet-1" class="wrapper bg-light wrapper-border">
+      <div class="container pt-15 pt-md-17 pb-13 pb-md-15">
+        <div class="row gy-10 gy-sm-13 gx-lg-3 align-items-center">
+          <div class="col-md-8 col-lg-6 position-relative">
+            <div class="shape bg-dot primary rellax w-17 h-21" data-rellax-speed="1" style="top: -2rem; left: -1.9rem;"></div>
+            <div class="shape rounded bg-soft-primary rellax d-md-block" data-rellax-speed="0" style="bottom: -1.8rem; right: -1.5rem; width: 85%; height: 90%; "></div>
+            <figure class="rounded"><img src="@@webRoot/assets/img/photos/about7.jpg" srcset="@@webRoot/assets/img/photos/about7@2x.jpg 2x" alt="" /></figure>
+          </div>
+          <!--/column -->
+          <div class="col-lg-5 col-xl-4 offset-lg-1">
+            <h2 class="h1 mb-3">How It Works?</h2>
+            <p class="lead fs-lg mb-6">So here are three working steps why our valued customers choose us.</p>
+            <div class="d-flex flex-row mb-6">
+              <div>
+                <span class="icon btn btn-circle btn-primary disabled me-5"><span class="number fs-18">1</span></span>
+              </div>
+              <div>
+                <h4 class="mb-1">Collect Ideas</h4>
+                <p class="mb-0">Nulla vitae elit libero pharetra augue dapibus. Praesent commodo cursus.</p>
+              </div>
+            </div>
+            <div class="d-flex flex-row mb-6">
+              <div>
+                <span class="icon btn btn-circle btn-primary disabled me-5"><span class="number fs-18">2</span></span>
+              </div>
+              <div>
+                <h4 class="mb-1">Data Analysis</h4>
+                <p class="mb-0">Vivamus sagittis lacus vel augue laoreet. Etiam porta sem malesuada magna.</p>
+              </div>
+            </div>
+            <div class="d-flex flex-row">
+              <div>
+                <span class="icon btn btn-circle btn-primary disabled me-5"><span class="number fs-18">3</span></span>
+              </div>
+              <div>
+                <h4 class="mb-1">Finalize Product</h4>
+                <p class="mb-0">Cras mattis consectetur purus sit amet. Aenean lacinia bibendum nulla sed.</p>
+              </div>
+            </div>
+          </div>
+          <!--/column -->
+        </div>
+        <!--/.row -->
+      </div>
+      <!-- /.container -->
+      <div class="container pb-15 pb-md-17">
+        <div class="card">
+          <div class="card-footer border-0 position-relative">
+            <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-snippet-1">View example's code</a>
+          </div>
+          <!--/.card-footer -->
+          <div id="collapse-snippet-1" class="card-footer bg-dark p-0 accordion-collapse collapse">
+            <div class="code-wrapper">
+              <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;section class=&quot;wrapper bg-light wrapper-border&quot;&gt;
+  &lt;div class=&quot;container py-14 py-md-16&quot;&gt;
+    &lt;div class=&quot;row gy-10 gy-sm-13 gx-lg-3 align-items-center&quot;&gt;
+      &lt;div class=&quot;col-md-8 col-lg-6 position-relative&quot;&gt;
+        &lt;div class=&quot;shape bg-dot primary rellax w-17 h-21&quot; data-rellax-speed=&quot;1&quot; style=&quot;top: -2rem; left: -1.9rem;&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;shape rounded bg-soft-primary rellax d-md-block&quot; data-rellax-speed=&quot;0&quot; style=&quot;bottom: -1.8rem; right: -1.5rem; width: 85%; height: 90%; &quot;&gt;&lt;/div&gt;
+        &lt;figure class=&quot;rounded&quot;&gt;&lt;img src=&quot;./assets/img/photos/about7.jpg&quot; srcset=&quot;./assets/img/photos/about7@2x.jpg 2x&quot; alt=&quot;&quot; /&gt;&lt;/figure&gt;
+      &lt;/div&gt;
+      &lt;!--/column --&gt;
+      &lt;div class=&quot;col-lg-5 col-xl-4 offset-lg-1&quot;&gt;
+        &lt;h2 class=&quot;h1 mb-3&quot;&gt;How It Works?&lt;/h2&gt;
+        &lt;p class=&quot;lead fs-lg mb-6&quot;&gt;So here are three working steps why our valued customers choose us.&lt;/p&gt;
+        &lt;div class=&quot;d-flex flex-row mb-6&quot;&gt;
+          &lt;div&gt;
+            &lt;span class=&quot;icon btn btn-circle btn-primary disabled me-5&quot;&gt;&lt;span class=&quot;number fs-18&quot;&gt;1&lt;/span&gt;&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div&gt;
+            &lt;h4 class=&quot;mb-1&quot;&gt;Collect Ideas&lt;/h4&gt;
+            &lt;p class=&quot;mb-0&quot;&gt;Nulla vitae elit libero pharetra augue dapibus. Praesent commodo cursus.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;d-flex flex-row mb-6&quot;&gt;
+          &lt;div&gt;
+            &lt;span class=&quot;icon btn btn-circle btn-primary disabled me-5&quot;&gt;&lt;span class=&quot;number fs-18&quot;&gt;2&lt;/span&gt;&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div&gt;
+            &lt;h4 class=&quot;mb-1&quot;&gt;Data Analysis&lt;/h4&gt;
+            &lt;p class=&quot;mb-0&quot;&gt;Vivamus sagittis lacus vel augue laoreet. Etiam porta sem malesuada magna.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;d-flex flex-row&quot;&gt;
+          &lt;div&gt;
+            &lt;span class=&quot;icon btn btn-circle btn-primary disabled me-5&quot;&gt;&lt;span class=&quot;number fs-18&quot;&gt;3&lt;/span&gt;&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div&gt;
+            &lt;h4 class=&quot;mb-1&quot;&gt;Finalize Product&lt;/h4&gt;
+            &lt;p class=&quot;mb-0&quot;&gt;Cras mattis consectetur purus sit amet. Aenean lacinia bibendum nulla sed.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;!--/column --&gt;
+    &lt;/div&gt;
+    &lt;!--/.row --&gt;
+  &lt;/div&gt;
+  &lt;!-- /.container --&gt;
+&lt;/section&gt;
+&lt;!-- /section --&gt;</code></pre>
+              </div>
+              <!--/.code-wrapper-inner -->
+            </div>
+            <!--/.code-wrapper -->
+          </div>
+          <!--/.card-footer -->
+        </div>
+        <!--/.card -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+    <section id="snippet-2" class="wrapper bg-light wrapper-border">
+      <div class="container pt-15 pt-md-17 pb-13 pb-md-15">
+        <h2 class="display-4 mb-3">How We Do It?</h2>
+        <p class="lead fs-lg mb-8">We make your spending <span class="underline">stress-free</span> for you to have the perfect control.</p>
+        <div class="row gx-lg-8 gx-xl-12 gy-6 process-wrapper line">
+          <div class="col-md-6 col-lg-3"> <span class="icon btn btn-circle btn-lg btn-soft-primary disabled mb-4"><span class="number">01</span></span>
+            <h4 class="mb-1">Concept</h4>
+            <p class="mb-0">Nulla vitae elit libero elit non porta gravida eget metus cras. Aenean eu leo quam. Pellentesque ornare.</p>
+          </div>
+          <!--/column -->
+          <div class="col-md-6 col-lg-3"> <span class="icon btn btn-circle btn-lg btn-primary disabled mb-4"><span class="number">02</span></span>
+            <h4 class="mb-1">Prepare</h4>
+            <p class="mb-0">Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis.</p>
+          </div>
+          <!--/column -->
+          <div class="col-md-6 col-lg-3"> <span class="icon btn btn-circle btn-lg btn-soft-primary disabled mb-4"><span class="number">03</span></span>
+            <h4 class="mb-1">Retouch</h4>
+            <p class="mb-0">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero.</p>
+          </div>
+          <!--/column -->
+          <div class="col-md-6 col-lg-3"> <span class="icon btn btn-circle btn-lg btn-soft-primary disabled mb-4"><span class="number">04</span></span>
+            <h4 class="mb-1">Finalize</h4>
+            <p class="mb-0">Integer posuere erat, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <!--/column -->
+        </div>
+        <!--/.row -->
+      </div>
+      <!-- /.container -->
+      <div class="container pb-15 pb-md-17">
+        <div class="card">
+          <div class="card-footer border-0 position-relative">
+            <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-snippet-2">View example's code</a>
+          </div>
+          <!--/.card-footer -->
+          <div id="collapse-snippet-2" class="card-footer bg-dark p-0 accordion-collapse collapse">
+            <div class="code-wrapper">
+              <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;section class=&quot;wrapper bg-light&quot;&gt;
+  &lt;div class=&quot;container py-14 py-md-16&quot;&gt;
+    &lt;h2 class=&quot;display-4 mb-3&quot;&gt;How We Do It?&lt;/h2&gt;
+    &lt;p class=&quot;lead fs-lg mb-8&quot;&gt;We make your spending &lt;span class=&quot;underline&quot;&gt;stress-free&lt;/span&gt; for you to have the perfect control.&lt;/p&gt;
+    &lt;div class=&quot;row gx-lg-8 gx-xl-12 gy-6 process-wrapper line&quot;&gt;
+      &lt;div class=&quot;col-md-6 col-lg-3&quot;&gt; &lt;span class=&quot;icon btn btn-circle btn-lg btn-soft-primary disabled mb-4&quot;&gt;&lt;span class=&quot;number&quot;&gt;01&lt;/span&gt;&lt;/span&gt;
+        &lt;h4 class=&quot;mb-1&quot;&gt;Concept&lt;/h4&gt;
+        &lt;p class=&quot;mb-0&quot;&gt;Nulla vitae elit libero elit non porta gravida eget metus cras. Aenean eu leo quam. Pellentesque ornare.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;!--/column --&gt;
+      &lt;div class=&quot;col-md-6 col-lg-3&quot;&gt; &lt;span class=&quot;icon btn btn-circle btn-lg btn-primary disabled mb-4&quot;&gt;&lt;span class=&quot;number&quot;&gt;02&lt;/span&gt;&lt;/span&gt;
+        &lt;h4 class=&quot;mb-1&quot;&gt;Prepare&lt;/h4&gt;
+        &lt;p class=&quot;mb-0&quot;&gt;Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;!--/column --&gt;
+      &lt;div class=&quot;col-md-6 col-lg-3&quot;&gt; &lt;span class=&quot;icon btn btn-circle btn-lg btn-soft-primary disabled mb-4&quot;&gt;&lt;span class=&quot;number&quot;&gt;03&lt;/span&gt;&lt;/span&gt;
+        &lt;h4 class=&quot;mb-1&quot;&gt;Retouch&lt;/h4&gt;
+        &lt;p class=&quot;mb-0&quot;&gt;Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;!--/column --&gt;
+      &lt;div class=&quot;col-md-6 col-lg-3&quot;&gt; &lt;span class=&quot;icon btn btn-circle btn-lg btn-soft-primary disabled mb-4&quot;&gt;&lt;span class=&quot;number&quot;&gt;04&lt;/span&gt;&lt;/span&gt;
+        &lt;h4 class=&quot;mb-1&quot;&gt;Finalize&lt;/h4&gt;
+        &lt;p class=&quot;mb-0&quot;&gt;Integer posuere erat, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;!--/column --&gt;
+    &lt;/div&gt;
+    &lt;!--/.row --&gt;
+  &lt;/div&gt;
+  &lt;!-- /.container --&gt;
+&lt;/section&gt;
+&lt;!-- /section --&gt;</code></pre>
+              </div>
+              <!--/.code-wrapper-inner -->
+            </div>
+            <!--/.code-wrapper -->
+          </div>
+          <!--/.card-footer -->
+        </div>
+        <!--/.card -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+    <section id="snippet-3" class="wrapper bg-light wrapper-border">
+      <div class="container pt-11 pt-lg-13 pb-16 pb-lg-6">
+        <div class="row gx-lg-8 gx-xl-10 align-items-center">
+          <div class="col-lg-6">
+            <figure><img src="@@webRoot/assets/img/photos/device.png" srcset="@@webRoot/assets/img/photos/device@2x.png 2x" alt="" /></figure>
+          </div>
+          <!-- /column -->
+          <div class="col-lg-6">
+            <h2 class="fs-15 text-uppercase text-muted mb-3">How It Works</h2>
+            <h3 class="display-4 mb-5">Download the app, create your profile and voilà, you're all set!</h3>
+            <p class="mb-8">Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo.</p>
+            <div class="row gy-6 gx-xxl-8 process-wrapper">
+              <div class="col-md-4"> <img src="@@webRoot/assets/img/icons/cloud-computing.svg" class="svg-inject icon-svg icon-svg-sm text-green mb-3" alt="" />
+                <h4 class="mb-1">1. Download</h4>
+                <p class="mb-0">Nulla vitae elit libero elit non porta eget.</p>
+              </div>
+              <!--/column -->
+              <div class="col-md-4"> <img src="@@webRoot/assets/img/icons/smartphone-2.svg" class="svg-inject icon-svg icon-svg-sm text-red mb-3" alt="" />
+                <h4 class="mb-1">2. Set Profile</h4>
+                <p class="mb-0">Nulla vitae elit libero elit non porta eget.</p>
+              </div>
+              <!--/column -->
+              <div class="col-md-4"> <img src="@@webRoot/assets/img/icons/rocket.svg" class="svg-inject icon-svg icon-svg-sm text-aqua mb-3" alt="" />
+                <h4 class="mb-1">3. Start</h4>
+                <p class="mb-0">Nulla vitae elit libero elit non porta eget.</p>
+              </div>
+              <!--/column -->
+            </div>
+            <!--/.row -->
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+      <div class="container pb-15 pb-md-17">
+        <div class="card">
+          <div class="card-footer border-0 position-relative">
+            <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-snippet-3">View example's code</a>
+          </div>
+          <!--/.card-footer -->
+          <div id="collapse-snippet-3" class="card-footer bg-dark p-0 accordion-collapse collapse">
+            <div class="code-wrapper">
+              <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;section class=&quot;wrapper bg-light&quot;&gt;
+  &lt;div class=&quot;container pt-9 pt-lg-11 pb-14 pb-lg-6&quot;&gt;
+    &lt;div class=&quot;row gx-lg-8 gx-xl-10 align-items-center&quot;&gt;
+      &lt;div class=&quot;col-lg-6&quot;&gt;
+        &lt;figure&gt;&lt;img src=&quot;./assets/img/photos/device.png&quot; srcset=&quot;./assets/img/photos/device@2x.png 2x&quot; alt=&quot;&quot; /&gt;&lt;/figure&gt;
+      &lt;/div&gt;
+      &lt;!-- /column --&gt;
+      &lt;div class=&quot;col-lg-6&quot;&gt;
+        &lt;h2 class=&quot;fs-15 text-uppercase text-muted mb-3&quot;&gt;How It Works&lt;/h2&gt;
+        &lt;h3 class=&quot;display-4 mb-5&quot;&gt;Download the app, create your profile and voil&agrave;, you&apos;re all set!&lt;/h3&gt;
+        &lt;p class=&quot;mb-8&quot;&gt;Donec ullamcorper nulla non metus auctor fringilla. Cras mattis consectetur purus sit amet fermentum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo.&lt;/p&gt;
+        &lt;div class=&quot;row gy-6 gx-xxl-8 process-wrapper&quot;&gt;
+          &lt;div class=&quot;col-md-4&quot;&gt; &lt;img src=&quot;./assets/img/icons/cloud-computing.svg&quot; class=&quot;svg-inject icon-svg icon-svg-sm text-green mb-3&quot; alt=&quot;&quot; /&gt;
+            &lt;h4 class=&quot;mb-1&quot;&gt;1. Download&lt;/h4&gt;
+            &lt;p class=&quot;mb-0&quot;&gt;Nulla vitae elit libero elit non porta eget.&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;!--/column --&gt;
+          &lt;div class=&quot;col-md-4&quot;&gt; &lt;img src=&quot;./assets/img/icons/smartphone-2.svg&quot; class=&quot;svg-inject icon-svg icon-svg-sm text-red mb-3&quot; alt=&quot;&quot; /&gt;
+            &lt;h4 class=&quot;mb-1&quot;&gt;2. Set Profile&lt;/h4&gt;
+            &lt;p class=&quot;mb-0&quot;&gt;Nulla vitae elit libero elit non porta eget.&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;!--/column --&gt;
+          &lt;div class=&quot;col-md-4&quot;&gt; &lt;img src=&quot;./assets/img/icons/rocket.svg&quot; class=&quot;svg-inject icon-svg icon-svg-sm text-aqua mb-3&quot; alt=&quot;&quot; /&gt;
+            &lt;h4 class=&quot;mb-1&quot;&gt;3. Start&lt;/h4&gt;
+            &lt;p class=&quot;mb-0&quot;&gt;Nulla vitae elit libero elit non porta eget.&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;!--/column --&gt;
+        &lt;/div&gt;
+        &lt;!--/.row --&gt;
+      &lt;/div&gt;
+      &lt;!-- /column --&gt;
+    &lt;/div&gt;
+    &lt;!-- /.row --&gt;
+  &lt;/div&gt;
+  &lt;!-- /.container --&gt;
+&lt;/section&gt;
+&lt;!-- /section --&gt;</code></pre>
+              </div>
+              <!--/.code-wrapper-inner -->
+            </div>
+            <!--/.code-wrapper -->
+          </div>
+          <!--/.card-footer -->
+        </div>
+        <!--/.card -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+    <section id="snippet-4" class="wrapper bg-light wrapper-border">
+      <div class="container pt-15 pt-md-17 pb-13 pb-md-15">
+        <div class="row text-center">
+          <div class="col-lg-10 mx-auto">
+            <div class="position-relative">
+              <div class="shape bg-dot red rellax w-16 h-18" data-rellax-speed="1" style="top: 1rem; left: -3.9rem;"></div>
+              <div class="shape rounded-circle bg-line primary rellax w-18 h-18" data-rellax-speed="1" style="bottom: 2rem; right: -3rem;"></div>
+              <video poster="@@webRoot/assets/img/photos/movie.jpg" class="player" playsinline controls preload="none">
+                <source src="@@webRoot/assets/media/movie.mp4" type="video/mp4">
+                <source src="@@webRoot/assets/media/movie.webm" type="video/webm">
+              </video>
+            </div>
+          </div>
+          <!--/column -->
+        </div>
+        <!--/.row -->
+        <div class="row text-center">
+          <div class="col-lg-9 mx-auto">
+            <h2 class="fs-15 text-uppercase text-muted mb-3 mt-12">Our Process</h2>
+            <h3 class="display-4 mb-0 text-center px-xl-10 px-xxl-15">Find out everything you need to know about creating a business process model</h3>
+            <div class="row gx-lg-8 gx-xl-12 process-wrapper text-center mt-10">
+              <div class="col-md-4"> <img src="@@webRoot/assets/img/icons/light-bulb.svg" class="svg-inject icon-svg icon-svg-md text-primary mb-3" alt="" />
+                <h4 class="mb-1">1. Concept</h4>
+                <p class="mb-0">Nulla vitae elit libero elit non porta gravida eget metus cras.</p>
+              </div>
+              <!--/column -->
+              <div class="col-md-4"> <img src="@@webRoot/assets/img/icons/settings-3.svg" class="svg-inject icon-svg icon-svg-md text-red mb-3" alt="" />
+                <h4 class="mb-1">2. Prepare</h4>
+                <p class="mb-0">Nulla vitae elit libero elit non porta gravida eget metus cras.</p>
+              </div>
+              <!--/column -->
+              <div class="col-md-4"> <img src="@@webRoot/assets/img/icons/design.svg" class="svg-inject icon-svg icon-svg-md text-leaf mb-3" alt="" />
+                <h4 class="mb-1">3. Retouch</h4>
+                <p class="mb-0">Nulla vitae elit libero elit non porta gravida eget metus cras.</p>
+              </div>
+              <!--/column -->
+            </div>
+            <!--/.row -->
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+      <div class="container pb-15 pb-md-17">
+        <div class="card">
+          <div class="card-footer border-0 position-relative">
+            <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-snippet-4">View example's code</a>
+          </div>
+          <!--/.card-footer -->
+          <div id="collapse-snippet-4" class="card-footer bg-dark p-0 accordion-collapse collapse">
+            <div class="code-wrapper">
+              <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;section class=&quot;wrapper bg-light&quot;&gt;
+  &lt;div class=&quot;container py-14 py-md-16&quot;&gt;
+    &lt;div class=&quot;row text-center&quot;&gt;
+      &lt;div class=&quot;col-lg-10 mx-auto&quot;&gt;
+        &lt;div class=&quot;position-relative&quot;&gt;
+          &lt;div class=&quot;shape bg-dot red rellax w-16 h-18&quot; data-rellax-speed=&quot;1&quot; style=&quot;top: 1rem; left: -3.9rem;&quot;&gt;&lt;/div&gt;
+          &lt;div class=&quot;shape rounded-circle bg-line primary rellax w-18 h-18&quot; data-rellax-speed=&quot;1&quot; style=&quot;bottom: 2rem; right: -3rem;&quot;&gt;&lt;/div&gt;
+          &lt;video poster=&quot;./assets/img/photos/movie.jpg&quot; class=&quot;player&quot; playsinline controls preload=&quot;none&quot;&gt;
+            &lt;source src=&quot;./assets/media/movie.mp4&quot; type=&quot;video/mp4&quot;&gt;
+            &lt;source src=&quot;./assets/media/movie.webm&quot; type=&quot;video/webm&quot;&gt;
+          &lt;/video&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;!--/column --&gt;
+    &lt;/div&gt;
+    &lt;!--/.row --&gt;
+    &lt;div class=&quot;row text-center&quot;&gt;
+      &lt;div class=&quot;col-lg-9 mx-auto&quot;&gt;
+        &lt;h2 class=&quot;fs-15 text-uppercase text-muted mb-3 mt-12&quot;&gt;Our Process&lt;/h2&gt;
+        &lt;h3 class=&quot;display-4 mb-0 text-center px-xl-10 px-xxl-15&quot;&gt;Find out everything you need to know about creating a business process model&lt;/h3&gt;
+        &lt;div class=&quot;row gx-lg-8 gx-xl-12 process-wrapper text-center mt-10&quot;&gt;
+          &lt;div class=&quot;col-md-4&quot;&gt; &lt;img src=&quot;./assets/img/icons/light-bulb.svg&quot; class=&quot;svg-inject icon-svg icon-svg-md text-primary mb-3&quot; alt=&quot;&quot; /&gt;
+            &lt;h4 class=&quot;mb-1&quot;&gt;1. Concept&lt;/h4&gt;
+            &lt;p class=&quot;mb-0&quot;&gt;Nulla vitae elit libero elit non porta gravida eget metus cras.&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;!--/column --&gt;
+          &lt;div class=&quot;col-md-4&quot;&gt; &lt;img src=&quot;./assets/img/icons/settings-3.svg&quot; class=&quot;svg-inject icon-svg icon-svg-md text-red mb-3&quot; alt=&quot;&quot; /&gt;
+            &lt;h4 class=&quot;mb-1&quot;&gt;2. Prepare&lt;/h4&gt;
+            &lt;p class=&quot;mb-0&quot;&gt;Nulla vitae elit libero elit non porta gravida eget metus cras.&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;!--/column --&gt;
+          &lt;div class=&quot;col-md-4&quot;&gt; &lt;img src=&quot;./assets/img/icons/design.svg&quot; class=&quot;svg-inject icon-svg icon-svg-md text-leaf mb-3&quot; alt=&quot;&quot; /&gt;
+            &lt;h4 class=&quot;mb-1&quot;&gt;3. Retouch&lt;/h4&gt;
+            &lt;p class=&quot;mb-0&quot;&gt;Nulla vitae elit libero elit non porta gravida eget metus cras.&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;!--/column --&gt;
+        &lt;/div&gt;
+        &lt;!--/.row --&gt;
+      &lt;/div&gt;
+      &lt;!-- /column --&gt;
+    &lt;/div&gt;
+    &lt;!-- /.row --&gt;
+  &lt;/div&gt;
+  &lt;!-- /.container --&gt;
+&lt;/section&gt;
+&lt;!-- /section --&gt;</code></pre>
+              </div>
+              <!--/.code-wrapper-inner -->
+            </div>
+            <!--/.code-wrapper -->
+          </div>
+          <!--/.card-footer -->
+        </div>
+        <!--/.card -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+    <section id="snippet-5" class="wrapper bg-light wrapper-border">
+      <div class="container pt-15 pt-md-17 pb-13 pb-md-15">
+        <div class="row mb-5">
+          <div class="col-md-10 col-xl-8 col-xxl-7 mx-auto text-center">
+            <img src="@@webRoot/assets/img/icons/list.svg" class="svg-inject icon-svg icon-svg-md mb-4" alt="" />
+            <h2 class="display-4 mb-4 px-lg-14">Here are 3 working steps to organize our business projects.</h2>
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+        <div class="row gx-md-8 gx-xl-12 gy-10 align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="card me-lg-6">
+              <div class="card-body p-6">
+                <div class="d-flex flex-row">
+                  <div>
+                    <span class="icon btn btn-circle btn-lg btn-soft-primary disabled me-4"><span class="number">01</span></span>
+                  </div>
+                  <div>
+                    <h4 class="mb-1">Collect Ideas</h4>
+                    <p class="mb-0">Nulla vitae elit libero pharetra augue dapibus.</p>
+                  </div>
+                </div>
+              </div>
+              <!--/.card-body -->
+            </div>
+            <!--/.card -->
+            <div class="card ms-lg-13 mt-6">
+              <div class="card-body p-6">
+                <div class="d-flex flex-row">
+                  <div>
+                    <span class="icon btn btn-circle btn-lg btn-soft-primary disabled me-4"><span class="number">02</span></span>
+                  </div>
+                  <div>
+                    <h4 class="mb-1">Data Analysis</h4>
+                    <p class="mb-0">Vivamus sagittis lacus vel augue laoreet.</p>
+                  </div>
+                </div>
+              </div>
+              <!--/.card-body -->
+            </div>
+            <!--/.card -->
+            <div class="card mx-lg-6 mt-6">
+              <div class="card-body p-6">
+                <div class="d-flex flex-row">
+                  <div>
+                    <span class="icon btn btn-circle btn-lg btn-soft-primary disabled me-4"><span class="number">03</span></span>
+                  </div>
+                  <div>
+                    <h4 class="mb-1">Finalize Product</h4>
+                    <p class="mb-0">Cras mattis consectetur purus sit amet.</p>
+                  </div>
+                </div>
+              </div>
+              <!--/.card-body -->
+            </div>
+            <!--/.card -->
+          </div>
+          <!--/column -->
+          <div class="col-lg-6">
+            <h2 class="display-6 mb-3">How It Works?</h2>
+            <p class="lead fs-lg pe-lg-5">Find out everything you need to know and more about how we create our business process models.</p>
+            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare.</p>
+            <p class="mb-6">Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed consectetur. Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis.</p>
+            <a href="#" class="btn btn-primary rounded-pill mb-0">Learn More</a>
+          </div>
+          <!--/column -->
+        </div>
+        <!--/.row -->
+      </div>
+      <!-- /.container -->
+      <div class="container pb-15 pb-md-17">
+        <div class="card">
+          <div class="card-footer border-0 position-relative">
+            <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-snippet-5">View example's code</a>
+          </div>
+          <!--/.card-footer -->
+          <div id="collapse-snippet-5" class="card-footer bg-dark p-0 accordion-collapse collapse">
+            <div class="code-wrapper">
+              <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;section class=&quot;wrapper bg-light&quot;&gt;
+  &lt;div class=&quot;container py-14 py-md-16&quot;&gt;
+    &lt;div class=&quot;row mb-5&quot;&gt;
+      &lt;div class=&quot;col-md-10 col-xl-8 col-xxl-7 mx-auto text-center&quot;&gt;
+        &lt;img src=&quot;./assets/img/icons/list.svg&quot; class=&quot;svg-inject icon-svg icon-svg-md mb-4&quot; alt=&quot;&quot; /&gt;
+        &lt;h2 class=&quot;display-4 mb-4 px-lg-14&quot;&gt;Here are 3 working steps to organize our business projects.&lt;/h2&gt;
+      &lt;/div&gt;
+      &lt;!-- /column --&gt;
+    &lt;/div&gt;
+    &lt;!-- /.row --&gt;
+    &lt;div class=&quot;row gx-md-8 gx-xl-12 gy-10 align-items-center&quot;&gt;
+      &lt;div class=&quot;col-lg-6 order-lg-2&quot;&gt;
+        &lt;div class=&quot;card me-lg-6&quot;&gt;
+          &lt;div class=&quot;card-body p-6&quot;&gt;
+            &lt;div class=&quot;d-flex flex-row&quot;&gt;
+              &lt;div&gt;
+                &lt;span class=&quot;icon btn btn-circle btn-lg btn-soft-primary disabled me-4&quot;&gt;&lt;span class=&quot;number&quot;&gt;01&lt;/span&gt;&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div&gt;
+                &lt;h4 class=&quot;mb-1&quot;&gt;Collect Ideas&lt;/h4&gt;
+                &lt;p class=&quot;mb-0&quot;&gt;Nulla vitae elit libero pharetra augue dapibus.&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;!--/.card-body --&gt;
+        &lt;/div&gt;
+        &lt;!--/.card --&gt;
+        &lt;div class=&quot;card ms-lg-13 mt-6&quot;&gt;
+          &lt;div class=&quot;card-body p-6&quot;&gt;
+            &lt;div class=&quot;d-flex flex-row&quot;&gt;
+              &lt;div&gt;
+                &lt;span class=&quot;icon btn btn-circle btn-lg btn-soft-primary disabled me-4&quot;&gt;&lt;span class=&quot;number&quot;&gt;02&lt;/span&gt;&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div&gt;
+                &lt;h4 class=&quot;mb-1&quot;&gt;Data Analysis&lt;/h4&gt;
+                &lt;p class=&quot;mb-0&quot;&gt;Vivamus sagittis lacus vel augue laoreet.&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;!--/.card-body --&gt;
+        &lt;/div&gt;
+        &lt;!--/.card --&gt;
+        &lt;div class=&quot;card mx-lg-6 mt-6&quot;&gt;
+          &lt;div class=&quot;card-body p-6&quot;&gt;
+            &lt;div class=&quot;d-flex flex-row&quot;&gt;
+              &lt;div&gt;
+                &lt;span class=&quot;icon btn btn-circle btn-lg btn-soft-primary disabled me-4&quot;&gt;&lt;span class=&quot;number&quot;&gt;03&lt;/span&gt;&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;div&gt;
+                &lt;h4 class=&quot;mb-1&quot;&gt;Finalize Product&lt;/h4&gt;
+                &lt;p class=&quot;mb-0&quot;&gt;Cras mattis consectetur purus sit amet.&lt;/p&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;!--/.card-body --&gt;
+        &lt;/div&gt;
+        &lt;!--/.card --&gt;
+      &lt;/div&gt;
+      &lt;!--/column --&gt;
+      &lt;div class=&quot;col-lg-6&quot;&gt;
+        &lt;h2 class=&quot;display-6 mb-3&quot;&gt;How It Works?&lt;/h2&gt;
+        &lt;p class=&quot;lead fs-lg pe-lg-5&quot;&gt;Find out everything you need to know and more about how we create our business process models.&lt;/p&gt;
+        &lt;p&gt;Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare.&lt;/p&gt;
+        &lt;p class=&quot;mb-6&quot;&gt;Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum nulla sed consectetur. Sed posuere consectetur est at lobortis. Vestibulum id ligula porta felis.&lt;/p&gt;
+        &lt;a href=&quot;#&quot; class=&quot;btn btn-primary rounded-pill mb-0&quot;&gt;Learn More&lt;/a&gt;
+      &lt;/div&gt;
+      &lt;!--/column --&gt;
+    &lt;/div&gt;
+    &lt;!--/.row --&gt;
+  &lt;/div&gt;
+  &lt;!-- /.container --&gt;
+&lt;/section&gt;
+&lt;!-- /section --&gt;</code></pre>
+              </div>
+              <!--/.code-wrapper-inner -->
+            </div>
+            <!--/.code-wrapper -->
+          </div>
+          <!--/.card-footer -->
+        </div>
+        <!--/.card -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+    <section id="snippet-6" class="wrapper bg-light wrapper-border">
+      <div class="container pt-15 pt-md-17 pb-13 pb-md-15">
+        <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
+          <div class="col-lg-7">
+            <figure><img class="w-auto" src="@@webRoot/assets/img/concept/concept3.png" srcset="@@webRoot/assets/img/concept/concept3@2x.png 2x" alt="" /></figure>
+          </div>
+          <!--/column -->
+          <div class="col-lg-5">
+            <h2 class="fs-15 text-uppercase text-line text-primary mb-3">How It Works?</h2>
+            <h3 class="display-5 mb-7 pe-xxl-5">Everything you need on creating a business process.</h3>
+            <div class="d-flex flex-row mb-4">
+              <div>
+                <img src="@@webRoot/assets/img/icons/light-bulb.svg" class="svg-inject icon-svg icon-svg-sm text-primary me-4" alt="" />
+              </div>
+              <div>
+                <h4 class="mb-1">Collect Ideas</h4>
+                <p class="mb-1">Nulla vitae elit libero pharetra augue dapibus.</p>
+              </div>
+            </div>
+            <div class="d-flex flex-row mb-4">
+              <div>
+                <img src="@@webRoot/assets/img/icons/pie-chart-2.svg" class="svg-inject icon-svg icon-svg-sm text-green me-4" alt="" />
+              </div>
+              <div>
+                <h4 class="mb-1">Data Analysis</h4>
+                <p class="mb-1">Vivamus sagittis lacus augue laoreet vel.</p>
+              </div>
+            </div>
+            <div class="d-flex flex-row">
+              <div>
+                <img src="@@webRoot/assets/img/icons/design.svg" class="svg-inject icon-svg icon-svg-sm text-yellow me-4" alt="" />
+              </div>
+              <div>
+                <h4 class="mb-1">Magic Touch</h4>
+                <p class="mb-0">Cras mattis consectetur purus sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <!--/column -->
+        </div>
+        <!--/.row -->
+      </div>
+      <!-- /.container -->
+      <div class="container pb-15 pb-md-17">
+        <div class="card">
+          <div class="card-footer border-0 position-relative">
+            <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-snippet-6">View example's code</a>
+          </div>
+          <!--/.card-footer -->
+          <div id="collapse-snippet-6" class="card-footer bg-dark p-0 accordion-collapse collapse">
+            <div class="code-wrapper">
+              <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;section class=&quot;wrapper bg-light&quot;&gt;
+  &lt;div class=&quot;container py-14 py-md-16&quot;&gt;
+    &lt;div class=&quot;row gx-lg-8 gx-xl-12 gy-10 align-items-center&quot;&gt;
+      &lt;div class=&quot;col-lg-7&quot;&gt;
+        &lt;figure&gt;&lt;img class=&quot;w-auto&quot; src=&quot;./assets/img/concept/concept3.png&quot; srcset=&quot;./assets/img/concept/concept3@2x.png 2x&quot; alt=&quot;&quot; /&gt;&lt;/figure&gt;
+      &lt;/div&gt;
+      &lt;!--/column --&gt;
+      &lt;div class=&quot;col-lg-5&quot;&gt;
+        &lt;h2 class=&quot;fs-15 text-uppercase text-line text-primary mb-3&quot;&gt;How It Works?&lt;/h2&gt;
+        &lt;h3 class=&quot;display-5 mb-7 pe-xxl-5&quot;&gt;Everything you need on creating a business process.&lt;/h3&gt;
+        &lt;div class=&quot;d-flex flex-row mb-4&quot;&gt;
+          &lt;div&gt;
+            &lt;img src=&quot;./assets/img/icons/light-bulb.svg&quot; class=&quot;svg-inject icon-svg icon-svg-sm text-primary me-4&quot; alt=&quot;&quot; /&gt;
+          &lt;/div&gt;
+          &lt;div&gt;
+            &lt;h4 class=&quot;mb-1&quot;&gt;Collect Ideas&lt;/h4&gt;
+            &lt;p class=&quot;mb-1&quot;&gt;Nulla vitae elit libero pharetra augue dapibus.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;d-flex flex-row mb-4&quot;&gt;
+          &lt;div&gt;
+            &lt;img src=&quot;./assets/img/icons/pie-chart-2.svg&quot; class=&quot;svg-inject icon-svg icon-svg-sm text-green me-4&quot; alt=&quot;&quot; /&gt;
+          &lt;/div&gt;
+          &lt;div&gt;
+            &lt;h4 class=&quot;mb-1&quot;&gt;Data Analysis&lt;/h4&gt;
+            &lt;p class=&quot;mb-1&quot;&gt;Vivamus sagittis lacus augue laoreet vel.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;d-flex flex-row&quot;&gt;
+          &lt;div&gt;
+            &lt;img src=&quot;./assets/img/icons/design.svg&quot; class=&quot;svg-inject icon-svg icon-svg-sm text-yellow me-4&quot; alt=&quot;&quot; /&gt;
+          &lt;/div&gt;
+          &lt;div&gt;
+            &lt;h4 class=&quot;mb-1&quot;&gt;Magic Touch&lt;/h4&gt;
+            &lt;p class=&quot;mb-0&quot;&gt;Cras mattis consectetur purus sit amet.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;!--/column --&gt;
+    &lt;/div&gt;
+    &lt;!--/.row --&gt;
+  &lt;/div&gt;
+  &lt;!-- /.container --&gt;
+&lt;/section&gt;
+&lt;!-- /section --&gt;</code></pre>
+              </div>
+              <!--/.code-wrapper-inner -->
+            </div>
+            <!--/.code-wrapper -->
+          </div>
+          <!--/.card-footer -->
+        </div>
+        <!--/.card -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+  </div>
+  <!-- /.content-wrapper -->
+  @@include('docs/_footer.html')
+  @@include('_page-progress.html')
+  @@include('_scripts.html')
+</body>
+</html>

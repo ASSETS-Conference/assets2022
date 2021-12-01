@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  @@include('_head.html')
+</head>
+<body>
+  <div class="content-wrapper">
+    <header class="wrapper bg-soft-primary">
+      @@include('_navbar.html', {
+        "classList": "center-nav transparent navbar-light",
+        "otherClassList": "w-100 d-flex ms-auto",
+        "otherLanguageSelect": true,
+        "otherBtn": true,
+        "otherBtnClassList": "btn-sm btn-primary rounded-pill",
+        "otherBtnText": "Contact",
+        "otherBtnLink": "@@webRoot/contact.html"
+      })
+    </header>
+    <!-- /header -->
+    <section class="wrapper bg-soft-primary">
+      <div class="container pt-10 pb-12 pt-md-14 pb-md-16 text-center">
+        <div class="row">
+          <div class="col-md-9 col-lg-7 col-xl-5 mx-auto">
+            <h1 class="display-1 mb-3">Misc</h1>
+            <p class="lead px-xxl-12">Learn more about some miscellaneous styling features used in Sandbox.</p>
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+    <div class="container">
+      <div class="row">
+        @@include('docs/_sidebar.html', {"page": "styleguide-misc"})
+        <aside class="col-xl-2 order-xl-3 sidebar sticky-sidebar mt-md-0 py-16 d-none d-xl-block">
+          <div class="widget">
+            <h6 class="widget-title fs-17 mb-2 ps-xl-5">On this page</h6>
+            <nav class="ps-xl-5">
+              <ul class="list-unstyled fs-sm lh-sm text-reset">
+                <li><a class="scroll" href="#snippet-1">Spacing</a></li>
+                <li><a class="scroll" href="#snippet-2">Gutters</a></li>
+                <li><a class="scroll" href="#snippet-3">Retina Images</a></li>
+              </ul>
+            </nav>
+          <!-- /nav -->
+          </div>
+          <!-- /.widget -->
+        </aside>
+        <!-- /column -->
+        <div class="col-xl-8 order-xl-2">
+          <section id="snippet-1" class="wrapper pt-16">
+            <h2 class="mb-5">Spacing</h2>
+            <div class="card">
+              <div class="card-body">
+                <p class="mb-0">Sandbox adds additional spacing variables to existing <a href="https://getbootstrap.com/docs/5.1/utilities/spacing/" class="external" target="_blank">Bootstrap spacing</a> ranging between values <mark class="doc">0</mark> and <mark class="doc">25</mark></p></code>
+              </div>
+              <!--/.card-body -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="snippet-2" class="wrapper pt-16">
+            <h2 class="mb-5">Gutters</h2>
+            <div class="card">
+              <div class="card-body">
+                <p class="mb-0">Spacing variables mentioned above can also be used for column gutters. More information regarding Bootstrap gutters can be found on <a href="https://getbootstrap.com/docs/5.0/layout/gutters/" class="external" target="_blank">Bootstrap docs</a></p>
+              </div>
+              <!--/.card-body -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="snippet-3" class="wrapper py-16">
+            <h2 class="mb-5">Retina Images</h2>
+            <div class="card">
+              <div class="card-body">
+                <p class="mb-0">In order to display a high resolution image on devices with retina display, you need two versions of the image. One with regular size and another with twice its size. The high resolution one should have the exact same name with <mark class="doc">@2x</mark> at the end.</p>
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-3">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-3" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;img src=&quot;logo.png&quot; srcset=&quot;logo@2x.png 2x&quot; alt=&quot;&quot; /&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+        </div>
+        <!-- /column -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.content-wrapper -->
+  @@include('docs/_footer.html')
+  @@include('_page-progress.html')
+  @@include('_scripts.html')
+</body>
+</html>

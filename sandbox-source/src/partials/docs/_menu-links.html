@@ -1,0 +1,95 @@
+@@if (!context.centerLogo) {
+<ul class="navbar-nav">
+  }
+@@if (context.centerLogo) {
+  <div class="w-100 order-1 order-lg-0 d-lg-flex">
+    <ul class="navbar-nav ms-lg-auto">
+      }
+      <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+      <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#">Dropdown</a>
+      <ul class="dropdown-menu">
+        <li class="nav-item"><a class="dropdown-item" href="#">Action</a></li>
+        <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">Dropdown</a>
+          <ul class="dropdown-menu">
+            <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#">Dropdown</a>
+              <ul class="dropdown-menu">
+                <li class="nav-item"><a class="dropdown-item" href="#">Action</a></li>
+                <li class="nav-item"><a class="dropdown-item" href="#">Another Action</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="dropdown-item" href="#">Action</a></li>
+            <li class="nav-item"><a class="dropdown-item" href="#">Another Action</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="dropdown-item" href="#">Another Action</a></li>
+      </ul>
+    </li>
+        @@if (context.centerLogo) {
+      </ul>
+      <!-- /.navbar-nav -->
+  </div>
+  <div class="w-100 order-3 order-lg-2 d-lg-flex">
+    <ul class="navbar-nav me-lg-auto">
+      }
+      <li class="nav-item"><a class="nav-link" href="#">Mega Menu</a>
+        <ul class="dropdown-menu mega-menu">
+          <li class="mega-menu-content">
+            <div class="row gx-0 gx-lg-3">
+              <div class="col-lg-6">
+                <h6 class="dropdown-header">One</h6>
+                <div class="row gx-0">
+                  <div class="col-lg-6">
+                    <ul class="list-unstyled">
+                      <li><a class="dropdown-item" href="#">Link</a></li>
+                      <li><a class="dropdown-item" href="#">Link</a></li>
+                      <li><a class="dropdown-item" href="#">Link</a></li>
+                    </ul>
+                  </div>
+                  <!--/column -->
+                  <div class="col-lg-6">
+                    <ul class="list-unstyled">
+                      <li><a class="dropdown-item" href="#">Link</a></li>
+                      <li><a class="dropdown-item" href="#">Link</a></li>
+                      <li><a class="dropdown-item" href="#">Link</a></li>
+                    </ul>
+                  </div>
+                  <!--/column -->
+                </div>
+                <!--/.row -->
+              </div>
+              <!--/column -->
+              <div class="col-lg-3">
+                <h6 class="dropdown-header">Two</h6>
+                <ul class="list-unstyled">
+                  <li><a class="dropdown-item" href="#">Link</a></li>
+                  <li><a class="dropdown-item" href="#">Link</a></li>
+                  <li><a class="dropdown-item" href="#">Link</a></li>
+                </ul>
+              </div>
+              <!--/column -->
+              <div class="col-lg-3">
+                <h6 class="dropdown-header">Three</h6>
+                <ul class="list-unstyled">
+                  <li><a class="dropdown-item" href="#">Link</a></li>
+                  <li><a class="dropdown-item" href="#">Link</a></li>
+                  <li><a class="dropdown-item" href="#">Link</a></li>
+                </ul>
+              </div>
+              <!--/column -->
+            </div>
+            <!--/.row -->
+          </li>
+          <!--/.mega-menu-content-->
+        </ul>
+        <!--/.dropdown-menu -->
+      </li>
+      <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+      @@if (context.centerLogo) {
+    </ul>
+    <!-- /.navbar-nav -->
+  </div>
+}
+@@if (!context.centerLogo) {
+</ul>
+<!-- /.navbar-nav -->
+}

@@ -1,0 +1,194 @@
+//----------------------------------------------------------//
+//	OVERLAY
+//----------------------------------------------------------//
+.overlay {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+figure.overlay img {
+  opacity: 1;
+  width: 100%;
+  max-width: 100%;
+  vertical-align: top;
+  position: relative;
+}
+.overlay figcaption,
+.overlay .figcaption {
+  padding: 0.5rem;
+  z-index: 5;
+  pointer-events: none;
+}
+.overlay * {
+  @include transition(all 0.4s ease);
+}
+.overlay img {
+  @include transition(none);
+}
+.overlay:not(.caption-overlay) i {
+  display: block;
+  @include font-size(1.4rem);
+}
+.overlay a,
+.overlay span.bg {
+  position: relative;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  cursor: pointer !important;
+}
+.overlay span.bg {
+  opacity: 0;
+  z-index: 4;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.overlay span.bg {
+  background: rgba($gray-900, 0.6);
+}
+.overlay.color span.bg {
+  background: rgba($main-color, 0.7);
+}
+.overlay.light span.bg {
+  background: rgba($white, 0.6);
+}
+.overlay:hover span.bg {
+  opacity: 1;
+  @include transition(opacity 0.35s ease-in-out);
+}
+.overlay * {
+  color: $white !important;
+}
+.overlay.light * {
+  color: $navy !important;
+}
+.overlay img {
+  max-width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  vertical-align: top;
+}
+.overlay1 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.overlay1 figcaption {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 0.75rem 1rem;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  text-align: center;
+}
+.overlay1 .from-top {
+  position: absolute;
+  padding: 0.75rem 1rem;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-80%);
+}
+.overlay1:hover figcaption,
+.overlay1:hover .figcaption {
+  opacity: 1;
+}
+.overlay1:hover figcaption *,
+.overlay1:hover .figcaption * {
+  transform: translateY(-50%);
+}
+.overlay2 * {
+  position: absolute;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+.overlay2 > * {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  position: absolute;
+}
+.overlay2 figcaption {
+  height: 100%;
+  opacity: 0;
+}
+.overlay2 img {
+  position: relative;
+}
+.overlay2 .from-top {
+  bottom: 50%;
+  padding: 0 1rem;
+  transform: translate3d(0%, -100%, 0);
+}
+.overlay2 .from-bottom {
+  top: 50%;
+  padding: 0 1rem;
+  transform: translate3d(0%, 100%, 0);
+}
+.overlay2:hover * {
+  opacity: 1;
+}
+.overlay2:hover figcaption * {
+  transform: translate3d(0%, 0%, 0);
+}
+.hover-scale {
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  transform: translateY(0);
+}
+.hover-scale img {
+  transition: all 0.35s ease-in-out;
+}
+.hover-scale:hover img {
+  transform: scale(1.05);
+}
+.itooltip-inner {
+  padding: 0.7rem 1rem;
+  box-shadow: var(--shadow);
+  animation: 0.15s linear fadein;
+  border-radius: $border-radius;
+}
+.itooltip-inner,
+.itooltip-light.itooltip-inner {
+  background: rgba($white, 0.9);
+  box-shadow: $box-shadow;
+  color: inherit;
+}
+.itooltip-dark.itooltip-inner {
+  background: rgba($gray-900, 0.9);
+}
+.itooltip-color.itooltip-inner {
+  background: rgba($main-color, 0.9);
+}
+@each $color,
+$value in $text-colors {
+  .itooltip-#{$color}.itooltip-inner {
+    background: rgba($value, 0.9);
+  }
+}
+[class*="itooltip-"]:not(.itooltip-light).itooltip-inner * {
+  color: $white;
+}
+.lift {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  transform: translateY(0);
+  transition: all 0.3s ease;
+}
+.lift:hover {
+  transform: translateY(-0.4rem);
+  box-shadow: 0rem 0.25rem 1.25rem rgba($navy, 0.1);
+}

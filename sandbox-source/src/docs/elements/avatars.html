@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  @@include('_head.html')
+</head>
+<body>
+  <div class="content-wrapper">
+    <header class="wrapper bg-soft-primary">
+      @@include('_navbar.html', {
+        "classList": "center-nav transparent navbar-light",
+        "otherClassList": "w-100 d-flex ms-auto",
+        "otherLanguageSelect": true,
+        "otherBtn": true,
+        "otherBtnClassList": "btn-sm btn-primary rounded-pill",
+        "otherBtnText": "Contact",
+        "otherBtnLink": "@@webRoot/contact.html"
+      })
+    </header>
+    <!-- /header -->
+    <section class="wrapper bg-soft-primary">
+      <div class="container pt-10 pb-12 pt-md-14 pb-md-16 text-center">
+        <div class="row">
+          <div class="col-md-9 col-lg-7 col-xl-6 mx-auto">
+            <h1 class="display-1 mb-3">Avatars</h1>
+            <p class="lead px-xxl-10">Use our custom.</p>
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+    <div class="container">
+      <div class="row">
+        @@include('docs/_sidebar.html', {"page": "elements-avatars"})
+        <aside class="col-xl-2 order-xl-3 sidebar sticky-sidebar mt-md-0 py-16 d-none d-xl-block">
+          <div class="widget">
+            <h6 class="widget-title fs-17 mb-2 ps-xl-5">On this page</h6>
+            <nav class="ps-xl-5">
+              <ul class="list-unstyled fs-sm lh-sm text-reset">
+                <li><a class="scroll" href="#snippet-1">Letters</a></li>
+                <li><a class="scroll" href="#snippet-2">Images</a></li>
+              </ul>
+            </nav>
+          <!-- /nav -->
+          </div>
+          <!-- /.widget -->
+        </aside>
+        <!-- /column -->
+        <div class="col-xl-8 order-xl-2">
+          <section id="snippet-1" class="wrapper pt-16">
+            <h2 class="mb-5">Letters</h2>
+            <p class="lead mb-8">Use any size between <mark class="doc">.w-1 / .h-1</mark> and <mark class="doc">.w-25 / .h-25</mark> to change the avatar size.</p>
+            <div class="card">
+              <div class="card-body d-flex flex-row align-items-center">
+                <span class="avatar bg-primary text-white w-15 h-15 me-4"><span class="fs-30">TC</span></span>
+                <span class="avatar bg-pale-primary text-primary w-12 h-12 me-4"><span class="fs-18">AH</span></span>
+                <span class="avatar bg-soft-primary text-primary w-10 h-10 me-4"><span class="fs-15">CH</span></span>
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-1">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-1" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;span class=&quot;avatar bg-primary text-white w-15 h-15&quot;&gt;
+  &lt;span&gt;TC&lt;/span&gt;
+&lt;/span&gt;
+
+&lt;span class=&quot;avatar bg-pale-primary text-primary w-12 h-12&quot;&gt;
+  &lt;span&gt;AH&lt;/span&gt;
+&lt;/span&gt;
+
+&lt;span class=&quot;avatar bg-soft-primary text-primary w-10 h-10&quot;&gt;
+  &lt;span&gt;CH&lt;/span&gt;
+&lt;/span&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="snippet-2" class="wrapper py-16">
+            <h2 class="mb-3">Image</h2>
+            <p class="lead mb-8">Use any size between <mark class="doc">.w-1</mark> and <mark class="doc">.w-25</mark> to change the image size. Image height will change automatically. Make sure to use images with 1:1 ratio to avoid stretching.</p>
+            <div class="card">
+              <div class="card-body d-flex flex-row align-items-center">
+                <img class="avatar w-15 me-4" src="@@webRoot/assets/img/avatars/te1.jpg" srcset="@@webRoot/assets/img/avatars/te1@2x.jpg 2x" alt="" />
+                <img class="avatar w-12 me-4" src="@@webRoot/assets/img/avatars/te2.jpg" srcset="@@webRoot/assets/img/avatars/te2@2x.jpg 2x" alt="" />
+                <img class="avatar w-10 me-4" src="@@webRoot/assets/img/avatars/t3.jpg" srcset="@@webRoot/assets/img/avatars/t3@2x.jpg 2x" alt="" />
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-2">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-2" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;img class=&quot;avatar w-15&quot; src=&quot;...&quot; alt=&quot;&quot; /&gt;
+  
+&lt;img class=&quot;avatar w-12&quot; src=&quot;...&quot; alt=&quot;&quot; /&gt;
+
+&lt;img class=&quot;avatar w-10&quot; src=&quot;...&quot; alt=&quot;&quot; /&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+        </div>
+        <!-- /column -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.content-wrapper -->
+  @@include('docs/_footer.html')
+  @@include('_page-progress.html')
+  @@include('_scripts.html')
+</body>
+</html>

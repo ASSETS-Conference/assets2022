@@ -1,0 +1,27 @@
+//----------------------------------------------------------//
+//	CARD
+//----------------------------------------------------------//
+.card {
+  box-shadow: $box-shadow-with-border;
+  border: 0;
+  &[class*="bg-"] {
+    box-shadow: none !important;
+  }
+}
+.card-img-top img {
+  border-top-left-radius: $card-inner-border-radius;
+  border-top-right-radius: $card-inner-border-radius;
+}
+.card-img-top .plyr {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+@media (max-width: 991.98px) {
+  .card-md-none {
+    background: none;
+    border-radius: 0;
+    .card-body {
+      padding: 0;
+    }
+  }
+}

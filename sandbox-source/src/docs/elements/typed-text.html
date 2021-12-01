@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  @@include('_head.html')
+</head>
+<body>
+  <div class="content-wrapper">
+    <header class="wrapper bg-soft-primary">
+      @@include('_navbar.html', {
+        "classList": "center-nav transparent navbar-light",
+        "otherClassList": "w-100 d-flex ms-auto",
+        "otherLanguageSelect": true,
+        "otherBtn": true,
+        "otherBtnClassList": "btn-sm btn-primary rounded-pill",
+        "otherBtnText": "Contact",
+        "otherBtnLink": "@@webRoot/contact.html"
+      })
+    </header>
+    <!-- /header -->
+    <section class="wrapper bg-soft-primary">
+      <div class="container pt-10 pb-12 pt-md-14 pb-md-16 text-center">
+        <div class="row">
+          <div class="col-md-9 col-lg-7 col-xl-6 mx-auto">
+            <h1 class="display-1 mb-3">Typed Text</h1>
+            <p class="lead px-xxl-5">Add typing effect to any text easily with pure HTML interface. For further plugin documentation please visit <a href="https://steven.codes/typerjs/" target="_blank" class="hover more">Typer.js docs</a></p>
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+    <div class="container">
+      <div class="row">
+        @@include('docs/_sidebar.html', {"page": "elements-typed-text"})
+        <aside class="col-xl-2 order-xl-3 sidebar sticky-sidebar mt-md-0 py-16 d-none d-xl-block">
+          <div class="widget">
+            <h6 class="widget-title fs-17 mb-2 ps-xl-5">On this page</h6>
+            <nav class="ps-xl-5">
+              <ul class="list-unstyled fs-sm lh-sm text-reset">
+                <li><a class="scroll" href="#snippet-1">Loop</a></li>
+                <li><a class="scroll" href="#snippet-2">Without Loop</a></li>
+              </ul>
+            </nav>
+          <!-- /nav -->
+          </div>
+          <!-- /.widget -->
+        </aside>
+        <!-- /column -->
+        <div class="col-xl-8 order-xl-2">
+          <section id="snippet-1" class="wrapper pt-16">
+            <h2 class="mb-5">Loop</h2>
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-lg-9">
+                    <h2 class="display-1 mb-0">Sandbox focuses on <br /><span class="typer text-primary" data-delay="100" data-words="customer satisfaction,business needs,creative ideas"></span><span class="cursor text-primary" data-owner="typer"></span></h2>
+                  </div>
+                  <!-- /column -->
+                </div>
+                <!-- /.row -->
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-1">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-1" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;span class=&quot;typer text-primary&quot; 
+      data-delay=&quot;100&quot; 
+      data-words=&quot;customer satisfaction,business needs,creative ideas&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;cursor text-primary&quot; data-owner=&quot;typer&quot;&gt;&lt;/span&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="snippet-2" class="wrapper py-16">
+            <h2 class="mb-5">Without Loop</h2>
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-9">
+                    <h2 class="display-1 mb-0">Sandbox is effortless and powerful with <br /><span class="typer text-primary" data-loop="false" data-delay="100" data-words="easy usage,fast transactions,secure payments"></span><span class="cursor text-primary" data-owner="typer"></span></h2>
+                  </div>
+                  <!-- /column -->
+                </div>
+                <!-- /.row -->
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-2">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-2" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;span class=&quot;typer text-primary&quot; 
+      data-loop=&quot;false&quot; 
+      data-delay=&quot;100&quot; 
+      data-words=&quot;easy usage,fast transactions,secure payments&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;cursor text-primary&quot; data-owner=&quot;typer&quot;&gt;&lt;/span&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+        </div>
+        <!-- /column -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.content-wrapper -->
+  @@include('docs/_footer.html')
+  @@include('_page-progress.html')
+  @@include('_scripts.html')
+</body>
+</html>

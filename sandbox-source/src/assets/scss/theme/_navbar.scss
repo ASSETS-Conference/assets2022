@@ -1,0 +1,316 @@
+//----------------------------------------------------------//
+//	NAVBAR
+//----------------------------------------------------------//
+.navbar {
+  width: 100%;
+  z-index: $zindex-sticky;
+  &.transparent .logo-dark {
+    display: none;
+  }
+  &.fixed.transparent {
+    .logo-light {
+      display: none;
+    }
+    .logo-dark {
+      display: inline-block;
+    }
+  }
+}
+.navbar .container {
+  position: relative;
+}
+.navbar-other .nav-item .nav-link>i {
+  @include font-size(1.1rem);
+}
+.navbar .navbar-other .navbar-nav>.nav-item .nav-link {
+  padding-left: 0;
+  padding-right: 0;
+}
+.navbar .navbar-other .navbar-nav>.nav-item+.nav-item {
+  margin-left: 0.8rem;
+}
+.navbar-bg-light {
+  background: $white;
+  box-shadow: none;
+}
+@media (min-width: 992px) {
+  .navbar.fancy.navbar-bg-light:not(.fixed),
+  .navbar.extended.navbar-bg-light:not(.fixed) {
+    background: none !important;
+  }
+  .navbar .nav-link {
+    white-space: nowrap;
+  }
+}
+.navbar-bg-dark {
+  background: $gray-700;
+}
+.navbar-dark .logo-dark {
+  display: none;
+}
+.navbar-dark.fixed .logo-light {
+  display: none;
+}
+.navbar-dark.fixed .logo-dark {
+  display: inline-block;
+}
+.navbar-dark:not([class*="navbar-bg-"]).fixed .btn {
+  background: $main-color;
+  border-color: $main-color;
+  color: $white;
+}
+.navbar .navbar-other .nav-link {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .navbar .navbar-collapse .nav-link {
+    padding-right: 0.6rem;
+    padding-left: 0.6rem;
+  }
+}
+@media (min-width: 992px) {
+  .navbar.extended:not(.fixed) .navbar-collapse .nav-link {
+    padding-top: 1.15rem;
+    padding-bottom: 1.15rem;
+  }
+  .navbar.fancy:not(.fixed) .navbar-collapse .nav-link {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+  .navbar[class*="navbar-bg-"]:not(.fancy):not(.extended):not(.fixed) .navbar-collapse .nav-link {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .navbar.transparent:not(.fixed) {
+    padding-top: 0.3rem;
+  }
+  .navbar.extended .navbar-collapse-wrapper,
+  .navbar.fancy .navbar-collapse-wrapper {
+    box-shadow: $box-shadow-sm;
+    width: 100%;
+    border-radius: $border-radius;
+  }
+  .navbar.extended:not(.fixed) .navbar-collapse-wrapper {
+    padding: 0 1.5rem 0 0.5rem;
+  }
+  .navbar.fancy:not(.fixed) .navbar-collapse-wrapper {
+    padding: 0 1.5rem 0 1.5rem;
+    margin-top: 2.25rem;
+  }
+  .navbar.extended .navbar-brand {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .navbar.fixed .topbar {
+    display: none !important;
+  }
+}
+@media (max-width: 991.98px) {
+  .navbar .navbar-collapse .nav-link {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    color: $navbar-dark-color;
+  }
+  .navbar-other .nav-item.language-select .nav-link {
+    @include font-size(1.05rem);
+  }
+  .navbar-other .nav-item .nav-link>i {
+    @include font-size(1.3rem);
+  }
+  .navbar .navbar-brand {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+  .navbar.fancy .navbar-collapse-wrapper {
+    background: none !important;
+    box-shadow: none !important;
+  }
+}
+//----------------------------------------------------------//
+//	STICKY NAVBAR
+//----------------------------------------------------------//
+.navbar.fixed {
+  margin: 0;
+  width: 100%;
+}
+.banner--clone {
+  position: fixed !important;
+  z-index: 1008;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+  @include transition(all 300ms ease-in-out,
+    border 1ms linear,
+    padding-right 0ms);
+}
+.banner--stick {
+  transform: translateY(0%);
+  border-bottom: 0;
+  &:not(.navbar-dark),
+  &.transparent {
+    box-shadow: $box-shadow;
+    background: rgba($white, 0.97);
+    &.navbar-dark .nav-link {
+      color: $navbar-light-color;
+      &:hover,
+      &:focus {
+        color: $navbar-light-hover-color;
+      }
+      &.disabled {
+        color: $navbar-light-disabled-color;
+      }
+    }
+  }
+}
+.navbar.fixed:not(.extended) .topbar {
+  display: none !important;
+}
+.navbar.fixed .navbar-collapse-wrapper {
+  background: none !important;
+  box-shadow: none !important;
+}
+//----------------------------------------------------------//
+//	OFFCANVAS
+//----------------------------------------------------------//
+.offcanvas-info {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: auto;
+  right: -15rem;
+  width: 15rem;
+  padding-top: 3rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  overflow-y: auto;
+  visibility: hidden;
+  background: $gray-900;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.3s;
+  transition-property: right, visibility;
+  z-index: 1041;
+  align-items: start;
+  background-clip: padding-box;
+}
+.offcanvas-info.open {
+  right: 0;
+  visibility: visible;
+}
+.offcanvas-close {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  cursor: pointer;
+}
+.offcanvas-nav-close {
+  left: auto;
+  right: 0.5rem;
+}
+.offcanvas-info .widget {
+  margin-bottom: 2rem;
+}
+@media (max-width: 991.98px) {
+  .offcanvas-nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    left: -15rem;
+    width: 15rem;
+    padding-right: 0;
+    padding-left: 1.5rem;
+    padding-bottom: 0.5rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background: $gray-900;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.3s;
+    transition-property: left, visibility;
+    @include transition(left 0.3s ease-in-out, visibility 0.3s ease-in-out);
+    align-items: start;
+    background-clip: padding-box;
+    z-index: 1041;
+  }
+  .offcanvas-nav.open {
+    left: 0;
+    visibility: visible;
+  }
+  .offcanvas-header {
+    padding: 3rem 0 2rem;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .navbar.fixed .offcanvas-nav.open {
+    display: none !important;
+  }
+  .navbar-expand-lg .navbar-nav {
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+//----------------------------------------------------------//
+//	HAMBURGER ICON
+//----------------------------------------------------------//
+button.plain {
+  cursor: pointer;
+  @include transition($link-transition);
+  vertical-align: middle;
+  border: 0 none;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+button.plain::-moz-focus-inner {
+  padding: 0;
+  border: 0 none;
+}
+button.plain:focus {
+  outline: 0;
+}
+button.hamburger {
+  display: inline-block;
+  width: 24px;
+  height: 22px;
+  padding: 0;
+  margin-left: 4px;
+}
+button.hamburger:before,
+button.hamburger:after {
+  content: "";
+}
+button.hamburger:before,
+button.hamburger span,
+button.hamburger:after {
+  display: block;
+  width: 100%;
+  height: 3px;
+  margin: 0 0 5px;
+  @include transition($link-transition);
+  background: $navy;
+}
+.inverse-text:not(.fixed) button.hamburger:before,
+.inverse-text:not(.fixed) button.hamburger span,
+.inverse-text:not(.fixed) button.hamburger:after,
+.navbar.position-absolute:not(.fixed) button.hamburger:before,
+.navbar.position-absolute:not(.fixed) button.hamburger span,
+.navbar.position-absolute:not(.fixed) button.hamburger:after,
+.navbar.navbar-bg-dark button.hamburger:before,
+.navbar.navbar-bg-dark button.hamburger span,
+.navbar.navbar-bg-dark button.hamburger:after,
+.navbar.transparent.navbar-dark:not(.fixed) button.hamburger:before,
+.navbar.transparent.navbar-dark:not(.fixed) button.hamburger span,
+.navbar.transparent.navbar-dark:not(.fixed) button.hamburger:after {
+  background: $white;
+}
+button.hamburger.animate.active span {
+  transform: scale(0);
+}
+button.hamburger.animate.active:before {
+  transform: translateY(8px) rotate(45deg);
+}
+button.hamburger.animate.active:after {
+  transform: translateY(-8px) rotate(-45deg);
+}

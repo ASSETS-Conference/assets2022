@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  @@include('_head.html')
+</head>
+<body>
+  <div class="content-wrapper">
+    <header class="wrapper bg-soft-primary">
+      @@include('_navbar.html', {
+        "classList": "center-nav transparent navbar-light",
+        "otherClassList": "w-100 d-flex ms-auto",
+        "otherLanguageSelect": true,
+        "otherBtn": true,
+        "otherBtnClassList": "btn-sm btn-primary rounded-pill",
+        "otherBtnText": "Contact",
+        "otherBtnLink": "@@webRoot/contact.html"
+      })
+    </header>
+    <!-- /header -->
+    <section class="wrapper bg-soft-primary">
+      <div class="container pt-10 pb-12 pt-md-14 pb-md-16 text-center">
+        <div class="row">
+          <div class="col-md-9 col-lg-7 col-xl-5 mx-auto">
+            <h1 class="display-1 mb-3">Forms</h1>
+            <p class="lead px-xl-11">Below you can find instructions on how to make contact or newsletter forms work.</p>
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+    <div class="container">
+      <div class="row">
+        @@include('docs/_sidebar.html', {"page": "docs-forms"})
+        <aside class="col-xl-2 order-xl-3 sidebar sticky-sidebar mt-md-0 py-16 d-none d-xl-block">
+          <div class="widget">
+            <h6 class="widget-title fs-17 mb-2 ps-xl-5">On this page</h6>
+            <nav class="ps-xl-5">
+              <ul class="list-unstyled fs-sm lh-sm text-reset">
+                <li><a class="scroll" href="#snippet-1">Contact Form</a></li>
+                <li><a class="scroll" href="#snippet-2">Custom Fields</a></li>
+                <li><a class="scroll" href="#snippet-3">Newsletter</a></li>
+              </ul>
+            </nav>
+          <!-- /nav -->
+          </div>
+          <!-- /.widget -->
+        </aside>
+        <!-- /column -->
+        <div class="col-xl-8 order-xl-2">
+          <section id="snippet-1" class="wrapper pt-16">
+            <h2 class="mb-5">Contact Form</h2>
+            <div class="card">
+              <div class="card-body">
+                <p>Open <code class="file">php/contact.php</code> and specify recipient's e-mail address by filling <mark class="doc">$fromEmail</mark> and <mark class="doc">$sendToEmail</mark> options. These email addresses will receive all form inquires/messages.</p>
+                <ul class="list-unstyled mb-0">
+                  <li><mark class="doc fw-normal bg-pale-primary">$fromEmail</mark> An email address that will be in the From field of the email</li>
+                  <li><mark class="doc fw-normal bg-pale-primary">$sendToEmail</mark> An email address that will receive the email with the output of the form.</li>
+                </ul>
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-1">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-1" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-php"><code>// an email address that will be in the From field of the email.
+$fromEmail = 'your-email@domain.com';
+$fromName = 'Sandbox Contact Form';
+  
+// an email address that will receive the email with the output of the form
+$sendToEmail = 'your-email@domain.com';
+$sendToName = 'Sandbox Contact Form';</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="snippet-2" class="wrapper pt-16">
+            <h2 class="mb-5">Custom Fields</h2>
+            <div class="card">
+              <div class="card-body">
+                <p class="mb-0">The example below shows how to change contact form fields as well as success and error messages.</p>
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-2">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-2" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-php"><code>// subject of the email
+$subject = 'New message from Sandbox contact form';
+  
+// form field names and their translations.
+// array variable name => Text to appear in the email
+$fields = array('name' => 'Name', 'surname' => 'Surname', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message');
+  
+// message that will be displayed when everything is OK :)
+$okMessage = 'We have received your inquiry. Stay tuned, we’ll get back to you very soon.';
+  
+// If something goes wrong, we will display this message.
+$errorMessage = 'There was an error while submitting the form. Please try again later';</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="snippet-3" class="wrapper py-16">
+            <h2 class="mb-5">Newsletter</h2>
+            <div class="card">
+              <div class="card-body">
+                <p class="mb-0">After creating your own custom newsletter form through <a href="https://us20.admin.mailchimp.com/lists/integration/embeddedcode?id=21607" target="_blank" class="external">Mailchimp</a>. Replacing the newsletter form action with the one in your generated newsletter code should be enough to personalize the existing subscription forms in Sandbox.</p>
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-3">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-3" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;form action=&quot;INSERT YOUR CUSTOM NEWSLETTER ACTION KEY HERE&quot; method=&quot;post&quot; id=&quot;mc-embedded-subscribe-form&quot; name=&quot;mc-embedded-subscribe-form&quot; class=&quot;validate&quot; target=&quot;_blank&quot; novalidate&gt;
+  ...
+&lt;/form&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+        </div>
+        <!-- /column -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.content-wrapper -->
+  @@include('docs/_footer.html')
+  @@include('_page-progress.html')
+  @@include('_scripts.html')
+</body>
+</html>

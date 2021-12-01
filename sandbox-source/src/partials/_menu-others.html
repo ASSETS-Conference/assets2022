@@ -1,0 +1,39 @@
+<div class="navbar-other @@classList">
+  <ul class="navbar-nav flex-row align-items-center ms-auto" data-sm-skip="true">
+    @@if (context.languageSelect === 'true') {
+      @@include('_menu-others-lang.html')
+    }
+    @@if (context.info === 'true') {
+      <li class="nav-item"><a class="nav-link" data-toggle="offcanvas-info"><i class="uil uil-info-circle"></i></a></li>
+    }
+    @@if (context.link === 'true') {
+      <li class="nav-item">
+        <a href="@@if (context.linkModal === 'true') {#}@@if (context.linkModal !== 'true') {@@linkLink}" class="nav-link" @@if (context.linksNewTab === 'true') {target="_blank"} @@if (context.linkModal === 'true') { data-bs-toggle="modal" data-bs-target="#modal-01"}>@@linkText</a>
+      </li>
+    }
+    @@if (context.btn === 'true') {
+    <li class="nav-item d-none d-md-block">
+      <a href="@@if (context.btnModal === 'true') {#}@@if (context.btnModal !== 'true') {@@btnLink}" class="btn @@btnClassList" @@if (context.linksNewTab === 'true') {target="_blank"} @@if (context.btnModal === 'true') { data-bs-toggle="modal" data-bs-target="#modal-01"}>@@btnText</a>
+    </li>
+    }
+    @@if (context.social === 'true') {
+      <li class="nav-item">
+        <nav class="nav social social-muted justify-content-end text-end">
+          <a href="#"><i class="uil uil-twitter"></i></a>
+          <a href="#"><i class="uil uil-facebook-f"></i></a>
+          <a href="#"><i class="uil uil-dribbble"></i></a>
+          <a href="#"><i class="uil uil-instagram"></i></a>
+        </nav>
+        <!-- /.social -->
+      </li>
+    }
+    <li class="nav-item d-lg-none">
+      <div class="navbar-hamburger"><button class="hamburger animate plain" data-toggle="offcanvas-nav"><span></span></button></div>
+    </li>
+  </ul>
+  <!-- /.navbar-nav -->
+</div>
+<!-- /.navbar-other -->
+@@if (context.info === 'true') {
+  @@include('_menu-others-offcanvas-info.html')
+}

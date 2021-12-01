@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  @@include('_head.html')
+</head>
+<body>
+  <div class="content-wrapper">
+    <header class="wrapper bg-soft-primary">
+      @@include('_navbar.html', {
+        "classList": "center-nav transparent navbar-light",
+        "otherClassList": "w-100 d-flex ms-auto",
+        "otherLanguageSelect": true,
+        "otherBtn": true,
+        "otherBtnClassList": "btn-sm btn-primary rounded-pill",
+        "otherBtnText": "Contact",
+        "otherBtnLink": "@@webRoot/contact.html"
+      })
+    </header>
+    <!-- /header -->
+    <section class="wrapper bg-soft-primary">
+      <div class="container pt-10 pb-12 pt-md-14 pb-md-16 text-center">
+        <div class="row">
+          <div class="col-md-9 col-lg-7 col-xl-6 mx-auto">
+            <h1 class="display-1 mb-3">Lists</h1>
+            <p class="lead px-xxl-10">Use our custom list styles to create unordered lists.</p>
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+    <div class="container">
+      <div class="row">
+        @@include('docs/_sidebar.html', {"page": "elements-lists"})
+        <aside class="col-xl-2 order-xl-3 sidebar sticky-sidebar mt-md-0 py-16 d-none d-xl-block">
+          <div class="widget">
+            <h6 class="widget-title fs-17 mb-2 ps-xl-5">On this page</h6>
+            <nav class="ps-xl-5">
+              <ul class="list-unstyled fs-sm lh-sm text-reset">
+                <li><a class="scroll" href="#snippet-1">Bullet</a></li>
+                <li><a class="scroll" href="#snippet-2">Icon</a></li>
+                <li><a class="scroll" href="#snippet-3">Icon Circle</a></li>
+              </ul>
+            </nav>
+          <!-- /nav -->
+          </div>
+          <!-- /.widget -->
+        </aside>
+        <!-- /column -->
+        <div class="col-xl-8 order-xl-2">
+          <section id="snippet-1" class="wrapper pt-16">
+            <h2 class="mb-5">Bullet</h2>
+            <div class="card">
+              <div class="card-body">
+                <ul class="unordered-list bullet-primary mb-0">
+                  <li>Aenean eu leo quam pellentesque.</li>
+                  <li>Nullam quis risus eget urna mollis.</li>
+                  <li>Donec id elit non mi porta gravida.</li>
+                  <li>Fusce dapibus, tellus ac cursus.</li>
+                </ul>
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-1">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-1" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;ul class=&quot;unordered-list bullet-primary&quot;&gt;
+  &lt;li&gt;Aenean eu leo quam pellentesque.&lt;/li&gt;
+  &lt;li&gt;Nullam quis risus eget urna mollis.&lt;/li&gt;
+  &lt;li&gt;Donec id elit non mi porta gravida.&lt;/li&gt;
+  &lt;li&gt;Fusce dapibus, tellus ac cursus.&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="snippet-2" class="wrapper pt-16">
+            <h2 class="mb-5">Icon</h2>
+            <div class="card">
+              <div class="card-body">
+                <ul class="icon-list bullet-primary mb-0">
+                  <li><span><i class="uil uil-arrow-right"></i></span><span>Aenean eu leo quam pellentesque.</span></li>
+                  <li><span><i class="uil uil-arrow-right"></i></span><span>Nullam quis risus eget urna mollis.</span></li>
+                  <li><span><i class="uil uil-arrow-right"></i></span><span>Donec id elit non mi porta gravida.</span></li>
+                  <li><span><i class="uil uil-arrow-right"></i></span><span>Fusce dapibus, tellus ac cursus.</span></li>
+                </ul>
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-2">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-2" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;ul class=&quot;icon-list bullet-primary&quot;&gt;
+  &lt;li&gt;&lt;span&gt;&lt;i class=&quot;uil uil-arrow-right&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;span&gt;Aenean eu leo quam pellentesque.&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;span&gt;&lt;i class=&quot;uil uil-arrow-right&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;span&gt;Nullam quis risus eget urna mollis.&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;span&gt;&lt;i class=&quot;uil uil-arrow-right&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;span&gt;Donec id elit non mi porta gravida.&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;span&gt;&lt;i class=&quot;uil uil-arrow-right&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;span&gt;Fusce dapibus, tellus ac cursus.&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="snippet-3" class="wrapper py-16">
+            <h2 class="mb-5">Icon Circle</h2>
+            <div class="card">
+              <div class="card-body">
+                <ul class="icon-list bullet-bg bullet-soft-green mb-0">
+                  <li><span><i class="uil uil-check"></i></span><span>Aenean eu leo quam pellentesque.</span></li>
+                  <li><span><i class="uil uil-check"></i></span><span>Nullam quis risus eget urna mollis.</span></li>
+                  <li><span><i class="uil uil-check"></i></span><span>Donec id elit non mi porta gravida.</span></li>
+                  <li><span><i class="uil uil-check"></i></span><span>Fusce dapibus, tellus ac cursus.</span></li>
+                </ul>
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-3">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-3" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;ul class=&quot;icon-list bullet-bg bullet-soft-green&quot;&gt;
+  &lt;li&gt;&lt;span&gt;&lt;i class=&quot;uil uil-check&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;span&gt;Aenean eu leo quam pellentesque.&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;span&gt;&lt;i class=&quot;uil uil-check&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;span&gt;Nullam quis risus eget urna mollis.&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;span&gt;&lt;i class=&quot;uil uil-check&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;span&gt;Donec id elit non mi porta gravida.&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;span&gt;&lt;i class=&quot;uil uil-check&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;span&gt;Fusce dapibus, tellus ac cursus.&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+        </div>
+        <!-- /column -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.content-wrapper -->
+  @@include('docs/_footer.html')
+  @@include('_page-progress.html')
+  @@include('_scripts.html')
+</body>
+</html>

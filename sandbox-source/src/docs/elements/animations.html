@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  @@include('_head.html')
+</head>
+<body>
+  <div class="content-wrapper">
+    <header class="wrapper bg-soft-primary">
+      @@include('_navbar.html', {
+        "classList": "center-nav transparent navbar-light",
+        "otherClassList": "w-100 d-flex ms-auto",
+        "otherLanguageSelect": true,
+        "otherBtn": true,
+        "otherBtnClassList": "btn-sm btn-primary rounded-pill",
+        "otherBtnText": "Contact",
+        "otherBtnLink": "@@webRoot/contact.html"
+      })
+    </header>
+    <!-- /header -->
+    <section class="wrapper bg-soft-primary">
+      <div class="container pt-10 pb-12 pt-md-14 pb-md-16 text-center">
+        <div class="row">
+          <div class="col-md-9 col-lg-7 col-xl-6 mx-auto">
+            <h1 class="display-1 mb-3">Animations</h1>
+            <p class="lead px-xxl-5">Add animations to elements to show them by scrolling. For further plugin documentation please visit <a href="https://prjct-samwest.github.io/scrollCue/" target="_blank" class="hover more">scrollCue.js docs</a></p>
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+        <div class="row">
+          <div class="col-lg-3 mx-auto">
+            <form class="Preview">
+              <select class="form-select" onchange="ac(this.value);">
+                <option value="fadeIn" selected>fadeIn</option>
+                <option value="slideInLeft">slideInLeft</option>
+                <option value="slideInRight">slideInRight</option>
+                <option value="slideInDown">slideInDown</option>
+                <option value="slideInUp">slideInUp</option>
+                <option value="zoomIn">zoomIn</option>
+                <option value="zoomOut">zoomOut</option>
+                <option value="rotateIn">rotateIn</option>
+                <option value="bounceIn">bounceIn</option>
+                <option value="bounceInLeft">bounceInLeft</option>
+                <option value="bounceInRight">bounceInRight</option>
+                <option value="bounceInDown">bounceInDown</option>
+                <option value="bounceInUp">bounceInUp</option>
+                <option value="flipInX">flipInX</option>
+                <option value="flipInY">flipInY</option>
+              </select>
+              <input class="d-none" type="button" value="RELOAD" onclick="reload();">
+            </form>
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+    <div class="container">
+      <div class="row">
+        @@include('docs/_sidebar.html', {"page": "elements-animations"})
+        <aside class="col-xl-2 order-xl-3 sidebar sticky-sidebar mt-md-0 py-16 d-none d-xl-block">
+          <div class="widget">
+            <h6 class="widget-title fs-17 mb-2 ps-xl-5">On this page</h6>
+            <nav class="ps-xl-5">
+              <ul class="list-unstyled fs-sm lh-sm text-reset">
+                <li><a class="scroll" href="#snippet-1">Standard Example</a></li>
+                <li><a class="scroll" href="#snippet-2">Parent Wrap</a></li>
+                <li><a class="scroll" href="#snippet-3">Group Wrap</a></li>
+                <li><a class="scroll" href="#snippet-4">[data-duration]</a></li>
+                <li><a class="scroll" href="#snippet-5">[data-interval]</a></li>
+                <li><a class="scroll" href="#snippet-6">[data-delay]</a></li>
+              </ul>
+            </nav>
+          <!-- /nav -->
+          </div>
+          <!-- /.widget -->
+        </aside>
+        <!-- /column -->
+        <div class="col-xl-8 order-xl-2">
+          <section id="snippet-1" class="wrapper pt-16">
+            <h2 class="mb-3">Standard Example</h2>
+            <p class="lead mb-8">Set the <code class="code">data-cue</code> attribute in the target element and specify the animation type.</p>
+            <div class="card">
+              <div class="card-body">
+                <div class="row g-4">
+                  <div class="col" data-cue="fadeIn">
+                    <figure class="rounded"><img src="@@webRoot/assets/img/photos/p1.jpg" srcset="@@webRoot/assets/img/photos/p1@2x.jpg 2x" alt="" /></figure>
+                  </div>
+                  <div class="col" data-cue="fadeIn">
+                    <figure class="rounded"><img src="@@webRoot/assets/img/photos/p2.jpg" srcset="@@webRoot/assets/img/photos/p2@2x.jpg 2x" alt="" /></figure>
+                  </div>
+                  <div class="col" data-cue="fadeIn">
+                    <figure class="rounded"><img src="@@webRoot/assets/img/photos/p3.jpg" srcset="@@webRoot/assets/img/photos/p3@2x.jpg 2x" alt="" /></figure>
+                  </div>
+                </div>
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-1">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-1" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;img src=&quot;1.jpg&quot; data-cue=&quot;fadeIn&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;2.jpg&quot; data-cue=&quot;fadeIn&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;3.jpg&quot; data-cue=&quot;fadeIn&quot; alt=&quot;&quot; /&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="snippet-2" class="wrapper pt-16">
+            <h2 class="mb-3">Parent Wrap</h2>
+            <p class="lead mb-8">You can wrap it in a parent element by setting the <code class="code">data-cues</code> attribute.</p>
+            <div class="card">
+              <div class="card-body">
+                <div class="row g-4" data-cues="fadeIn">
+                  <div class="col" data-cue="fadeIn">
+                    <figure class="rounded"><img src="@@webRoot/assets/img/photos/p1.jpg" srcset="@@webRoot/assets/img/photos/p1@2x.jpg 2x" alt="" /></figure>
+                  </div>
+                  <div class="col" data-cue="fadeIn">
+                    <figure class="rounded"><img src="@@webRoot/assets/img/photos/p2.jpg" srcset="@@webRoot/assets/img/photos/p2@2x.jpg 2x" alt="" /></figure>
+                  </div>
+                  <div class="col" data-cue="fadeIn">
+                    <figure class="rounded"><img src="@@webRoot/assets/img/photos/p3.jpg" srcset="@@webRoot/assets/img/photos/p3@2x.jpg 2x" alt="" /></figure>
+                  </div>
+                </div>
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-2">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-2" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;div data-cues=&quot;fadeIn&quot;&gt;
+  &lt;img src=&quot;1.jpg&quot; alt=&quot;&quot; /&gt;
+  ...
+  &lt;img src=&quot;3.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="snippet-3" class="wrapper pt-16">
+            <h2 class="mb-3">Group Wrap</h2>
+            <p class="lead mb-8">You can group target elements by setting the <code class="code">data-group</code> attribute. With grouping, when the first element is triggered, the remaining elements are also triggered sequentially, regardless of the scroll amount.</p>
+            <div class="card">
+              <div class="card-body">
+                <div class="row g-4" data-cues="fadeIn" data-group="images">
+                  <div class="col" data-cue="fadeIn">
+                    <figure class="rounded"><img src="@@webRoot/assets/img/photos/p1.jpg" srcset="@@webRoot/assets/img/photos/p1@2x.jpg 2x" alt="" /></figure>
+                  </div>
+                  <div class="col" data-cue="fadeIn">
+                    <figure class="rounded"><img src="@@webRoot/assets/img/photos/p2.jpg" srcset="@@webRoot/assets/img/photos/p2@2x.jpg 2x" alt="" /></figure>
+                  </div>
+                  <div class="col" data-cue="fadeIn">
+                    <figure class="rounded"><img src="@@webRoot/assets/img/photos/p3.jpg" srcset="@@webRoot/assets/img/photos/p3@2x.jpg 2x" alt="" /></figure>
+                  </div>
+                </div>
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-3">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-3" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;div data-cues=&quot;fadeIn&quot; data-group=&quot;images&quot;&gt;
+  &lt;img src=&quot;1.jpg&quot; alt=&quot;&quot; /&gt;
+  ...
+  &lt;img src=&quot;3.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="snippet-4" class="wrapper pt-16">
+            <h2 class="mb-3">[data-duration]</h2>
+            <p class="lead mb-8">You can set the showing time of the element. (ms)</p>
+            <div class="card">
+              <div class="card-body">
+                <div class="row g-4" data-cues="fadeIn" data-duration="2000">
+                  <div class="col" data-cue="fadeIn">
+                    <figure class="rounded"><img src="@@webRoot/assets/img/photos/p1.jpg" srcset="@@webRoot/assets/img/photos/p1@2x.jpg 2x" alt="" /></figure>
+                  </div>
+                  <div class="col" data-cue="fadeIn" data-duration="500">
+                    <figure class="rounded"><img src="@@webRoot/assets/img/photos/p2.jpg" srcset="@@webRoot/assets/img/photos/p2@2x.jpg 2x" alt="" /></figure>
+                  </div>
+                  <div class="col" data-cue="fadeIn" data-duration="500">
+                    <figure class="rounded"><img src="@@webRoot/assets/img/photos/p3.jpg" srcset="@@webRoot/assets/img/photos/p3@2x.jpg 2x" alt="" /></figure>
+                  </div>
+                </div>
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-4">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-4" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;div data-cues=&quot;fadeIn&quot; data-duration=&quot;2000&quot;&gt;
+  &lt;img src=&quot;1.jpg&quot; alt=&quot;&quot; /&gt;
+  &lt;img src=&quot;2.jpg&quot; data-duration=&quot;500&quot; alt=&quot;&quot; /&gt;
+  &lt;img src=&quot;3.jpg&quot; data-duration=&quot;500&quot; alt=&quot;&quot; /&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="snippet-5" class="wrapper pt-16">
+            <h2 class="mb-3">[data-interval]</h2>
+            <p class="lead mb-8">You can set the showing interval time of the element. (ms)</p>
+            <div class="card">
+              <div class="card-body">
+                <div class="row g-4" data-cues="fadeIn" data-interval="-200">
+                  <div class="col" data-cue="fadeIn">
+                    <figure class="rounded"><img src="@@webRoot/assets/img/photos/p1.jpg" srcset="@@webRoot/assets/img/photos/p1@2x.jpg 2x" alt="" /></figure>
+                  </div>
+                  <div class="col" data-cue="fadeIn" data-interval="1000">
+                    <figure class="rounded"><img src="@@webRoot/assets/img/photos/p2.jpg" srcset="@@webRoot/assets/img/photos/p2@2x.jpg 2x" alt="" /></figure>
+                  </div>
+                  <div class="col" data-cue="fadeIn" data-interval="-0.2">
+                    <figure class="rounded"><img src="@@webRoot/assets/img/photos/p3.jpg" srcset="@@webRoot/assets/img/photos/p3@2x.jpg 2x" alt="" /></figure>
+                  </div>
+                </div>
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-5">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-5" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;div data-cues=&quot;fadeIn&quot; data-interval=&quot;-200&quot;&gt;
+  &lt;img src=&quot;1.jpg&quot; alt=&quot;&quot; /&gt;
+  &lt;img src=&quot;2.jpg&quot; data-interval=&quot;1000&quot; alt=&quot;&quot; /&gt;
+  &lt;img src=&quot;3.jpg&quot; data-interval=&quot;-0.2&quot; alt=&quot;&quot; /&gt;   &lt;!-- 200ms --&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="snippet-6" class="wrapper py-16">
+            <h2 class="mb-3">[data-delay]</h2>
+            <p class="mb-8">You can set the showing delay time of the element. (ms)</p>
+            <div class="card">
+              <div class="card-body">
+                <div class="row g-4" data-cues="fadeIn" data-delay="1000">
+                  <div class="col" data-cue="fadeIn">
+                    <figure class="rounded"><img src="@@webRoot/assets/img/photos/p1.jpg" srcset="@@webRoot/assets/img/photos/p1@2x.jpg 2x" alt="" /></figure>
+                  </div>
+                  <div class="col" data-cue="fadeIn" data-delay="2000">
+                    <figure class="rounded"><img src="@@webRoot/assets/img/photos/p2.jpg" srcset="@@webRoot/assets/img/photos/p2@2x.jpg 2x" alt="" /></figure>
+                  </div>
+                  <div class="col" data-cue="fadeIn">
+                    <figure class="rounded"><img src="@@webRoot/assets/img/photos/p3.jpg" srcset="@@webRoot/assets/img/photos/p3@2x.jpg 2x" alt="" /></figure>
+                  </div>
+                </div>
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-6">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-6" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;div data-cues=&quot;fadeIn&quot; data-delay=&quot;1000&quot;&gt;
+  &lt;img src=&quot;1.jpg&quot; alt=&quot;&quot; /&gt;
+  &lt;img src=&quot;2.jpg&quot; data-delay=&quot;2000&quot; alt=&quot;&quot; /&gt;
+  &lt;img src=&quot;3.jpg&quot; alt=&quot;&quot; /&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+        </div>
+        <!-- /column -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.content-wrapper -->
+  @@include('docs/_footer.html')
+  @@include('_page-progress.html')
+  @@include('_scripts.html')
+  <script>
+    let name = document.querySelectorAll('.anim .hljs-string');
+    let elm = document.querySelectorAll('[data-cue]:not(span)');
+    let select = document.querySelector('select');
+    let button = document.querySelector('input');
+
+    function ac(val) {
+      for (let i = 0; i < name.length; i++) {
+        name[i].innerHTML = val;
+      }
+      button.click();
+    }
+
+    function reload() {
+      for (let i = 0; i < elm.length; i++) {
+        elm[i].style.animationName = null;
+        elm[i].setAttribute('data-cue', select.value);
+        elm[i].removeAttribute('data-show');
+      }
+      scrollCue.update();
+    }
+  </script>
+</body>
+</html>

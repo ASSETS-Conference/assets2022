@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  @@include('_head.html')
+</head>
+<body>
+  <div class="content-wrapper">
+    <header class="wrapper bg-soft-primary">
+      @@include('_navbar.html', {
+        "classList": "center-nav transparent navbar-light",
+        "otherClassList": "w-100 d-flex ms-auto",
+        "otherLanguageSelect": true,
+        "otherBtn": true,
+        "otherBtnClassList": "btn-sm btn-primary rounded-pill",
+        "otherBtnText": "Contact",
+        "otherBtnLink": "@@webRoot/contact.html"
+      })
+    </header>
+    <!-- /header -->
+    <section class="wrapper bg-soft-primary">
+      <div class="container pt-10 pb-12 pt-md-14 pb-md-16 text-center">
+        <div class="row">
+          <div class="col-md-9 col-lg-7 col-xl-6 mx-auto">
+            <h1 class="display-1 mb-3">Abstract Images</h1>
+            <p class="lead px-xxl-10">Below you can find the list of abstract background images that come bundled with Sandbox.</p>
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+    <div class="container">
+      <div class="row">
+        @@include('docs/_sidebar.html', {"page": "styleguide-abstract"})
+        <div class="col-xl-8 order-xl-2">
+          <section id="snippet-1" class="wrapper pt-16">
+            <h2 class="mb-5">Images</h2>
+            <ul class="glyphs glyphs-svg row gy-6">
+              <li class="col-6 text-center">
+                <div class="card h-100">
+                  <div class="card-body p-0 rounded-top">
+                    <figure><img class="img-fluid rounded-top" src="@@webRoot/assets/img/photos/bg2.jpg" alt="" /></figure>
+                    <span class="py-3">bg2.jpg</span>
+                  </div>
+                  <div class="card-footer position-relative"><a class="stretched-link link-body btn-copy-icon" data-clipboard-text="&lt;section class=&quot;wrapper image-wrapper bg-image bg-overlay text-white&quot; data-image-src=&quot;./assets/img/photos/bg2.jpg&quot;&gt;&lt;/section&gt;">Copy</a></div>
+                </div>
+              </li>
+              <li class="col-6 text-center">
+                <div class="card h-100">
+                  <div class="card-body p-0 rounded-top">
+                    <figure><img class="img-fluid rounded-top" src="@@webRoot/assets/img/photos/bg3.jpg" alt="" /></figure>
+                    <span class="py-3">bg3.jpg</span>
+                  </div>
+                  <div class="card-footer position-relative"><a class="stretched-link link-body btn-copy-icon" data-clipboard-text="&lt;section class=&quot;wrapper image-wrapper bg-image bg-overlay text-white&quot; data-image-src=&quot;./assets/img/photos/bg3.jpg&quot;&gt;&lt;/section&gt;">Copy</a></div>
+                </div>
+              </li>
+              <li class="col-6 text-center">
+                <div class="card h-100">
+                  <div class="card-body p-0 rounded-top">
+                    <figure><img class="img-fluid rounded-top" src="@@webRoot/assets/img/photos/bg4.jpg" alt="" /></figure>
+                    <span class="py-3">bg4.jpg</span>
+                  </div>
+                  <div class="card-footer position-relative"><a class="stretched-link link-body btn-copy-icon" data-clipboard-text="&lt;section class=&quot;wrapper image-wrapper bg-image bg-overlay text-white&quot; data-image-src=&quot;./assets/img/photos/bg4.jpg&quot;&gt;&lt;/section&gt;">Copy</a></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
+        <!-- /column -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.content-wrapper -->
+  @@include('docs/_footer.html')
+  @@include('_page-progress.html')
+  @@include('_scripts.html')
+</body>
+</html>

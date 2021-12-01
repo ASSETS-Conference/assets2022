@@ -1,0 +1,141 @@
+//----------------------------------------------------------//
+//	PROJECT TILES
+//----------------------------------------------------------//
+.projects-tiles .project:first-child {
+  margin-top: 0;
+}
+@media (min-width: 768px) {
+  .projects-tiles .project {
+    margin-top: 10rem;
+  }
+  .projects-tiles .project-details {
+    padding: 2rem;
+    padding-bottom: 1rem;
+  }
+}
+@media (max-width: 767px) {
+  .projects-tiles .project {
+    margin-top: 5rem;
+  }
+}
+//----------------------------------------------------------//
+//	PROJECTS OVERFLOW
+//----------------------------------------------------------//
+.projects-overflow .project-details {
+  width: 100%;
+}
+.projects-overflow .item {
+  position: relative;
+  margin-top: 2.5rem;
+}
+.projects-overflow .item:first-child {
+  margin-top: 0;
+}
+@media (min-width: 1200px) {
+  .projects-overflow .project-details {
+    max-width: 24rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .projects-overflow .project-details {
+    max-width: 20rem;
+  }
+}
+@media (min-width: 992px) {
+  .projects-overflow .project-details {
+    position: absolute;
+  }
+  .projects-overflow .item {
+    margin-top: 10rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .projects-overflow .project {
+    box-shadow: $box-shadow !important;
+    border-radius: $border-radius !important;
+  }
+  .projects-overflow .project figure img {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+  }
+  .projects-overflow .project-details .card {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    box-shadow: none !important;
+  }
+}
+//----------------------------------------------------------//
+//	PROJECTS OVERFLOW 2
+//----------------------------------------------------------//
+.projects-overflow2 .project-image {
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.projects-overflow2 .item {
+  position: relative;
+  margin-top: 2.5rem;
+}
+.projects-overflow2 .item .card {
+  z-index: 1;
+}
+.projects-overflow2 .item .card .card-body {
+  padding: 4rem;
+}
+.projects-overflow2 .item:first-child {
+  margin-top: 0;
+}
+@media (min-width: 1400px) {
+  .projects-overflow2 .project-image {
+    max-width: 30rem;
+  }
+}
+@media (min-width: 1200px) {
+  .projects-overflow2 .project-image {
+    max-width: 30rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .projects-overflow2 .project-image {
+    max-width: 25rem;
+  }
+}
+//----------------------------------------------------------//
+//	OVERLAP GRID
+//----------------------------------------------------------//
+.overlap-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .overlap-grid-2 .item:nth-child(1) {
+    width: 70%;
+    margin-top: 0;
+    margin-left: 30%;
+    z-index: 3;
+  }
+  .overlap-grid-2 .item:nth-child(2) {
+    width: 55%;
+    margin-top: -45%;
+    margin-left: 0;
+    z-index: 4;
+  }
+  .overlap-grid-2 .item:nth-child(3) {
+    width: 60%;
+    margin-top: -35%;
+    margin-left: 40%;
+    z-index: 2;
+  }
+}
+@media (max-width: 767px) {
+  .overlap-grid-2 .item {
+    width: 100%;
+  }
+  .overlap-grid-2 .item+.item {
+    margin-top: 1.5rem;
+  }
+}

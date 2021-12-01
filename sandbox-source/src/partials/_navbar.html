@@ -1,0 +1,73 @@
+<nav class="navbar navbar-expand-lg @@classList">
+  @@if (!context.fancy) {
+    <div class="container flex-lg-row flex-nowrap align-items-center">
+  }
+  @@if (context.fancy) {
+    <div class="container">
+    <div class="navbar-collapse-wrapper bg-white d-flex flex-row flex-nowrap w-100 justify-content-between align-items-center">
+  }
+    <div class="navbar-brand w-100">
+      <a href="@@webRoot/index.html">
+        @@if (!context.logoBoth) {       
+          @@if (!context.logoLight) {
+            <img src="@@webRoot/assets/img/@@if(context.logoAlt){@@logoAlt}@@if(!context.logoAlt){logo}.png" srcset="@@webRoot/assets/img/@@if(context.logoAlt){@@logoAlt}@@if(!context.logoAlt){logo}@2x.png 2x" alt="" />
+          }
+          @@if (context.logoLight) {
+            <img src="@@webRoot/assets/img/logo-light.png" srcset="@@webRoot/assets/img/logo-light@2x.png 2x" alt="" />
+          }
+        }
+        @@if (context.logoBoth) {
+          <img class="logo-dark" src="@@webRoot/assets/img/@@if(context.logoAlt){@@logoAlt}@@if(!context.logoAlt){logo}.png" srcset="@@webRoot/assets/img/@@if(context.logoAlt){@@logoAlt}@@if(!context.logoAlt){logo}@2x.png 2x" alt="" />
+          <img class="logo-light" src="@@webRoot/assets/img/logo-light.png" srcset="@@webRoot/assets/img/logo-light@2x.png 2x" alt="" />
+        }
+      </a>
+    </div>
+    <div class="navbar-collapse offcanvas-nav">
+      <div class="offcanvas-header d-lg-none d-xl-none">
+        <a href="@@webRoot/index.html"><img src="@@webRoot/assets/img/logo-light.png" srcset="@@webRoot/assets/img/logo-light@2x.png 2x" alt="" /></a>
+        <button type="button" class="btn-close btn-close-white offcanvas-close offcanvas-nav-close" aria-label="Close"></button>
+      </div>
+      @@if (!context.onePage) {
+        @@if (!context.docs) {
+          @@include('_menu-links.html')
+        }
+        @@if (context.docs) {
+          @@include('docs/_menu-links.html')
+        }
+      }
+      @@if (context.onePage) {
+        @@include('_menu-links-onepage.html')
+      }
+    </div>
+    <!-- /.navbar-collapse -->
+    @@include('_menu-others.html', {
+        "classList": "@@otherClassList",
+        "btn": "@@otherBtn",
+        "btnClassList": "@@otherBtnClassList",
+        "btnText": "@@otherBtnText",
+        "btnLink": "@@otherBtnLink",
+        "btnModal": "@@otherBtnModal",
+        "link": "@@otherLink",
+        "linkText": "@@otherLinkText",
+        "linkLink": "@@otherLinkLink",
+        "linkModal": "@@otherLinkModal",
+        "linksNewTab": "@@otherLinksNewTab",
+        "languageSelect": "@@otherLanguageSelect",
+        "social": "@@otherSocial",
+        "info": "@@otherInfo"
+    })
+  @@if (!context.fancy) {
+    </div>
+    <!-- /.container -->
+  }
+  @@if (context.fancy) {
+      </div>
+      <!-- /.navbar-collapse-wrapper -->
+    </div>
+    <!-- /.container -->
+  }
+</nav>
+<!-- /.navbar -->
+@@if (context.otherBtnModal || context.otherLinkModal) {
+  @@include('_menu-others-modal.html')
+}

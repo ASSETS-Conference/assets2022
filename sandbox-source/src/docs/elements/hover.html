@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  @@include('_head.html')
+</head>
+<body>
+  <div class="content-wrapper">
+    <header class="wrapper bg-soft-primary">
+      @@include('_navbar.html', {
+        "classList": "center-nav transparent navbar-light",
+        "otherClassList": "w-100 d-flex ms-auto",
+        "otherLanguageSelect": true,
+        "otherBtn": true,
+        "otherBtnClassList": "btn-sm btn-primary rounded-pill",
+        "otherBtnText": "Contact",
+        "otherBtnLink": "@@webRoot/contact.html"
+      })
+    </header>
+    <!-- /header -->
+    <section class="wrapper bg-soft-primary">
+      <div class="container pt-10 pb-12 pt-md-14 pb-md-16 text-center">
+        <div class="row">
+          <div class="col-md-9 col-lg-7 col-xl-5 mx-auto">
+            <h1 class="display-1 mb-3">Hover</h1>
+            <p class="lead px-xxl-12">Use our custom hover styles to add hovers state to your images and elements.</p>
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+    <div class="container">
+      <div class="row">
+        @@include('docs/_sidebar.html', {"page": "elements-hover"})
+        <aside class="col-xl-2 order-xl-3 sidebar sticky-sidebar mt-md-0 py-16 d-none d-xl-block">
+          <div class="widget">
+            <h6 class="widget-title fs-17 mb-2 ps-xl-5">On this page</h6>
+            <nav class="ps-xl-5">
+              <ul class="list-unstyled fs-sm lh-sm text-reset">
+                <li><a class="scroll" href="#snippet-1">Tooltip</a></li>
+                <li><a class="scroll" href="#snippet-2">Overlay</a></li>
+                <li><a class="scroll" href="#snippet-3">Simple</a></li>
+              </ul>
+            </nav>
+          <!-- /nav -->
+          </div>
+          <!-- /.widget -->
+        </aside>
+        <!-- /column -->
+        <div class="col-xl-8 order-xl-2">
+          <section id="snippet-1" class="wrapper pt-16">
+            <h2 class="mb-5">Tooltip</h2>
+            <div class="card">
+              <div class="card-body">
+                <div class="row gy-6">
+                  <div class="item col-md-6 col-lg-4">
+                    <figure class="itooltip itooltip-dark hover-scale rounded" title='<h5 class="mb-1">Some Title</h5><p class="mb-0">Quam Sit Ornare</p>'><a href="#"> <img src="@@webRoot/assets/img/photos/p1.jpg" srcset="@@webRoot/assets/img/photos/p1@2x.jpg 2x" alt="" /></a></figure>
+                  </div>
+                  <!--/column -->
+                  <div class="item col-md-6 col-lg-4">
+                    <figure class="itooltip itooltip-light hover-scale rounded" title='<h5 class="mb-1">Some Title</h5><p class="mb-0">Quam Sit Ornare</p>'><a href="#"> <img src="@@webRoot/assets/img/photos/p2.jpg" srcset="@@webRoot/assets/img/photos/p2@2x.jpg 2x" alt="" /></a>
+                    </figure>
+                  </div>
+                  <!--/column -->
+                  <div class="item col-md-6 col-lg-4">
+                    <figure class="itooltip itooltip-primary hover-scale rounded" title='<h5 class="mb-1">Some Title</h5><p class="mb-0">Quam Sit Ornare</p>'><a href="#"> <img src="@@webRoot/assets/img/photos/p3.jpg" srcset="@@webRoot/assets/img/photos/p3@2x.jpg 2x" alt="" /></a>
+                    </figure>
+                  </div>
+                  <!--/column -->
+                </div>
+                <!--/.row -->
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-1">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-1" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;figure class=&quot;itooltip itooltip-dark hover-scale rounded&quot; title=&apos;&lt;h5 class=&quot;mb-1&quot;&gt;Some Title&lt;/h5&gt;&lt;p class=&quot;mb-0&quot;&gt;Quam Sit Ornare&lt;/p&gt;&apos;&gt;
+  &lt;a href=&quot;#&quot;&gt; 
+    &lt;img src=&quot;./assets/img/photos/p1.jpg&quot; srcset=&quot;./assets/img/photos/p1@2x.jpg 2x&quot; alt=&quot;&quot; /&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;
+  
+&lt;figure class=&quot;itooltip itooltip-light hover-scale rounded&quot; title=&apos;&lt;h5 class=&quot;mb-1&quot;&gt;Some Title&lt;/h5&gt;&lt;p class=&quot;mb-0&quot;&gt;Quam Sit Ornare&lt;/p&gt;&apos;&gt;
+  &lt;a href=&quot;#&quot;&gt; 
+    &lt;img src=&quot;./assets/img/photos/p2.jpg&quot; srcset=&quot;./assets/img/photos/p2@2x.jpg 2x&quot; alt=&quot;&quot; /&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;
+  
+&lt;figure class=&quot;itooltip itooltip-primary hover-scale rounded&quot; title=&apos;&lt;h5 class=&quot;mb-1&quot;&gt;Some Title&lt;/h5&gt;&lt;p class=&quot;mb-0&quot;&gt;Quam Sit Ornare&lt;/p&gt;&apos;&gt;
+  &lt;a href=&quot;#&quot;&gt; 
+    &lt;img src=&quot;./assets/img/photos/p3.jpg&quot; srcset=&quot;./assets/img/photos/p3@2x.jpg 2x&quot; alt=&quot;&quot; /&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="snippet-2" class="wrapper pt-16">
+            <h2 class="mb-5">Overlay</h2>
+            <div class="card">
+              <div class="card-body">
+                <div class="row gy-6">
+                  <div class="item col-md-6 col-lg-4">
+                    <figure class="overlay overlay1 hover-scale rounded"><a href="#"> <img src="@@webRoot/assets/img/photos/p4.jpg" srcset="@@webRoot/assets/img/photos/p4@2x.jpg 2x" alt="" /></a>
+                      <figcaption>
+                        <h5 class="from-top mb-0">Some Title</h5>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <!--/column -->
+                  <div class="item col-md-6 col-lg-4">
+                    <figure class="overlay overlay2 hover-scale color rounded"><a href="#"> <img src="@@webRoot/assets/img/photos/p5.jpg" srcset="@@webRoot/assets/img/photos/p5@2x.jpg 2x" alt="" /></a>
+                      <figcaption>
+                        <h5 class="from-top mb-1">Some Title</h5>
+                        <p class="from-bottom">Some Description</p>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <!--/column -->
+                </div>
+                <!--/.row -->
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-2">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-2" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;figure class=&quot;overlay overlay1 hover-scale rounded&quot;&gt;
+  &lt;a href=&quot;#&quot;&gt; 
+    &lt;img src=&quot;./assets/img/photos/p4.jpg&quot; srcset=&quot;./assets/img/photos/p4@2x.jpg 2x&quot; alt=&quot;&quot; /&gt;
+  &lt;/a&gt;
+  &lt;figcaption&gt;
+    &lt;h5 class=&quot;from-top mb-0&quot;&gt;Some Title&lt;/h5&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;figure class=&quot;overlay overlay2 hover-scale color rounded&quot;&gt;
+  &lt;a href=&quot;#&quot;&gt; 
+    &lt;img src=&quot;./assets/img/photos/p5.jpg&quot; srcset=&quot;./assets/img/photos/p5@2x.jpg 2x&quot; alt=&quot;&quot; /&gt;
+  &lt;/a&gt;
+  &lt;figcaption&gt;
+    &lt;h5 class=&quot;from-top mb-1&quot;&gt;Some Title&lt;/h5&gt;
+    &lt;p class=&quot;from-bottom&quot;&gt;Some Description&lt;/p&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="snippet-3" class="wrapper py-16">
+            <h2 class="mb-5">Simple</h2>
+            <div class="card">
+              <div class="card-body">
+                <div class="row gy-6">
+                  <div class="item col-md-6 col-lg-4">
+                    <figure class="lift rounded"><a href="#"> <img src="@@webRoot/assets/img/photos/p6.jpg" srcset="@@webRoot/assets/img/photos/p6@2x.jpg 2x" alt="" /></a></figure>
+                  </div>
+                  <!--/column -->
+                  <div class="item col-md-6 col-lg-4">
+                    <figure class="hover-scale rounded"><a href="#"> <img src="@@webRoot/assets/img/photos/p3.jpg" srcset="@@webRoot/assets/img/photos/p3@2x.jpg 2x" alt="" /></a></figure>
+                  </div>
+                  <!--/column -->
+                </div>
+                <!--/.row -->
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-3">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-3" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;figure class=&quot;lift rounded&quot;&gt;
+  &lt;a href=&quot;#&quot;&gt; 
+    &lt;img src=&quot;./assets/img/photos/p6.jpg&quot; srcset=&quot;./assets/img/photos/p6@2x.jpg 2x&quot; alt=&quot;&quot; /&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;
+
+&lt;figure class=&quot;hover scale rounded&quot;&gt;
+  &lt;a href=&quot;#&quot;&gt; 
+    &lt;img src=&quot;./assets/img/photos/p3.jpg&quot; srcset=&quot;./assets/img/photos/p3@2x.jpg 2x&quot; alt=&quot;&quot; /&gt;
+  &lt;/a&gt;
+&lt;/figure&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+        </div>
+        <!-- /column -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.content-wrapper -->
+  @@include('docs/_footer.html')
+  @@include('_page-progress.html')
+  @@include('_scripts.html')
+</body>
+</html>

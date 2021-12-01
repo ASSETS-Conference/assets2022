@@ -1,0 +1,182 @@
+//----------------------------------------------------------//
+//	CAROUSEL
+//----------------------------------------------------------//
+.owl-carousel {
+  margin-bottom: 1.5rem;
+  .owl-stage-outer {
+    cursor: -webkit-grab;
+    cursor: -o-grab;
+    cursor: -ms-grab;
+    cursor: grab;
+  }
+  &.owl-grab {
+    cursor: move;
+    cursor: -webkit-grabbing;
+    cursor: -o-grabbing;
+    cursor: -ms-grabbing;
+    cursor: grabbing;
+  }
+  &.clients .owl-stage {
+    display: flex;
+    align-items: center;
+  }
+  .owl-nav {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    line-height: 1;
+    button {
+      &.owl-next,
+      &.owl-prev {
+        z-index: 100;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba($white, 0.7);
+        color: $navy;
+        box-shadow: $box-shadow-sm;
+        @include font-size(1.2rem);
+        width: 2.2rem;
+        height: 2.2rem;
+        line-height: 2.2rem;
+        border-radius: 100%;
+        text-shadow: none;
+        @include transition($link-transition);
+        pointer-events: all;
+        &.disabled {
+          background: rgba($white, 0.7);
+        }
+        &:hover {
+          background: rgba($white, 0.9);
+        }
+      }
+      &.owl-prev {
+        left: 1rem;
+      }
+      &.owl-next {
+        left: auto;
+        right: 1rem;
+      }
+    }
+  }
+  .owl-dots {
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+    line-height: 1;
+    .owl-dot {
+      span {
+        width: 0.5rem;
+        height: 0.5rem;
+        margin: 0 0.3rem;
+        background: $secondary;
+        opacity: 0.5;
+        display: block;
+        -webkit-backface-visibility: visible;
+        @include transition($link-transition);
+        border-radius: 100%;
+        transform: scale(0.6);
+        border: 3px solid transparent;
+      }
+      &:hover span {
+        transform: scale(1);
+      }
+      &.active span {
+        transform: scale(1);
+        background: none;
+        border-color: $secondary;
+      }
+    }
+  }
+  .item {
+    figure .item-link {
+      opacity: 0;
+      position: absolute;
+      right: 0;
+      bottom: 1rem;
+      width: 2.2rem;
+      height: 2.2rem;
+      line-height: 2.2rem;
+      z-index: 1;
+      transition: all .3s ease-in-out;
+      opacity: 0;
+      color: $navy;
+      background: rgba($white, 0.7);
+      box-shadow: $box-shadow-sm;
+      @include font-size(1rem);
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      &:hover {
+        background: rgba($white, 0.9);
+      }
+    }
+    &:hover figure .item-link {
+      opacity: 1;
+      right: 1rem;
+    }
+  }
+  &.dots-start .owl-dots {
+    text-align: left;
+    justify-content: flex-start;
+  }
+  &.dots-over {
+    margin: 0;
+    .owl-dots {
+      bottom: 1rem;
+      .owl-dot {
+        span {
+          background: $white;
+          opacity: 1;
+          box-shadow: $box-shadow-sm;
+        }
+        &.active span {
+          background: none;
+          border-color: $white;
+        }
+      }
+    }
+  }
+  &.dots-dark .owl-dots .owl-dot span {
+    background: $white;
+  }
+  &.dots-dark .owl-dots .owl-dot.active span {
+    background: none;
+    border-color: $white;
+  }
+  &.gap-small .owl-dots {
+    margin-top: 1rem;
+  }
+  &.nav-dark .owl-nav button,
+  &.nav-dark .item figure .item-link {
+    background: rgba($main-color, 0.9) !important;
+    color: $white !important;
+    &.disabled {
+      background: rgba($main-color, 0.9) !important;
+    }
+    &:hover {
+      background: $main-color !important;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .owl-carousel .owl-dots {
+    margin-top: 1.25rem;
+  }
+}
+.item-inner {
+  padding: 1rem 0.75rem;
+}

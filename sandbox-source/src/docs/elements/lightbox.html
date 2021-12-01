@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  @@include('_head.html')
+</head>
+<body>
+  <div class="content-wrapper">
+    <header class="wrapper bg-soft-primary">
+      @@include('_navbar.html', {
+        "classList": "center-nav transparent navbar-light",
+        "otherClassList": "w-100 d-flex ms-auto",
+        "otherLanguageSelect": true,
+        "otherBtn": true,
+        "otherBtnClassList": "btn-sm btn-primary rounded-pill",
+        "otherBtnText": "Contact",
+        "otherBtnLink": "@@webRoot/contact.html"
+      })
+    </header>
+    <!-- /header -->
+    <section class="wrapper bg-soft-primary">
+      <div class="container pt-10 pb-12 pt-md-14 pb-md-16 text-center">
+        <div class="row">
+          <div class="col-md-9 col-lg-7 col-xl-6 mx-auto">
+            <h1 class="display-1 mb-3">Lightbox</h1>
+            <p class="lead px-xxl-10">Examples and instructions on how to add lightbox functionality to your image, YouTube or Vimeo links.</p>
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
+    <div class="container">
+      <div class="row">
+        @@include('docs/_sidebar.html', {"page": "elements-lightbox"})
+        <aside class="col-xl-2 order-xl-3 sidebar sticky-sidebar mt-md-0 py-16 d-none d-xl-block">
+          <div class="widget">
+            <h6 class="widget-title fs-17 mb-2 ps-xl-5">On this page</h6>
+            <nav class="ps-xl-5">
+              <ul class="list-unstyled fs-sm lh-sm text-reset">
+                <li><a class="scroll" href="#instructions">Instructions</a></li>
+                <li><a class="scroll" href="#snippet-1">Image & Caption</a></li>
+                <li><a class="scroll" href="#snippet-2">Vimeo & YouTube</a></li>
+              </ul>
+            </nav>
+          <!-- /nav -->
+          </div>
+          <!-- /.widget -->
+        </aside>
+        <!-- /column -->
+        <div class="col-xl-8 order-xl-2">
+          <section id="instructions" class="wrapper pt-16">
+            <h2 class="mb-5">Instructions</h2>
+            <div class="card">
+              <div class="card-body">
+                <p>Add <code class="code">.lightbox</code> class to <code class="code">a</code> tag to add lightbox functionality to your links.</p>
+                <p class="mb-0">Make sure to wrap all your lightbox links with <code class="code">.light-gallery-wrapper</code>. This will also enable navigation between all images within.</p>
+              </div>
+              <!--/.card-body -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="snippet-1" class="wrapper pt-16">
+            <h2 class="mb-5">Image & Caption</h2>
+            <div class="card">
+              <div class="card-body">
+                <div class="row gy-6 light-gallery-wrapper">
+                  <div class="item col-md-6 col-lg-4">
+                    <figure class="overlay overlay1 hover-scale rounded">
+                      <a href="@@webRoot/assets/img/photos/p6@2x.jpg" class="lightbox"><img src="@@webRoot/assets/img/photos/p6.jpg" srcset="@@webRoot/assets/img/photos/p6@2x.jpg 2x" alt="" /></a>
+                      <figcaption>
+                        <h5 class="from-top mb-0">Image</h5>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <!--/column -->
+                  <div class="item col-md-6 col-lg-4">
+                    <figure class="overlay overlay1 hover-scale rounded">
+                      <a href="@@webRoot/assets/img/photos/p3@2x.jpg" class="lightbox" data-sub-html=".caption"> <img src="@@webRoot/assets/img/photos/p3.jpg" srcset="@@webRoot/assets/img/photos/p3@2x.jpg 2x" alt="" /></a>
+                      <figcaption>
+                        <h5 class="from-top mb-0">Caption</h5>
+                      </figcaption>
+                    </figure>
+                    <div class="caption d-none">
+                      <h5>Heading</h5>
+                      <p>Purus Vulputate Sem Tellus Quam</p>
+                    </div>
+                  </div>
+                  <!--/column -->
+                </div>
+                <!--/.row -->
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-1">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-1" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;div class=&quot;light-gallery-wrapper&quot;&gt;
+  
+  &lt;figure class=&quot;overlay overlay1 hover-scale rounded&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;lightbox&quot;&gt;
+      &lt;img src=&quot;./assets/img/photos/p1.jpg&quot; alt=&quot;&quot; /&gt;
+    &lt;/a&gt;
+    &lt;!--/.lightbox --&gt;
+    &lt;figcaption&gt;
+      &lt;h5 class=&quot;from-top mb-0&quot;&gt;View Larger&lt;/h5&gt;
+    &lt;/figcaption&gt;
+    &lt;!--/figcaption --&gt;
+  &lt;/figure&gt;
+  &lt;!--/figure --&gt;
+
+  &lt;figure class=&quot;overlay overlay1 hover-scale rounded&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;lightbox&quot; data-sub-html=&quot;.caption&quot;&gt; 
+      &lt;img src=&quot;./assets/img/photos/p2.jpg&quot; alt=&quot;&quot; /&gt;
+    &lt;/a&gt;
+    &lt;!--/.lightbox --&gt;
+    &lt;figcaption&gt;
+      &lt;h5 class=&quot;from-top mb-0&quot;&gt;Caption&lt;/h5&gt;
+    &lt;/figcaption&gt;
+    &lt;!--/figcaption --&gt;
+  &lt;/figure&gt;
+  &lt;!--/figure --&gt;
+  &lt;div class=&quot;caption d-none&quot;&gt;
+    &lt;h5&gt;Heading&lt;/h5&gt;
+    &lt;p&gt;Purus Vulputate Sem Tellus Quam&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;!--/.caption --&gt;
+  
+&lt;/div&gt;
+&lt;!--/.light-gallery-wrapper --&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="snippet-2" class="wrapper py-16">
+            <h2 class="mb-5">Vimeo & YouTube</h2>
+            <div class="card">
+              <div class="card-body">
+                <div class="row gy-6 light-gallery-wrapper">
+                  <div class="item col-md-6 col-lg-4">
+                    <figure class="overlay overlay1 hover-scale rounded">
+                      <a href="https://vimeo.com/90355541" class="lightbox"><img src="@@webRoot/assets/img/photos/p4.jpg" srcset="@@webRoot/assets/img/photos/p4@2x.jpg 2x" alt="" /></a>
+                      <figcaption>
+                        <h5 class="from-top mb-0">Vimeo</h5>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <!--/column -->
+                  <div class="item col-md-6 col-lg-4">
+                    <figure class="overlay overlay1 hover-scale rounded">
+                      <a href="https://www.youtube.com/watch?v=26TbMXXOe0I" class="lightbox"> <img src="@@webRoot/assets/img/photos/p5.jpg" srcset="@@webRoot/assets/img/photos/p5@2x.jpg 2x" alt="" /></a>
+                      <figcaption>
+                        <h5 class="from-top mb-0">YouTube</h5>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <!--/column -->
+                </div>
+                <!--/.row -->
+              </div>
+              <!--/.card-body -->
+              <div class="card-footer position-relative">
+                <a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-2">View example's code</a>
+              </div>
+              <!--/.card-footer -->
+              <div id="collapse-2" class="card-footer bg-dark p-0 accordion-collapse collapse">
+                <div class="code-wrapper">
+                  <div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;div class=&quot;light-gallery-wrapper&quot;&gt;
+  
+  &lt;figure class=&quot;overlay overlay1 hover-scale rounded&quot;&gt;
+    &lt;a href=&quot;https://vimeo.com/90355541&quot; class=&quot;lightbox&quot;&gt;&lt;img src=&quot;./assets/img/photos/p1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+    &lt;figcaption&gt;
+      &lt;h5 class=&quot;from-top mb-0&quot;&gt;Vimeo&lt;/h5&gt;
+    &lt;/figcaption&gt;
+  &lt;/figure&gt;
+  &lt;!--/figure --&gt;
+
+  &lt;figure class=&quot;overlay overlay1 hover-scale rounded&quot;&gt;
+    &lt;a href=&quot;https://www.youtube.com/watch?v=26TbMXXOe0I&quot; class=&quot;lightbox&quot;&gt; &lt;img src=&quot;./assets/img/photos/p2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+    &lt;figcaption&gt;
+      &lt;h5 class=&quot;from-top mb-0&quot;&gt;YouTube&lt;/h5&gt;
+    &lt;/figcaption&gt;
+  &lt;/figure&gt;
+  
+&lt;/div&gt;
+&lt;!--/.light-gallery-wrapper --&gt;</code></pre>
+                  </div>
+                  <!--/.code-wrapper-inner -->
+                </div>
+                <!--/.code-wrapper -->
+              </div>
+              <!--/.card-footer -->
+            </div>
+            <!--/.card -->
+          </section>
+        </div>
+        <!-- /column -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.content-wrapper -->
+  @@include('docs/_footer.html')
+  @@include('_page-progress.html')
+  @@include('_scripts.html')
+</body>
+</html>

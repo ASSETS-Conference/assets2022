@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	@@include('_head.html')
+</head>
+<body>
+	<div class="content-wrapper">
+		<header class="wrapper bg-soft-primary">
+			@@include('_navbar.html', {
+				"classList": "center-nav transparent navbar-light",
+				"otherClassList": "w-100 d-flex ms-auto",
+				"otherLanguageSelect": true,
+				"otherBtn": true,
+				"otherBtnClassList": "btn-sm btn-primary rounded-pill",
+				"otherBtnText": "Contact",
+				"otherBtnLink": "@@webRoot/contact.html"
+			})
+		</header>
+		<!-- /header -->
+		<section class="wrapper bg-soft-primary">
+			<div class="container pt-10 pb-12 pt-md-14 pb-md-16 text-center">
+				<div class="row">
+					<div class="col-md-9 col-lg-7 col-xl-6 mx-auto">
+						<h1 class="display-1 mb-3">Buttons</h1>
+						<p class="lead px-xxl-10">Use our custom button styles for actions in forms, dialogs, with support for multiple sizes, states, etc. <a href="https://getbootstrap.com/docs/5.1/components/buttons/" target="_blank" class="hover more">Bootstrap docs</a></p>
+					</div>
+					<!-- /column -->
+				</div>
+				<!-- /.row -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /section -->
+		<div class="container">
+			<div class="row">
+				@@include('docs/_sidebar.html', {"page": "elements-buttons"})
+				<aside class="col-xl-2 order-xl-3 sidebar sticky-sidebar mt-md-0 py-16 d-none d-xl-block">
+					<div class="widget">
+						<h6 class="widget-title fs-17 mb-2 ps-xl-5">On this page</h6>
+						<nav class="ps-xl-5">
+							<ul class="list-unstyled fs-sm lh-sm text-reset">
+								<li><a class="scroll" href="#colors">Colors</a></li>
+								<li><a class="scroll" href="#gradients">Gradients</a></li>
+								<li><a class="scroll" href="#sizes">Sizes</a></li>
+								<li><a class="scroll" href="#shapes">Shapes</a></li>
+								<li><a class="scroll" href="#style">Style</a></li>
+								<li><a class="scroll" href="#circle">Circle</a></li>
+								<li><a class="scroll" href="#social">Social</a></li>
+								<li><a class="scroll" href="#play">Play</a></li>
+							</ul>
+						</nav>
+						<!-- /nav -->
+					</div>
+					<!-- /.widget -->
+				</aside>
+				<!-- /column -->
+				<div class="col-xl-8 order-xl-2">
+					<section id="colors" class="wrapper pt-16">
+						<h2 class="mb-5">Colors</h2>
+						<div class="card">
+							<div class="card-body">
+								<a href="#" class="btn btn-yellow rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-orange rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-red rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-pink rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-violet rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-purple rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-blue rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-aqua rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-green rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-leaf rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-navy rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-ash rounded-pill mb-2 me-1">Button</a>
+								<br class="d-none d-lg-block">
+								<a href="#" class="btn btn-soft-yellow rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-soft-orange rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-soft-red rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-soft-pink rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-soft-violet rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-soft-purple rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-soft-blue rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-soft-aqua rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-soft-green rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-soft-leaf rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-soft-dark rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-soft-ash rounded-pill mb-2 me-1">Button</a>
+							</div>
+							<!--/.card-body -->
+							<div class="card-footer position-relative">
+								<a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-colors">View example's code</a>
+							</div>
+							<!--/.card-footer -->
+							<div id="collapse-colors" class="card-footer bg-dark p-0 accordion-collapse collapse">
+								<div class="code-wrapper">
+									<div class="code-wrapper-inner">
+										<pre class="language-html"><code>&lt;a href=&quot;#&quot; class=&quot;btn btn-yellow rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-orange rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-red rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-pink rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-violet rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-purple rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-blue rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-aqua rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-green rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-leaf rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-navy rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-ash rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-white rounded-pill&quot;&gt;Button&lt;/a&gt;
+										
+&lt;a href=&quot;#&quot; class=&quot;btn btn-soft-yellow rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-soft-orange rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-soft-red rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-soft-pink rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-soft-violet rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-soft-purple rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-soft-blue rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-soft-aqua rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-soft-green rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-soft-leaf rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-soft-dark rounded-pill&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-soft-ash rounded-pill&quot;&gt;Button&lt;/a&gt;</code></pre>
+									</div>
+									<!--/.code-wrapper-inner -->
+								</div>
+								<!--/.code-wrapper -->
+							</div>
+							<!--/.card-footer -->
+						</div>
+						<!--/.card -->
+					</section>
+					<!-- /section -->
+					<section id="gradients" class="wrapper pt-16">
+						<h2 class="mb-5">Gradients</h2>
+						<div class="card">
+							<div class="card-body">
+								<a href="#" class="btn btn-gradient gradient-1 rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-gradient gradient-2 rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-gradient gradient-3 rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-gradient gradient-4 rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-gradient gradient-5 rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-gradient gradient-6 rounded-pill mb-2 me-1">Button</a>
+								<a href="#" class="btn btn-gradient gradient-7 rounded-pill mb-2 me-1">Button</a>
+								<br class="d-none d-lg-block">
+								<a href="#" class="btn btn-outline-gradient gradient-1 rounded-pill mb-2 me-1"><span>Button</span></a>
+								<a href="#" class="btn btn-outline-gradient gradient-2 rounded-pill mb-2 me-1"><span>Button</span></a>
+								<a href="#" class="btn btn-outline-gradient gradient-3 rounded-pill mb-2 me-1"><span>Button</span></a>
+								<a href="#" class="btn btn-outline-gradient gradient-4 rounded-pill mb-2 me-1"><span>Button</span></a>
+								<a href="#" class="btn btn-outline-gradient gradient-5 rounded-pill mb-2 me-1"><span>Button</span></a>
+								<a href="#" class="btn btn-outline-gradient gradient-6 rounded-pill mb-2 me-1"><span>Button</span></a>
+								<a href="#" class="btn btn-outline-gradient gradient-7 rounded-pill mb-2 me-1"><span>Button</span></a>
+							</div>
+							<!--/.card-body -->
+							<div class="card-footer position-relative">
+								<a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-gradients">View example's code</a>
+							</div>
+							<!--/.card-footer -->
+							<div id="collapse-gradients" class="card-footer bg-dark p-0 accordion-collapse collapse">
+								<div class="code-wrapper">
+									<div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;a href=&quot;#&quot; class=&quot;btn btn-gradient gradient-1 rounded-pill&quot;&gt;Text&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-gradient gradient-2 rounded-pill&quot;&gt;Text&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-gradient gradient-3 rounded-pill&quot;&gt;Text&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-gradient gradient-4 rounded-pill&quot;&gt;Text&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-gradient gradient-5 rounded-pill&quot;&gt;Text&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-gradient gradient-6 rounded-pill&quot;&gt;Text&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-gradient gradient-7 rounded-pill&quot;&gt;Text&lt;/a&gt;
+	
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-gradient gradient-1 rounded-pill&quot;&gt;&lt;span&gt;Text&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-gradient gradient-2 rounded-pill&quot;&gt;&lt;span&gt;Text&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-gradient gradient-3 rounded-pill&quot;&gt;&lt;span&gt;Text&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-gradient gradient-4 rounded-pill&quot;&gt;&lt;span&gt;Text&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-gradient gradient-5 rounded-pill&quot;&gt;&lt;span&gt;Text&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-gradient gradient-6 rounded-pill&quot;&gt;&lt;span&gt;Text&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-gradient gradient-7 rounded-pill&quot;&gt;&lt;span&gt;Text&lt;/span&gt;&lt;/a&gt;</code></pre>
+									</div>
+									<!--/.code-wrapper-inner -->
+								</div>
+								<!--/.code-wrapper -->
+							</div>
+							<!--/.card-footer -->
+						</div>
+						<!--/.card -->
+					</section>
+					<!-- /section -->
+					<section id="sizes" class="wrapper pt-16">
+						<h2 class="mb-5">Sizes</h2>
+						<div class="card">
+							<div class="card-body">
+								<a href="#" class="btn btn-primary btn-lg rounded-pill me-1 mb-2 mb-md-0">Large Button</a>
+								<a href="#" class="btn btn-primary rounded-pill me-1 mb-2 mb-md-0">Default Button</a>
+								<a href="#" class="btn btn-primary btn-sm rounded-pill me-1 mb-2 mb-md-0">Small Button</a>
+							</div>
+							<!--/.card-body -->
+							<div class="card-footer position-relative">
+								<a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-sizes">View example's code</a>
+							</div>
+							<!--/.card-footer -->
+							<div id="collapse-sizes" class="card-footer bg-dark p-0 accordion-collapse collapse">
+								<div class="code-wrapper">
+									<div class="code-wrapper-inner">
+										<pre class="language-html"><code>&lt;a href="#" class="btn btn-primary btn-lg rounded-pill"&gt;Large Button&lt;/a&gt; 
+&lt;a href="#" class="btn btn-primary rounded-pill"&gt;Default Button&lt;/a&gt; 
+&lt;a href="#" class="btn btn-primary btn-sm rounded-pill"&gt;Small Button&lt;/a&gt;</code></pre>
+									</div>
+									<!--/.code-wrapper-inner -->
+								</div>
+								<!--/.code-wrapper -->
+							</div>
+							<!--/.card-footer -->
+						</div>
+						<!--/.card -->
+					</section>
+					<!-- /section -->
+					<section id="shapes" class="wrapper pt-16">
+						<h2 class="mb-5">Shapes</h2>
+						<div class="card">
+							<div class="card-body">
+								<a href="#" class="btn btn-primary rounded-0 me-1 mb-2 mb-md-0">Square</a>
+								<a href="#" class="btn btn-primary me-1 mb-2 mb-md-0">Rounded</a>
+								<a href="#" class="btn btn-primary rounded-pill me-1 mb-2 mb-md-0">Pill</a>
+							</div>
+							<!--/.card-body -->
+							<div class="card-footer position-relative">
+								<a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-shapes">View example's code</a>
+							</div>
+							<!--/.card-footer -->
+							<div id="collapse-shapes" class="card-footer bg-dark p-0 accordion-collapse collapse">
+								<div class="code-wrapper">
+									<div class="code-wrapper-inner">
+										<pre class="language-html"><code>&lt;a href=&quot;#&quot; class=&quot;btn btn-primary rounded-0&quot;&gt;Square&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-primary&quot;&gt;Rounded&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-primary rounded-pill&quot;&gt;Pill&lt;/a&gt;</code></pre>
+									</div>
+									<!--/.code-wrapper-inner -->
+								</div>
+								<!--/.code-wrapper -->
+							</div>
+							<!--/.card-footer -->
+						</div>
+						<!--/.card -->
+					</section>
+					<!-- /section -->
+					<section id="style" class="wrapper pt-16">
+						<h2 class="mb-5">Style</h2>
+						<div class="card">
+							<div class="card-body">
+								<a href="#" class="btn btn-primary rounded-pill me-1 mb-2 mb-md-0">Solid</a>
+								<a href="#" class="btn btn-soft-primary rounded-pill me-1 mb-2 mb-md-0">Soft</a>
+								<a href="#" class="btn btn-outline-primary rounded-pill me-1 mb-2 mb-md-0">Outline</a>
+								<a href="#" class="btn btn-gradient gradient-1 rounded-pill me-1 mb-2 mb-md-0">Gradient</a>
+								<a href="#" class="btn btn-outline-gradient gradient-1 rounded-pill me-1 mb-2 mb-md-0"><span>Outline Gradient</span></a>
+							</div>
+							<!--/.card-body -->
+							<div class="card-footer position-relative">
+								<a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-styles">View example's code</a>
+							</div>
+							<!--/.card-footer -->
+							<div id="collapse-styles" class="card-footer bg-dark p-0 accordion-collapse collapse">
+								<div class="code-wrapper">
+									<div class="code-wrapper-inner">
+										<pre class="language-html"><code>&lt;a href=&quot;#&quot; class=&quot;btn btn-primary rounded-pill&quot;&gt;Solid&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-soft-primary rounded-pill&quot;&gt;Soft&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-primary rounded-pill&quot;&gt;Outline&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-gradient gradient-1 rounded-pill me-1 mb-2 mb-md-0&quot;&gt;Gradient&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-outline-gradient gradient-1 rounded-pill me-1 mb-2 mb-md-0&quot;&gt;&lt;span&gt;Outline Gradient&lt;/span&gt;&lt;/a&gt;</code></pre>
+									</div>
+									<!--/.code-wrapper-inner -->
+								</div>
+								<!--/.code-wrapper -->
+							</div>
+							<!--/.card-footer -->
+						</div>
+						<!--/.card -->
+					</section>
+					<!-- /section -->
+					<section id="circle" class="wrapper pt-16">
+						<h2 class="mb-5">Circle</h2>
+						<div class="card">
+							<div class="card-body">
+								<a href="#" class="btn btn-circle btn-primary btn-lg me-2 mb-2"><i class="uil uil-check"></i></a>
+								<a href="#" class="btn btn-circle btn-primary me-2 mb-2"><i class="uil uil-check"></i></a>
+								<a href="#" class="btn btn-circle btn-primary btn-sm me-2 mb-2"><i class="uil uil-check"></i></a>
+								<a href="#" class="btn btn-circle btn-soft-primary btn-lg me-2 mb-2"><i class="uil uil-check"></i></a>
+								<a href="#" class="btn btn-circle btn-soft-primary me-2 mb-2"><i class="uil uil-check"></i></a>
+								<a href="#" class="btn btn-circle btn-soft-primary btn-sm me-2 mb-2"><i class="uil uil-check"></i></a>
+								<a href="#" class="btn btn-circle btn-outline-primary btn-lg me-2 mb-2"><i class="uil uil-check"></i></a>
+								<a href="#" class="btn btn-circle btn-outline-primary me-2 mb-2"><i class="uil uil-check"></i></a>
+								<a href="#" class="btn btn-circle btn-outline-primary btn-sm me-2 mb-2"><i class="uil uil-check"></i></a>
+								<br class="d-none d-lg-block">
+								<a href="#" class="btn btn-circle btn-gradient gradient-1 btn-lg me-2 mb-2"><i class="uil uil-check"></i></a>
+								<a href="#" class="btn btn-circle btn-gradient gradient-1 me-2 mb-2"><i class="uil uil-check"></i></a>
+								<a href="#" class="btn btn-circle btn-gradient gradient-1 btn-sm me-2 mb-2"><i class="uil uil-check"></i></a>
+								<a href="#" class="btn btn-circle btn-outline-gradient gradient-1 btn-lg me-2 mb-2"><span><i class="uil uil-check"></i></span></a>
+								<a href="#" class="btn btn-circle btn-outline-gradient gradient-1 me-2 mb-2"><span><i class="uil uil-check"></i></span></a>
+								<a href="#" class="btn btn-circle btn-outline-gradient gradient-1 btn-sm me-2 mb-2"><span><i class="uil uil-check"></i></span></a>
+							</div>
+							<!--/.card-body -->
+							<div class="card-footer position-relative">
+								<a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-circle">View example's code</a>
+							</div>
+							<!--/.card-footer -->
+							<div id="collapse-circle" class="card-footer bg-dark p-0 accordion-collapse collapse">
+								<div class="code-wrapper">
+									<div class="code-wrapper-inner">
+										<pre class="language-html"><code>&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-primary btn-lg&quot;&gt;&lt;i class=&quot;uil uil-check&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-primary&quot;&gt;&lt;i class=&quot;uil uil-check&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-primary btn-sm&quot;&gt;&lt;i class=&quot;uil uil-check&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+
+&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-soft-primary btn-lg&quot;&gt;&lt;i class=&quot;uil uil-check&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-soft-primary&quot;&gt;&lt;i class=&quot;uil uil-check&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-soft-primary btn-sm&quot;&gt;&lt;i class=&quot;uil uil-check&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+
+&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-outline-primary btn-lg&quot;&gt;&lt;i class=&quot;uil uil-check&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-outline-primary&quot;&gt;&lt;i class=&quot;uil uil-check&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-outline-primary btn-sm&quot;&gt;&lt;i class=&quot;uil uil-check&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+
+&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-gradient gradient-1 btn-lg&quot;&gt;&lt;i class=&quot;uil uil-check&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-gradient gradient-1&quot;&gt;&lt;i class=&quot;uil uil-check&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-gradient gradient-1 btn-sm&quot;&gt;&lt;i class=&quot;uil uil-check&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+
+&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-outline-gradient gradient-1 btn-lg&quot;&gt;&lt;span&gt;&lt;i class=&quot;uil uil-check&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-outline-gradient gradient-1&quot;&gt;&lt;span&gt;&lt;i class=&quot;uil uil-check&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-outline-gradient gradient-1 btn-sm&quot;&gt;&lt;span&gt;&lt;i class=&quot;uil uil-check&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/a&gt;</code></pre>
+									</div>
+									<!--/.code-wrapper-inner -->
+								</div>
+								<!--/.code-wrapper -->
+							</div>
+							<!--/.card-footer -->
+						</div>
+						<!--/.card -->
+					</section>
+					<!-- /section -->
+					<section id="social" class="wrapper pt-16">
+						<h2 class="mb-5">Social</h2>
+						<div class="card">
+							<div class="card-body">
+								<div class="d-md-flex">
+									<div class="me-8 mb-2 mb-md-0">
+										<nav class="nav social">
+											<a href="#" class="btn btn-circle btn-sm btn-twitter"><i class="uil uil-twitter"></i></a>
+											<a href="#" class="btn btn-circle btn-sm btn-facebook"><i class="uil uil-facebook-f"></i></a>
+											<a href="#" class="btn btn-circle btn-sm btn-dribbble"><i class="uil uil-dribbble"></i></a>
+										</nav>
+									</div>
+									<div class="me-8">
+										<nav class="nav social social-muted">
+											<a href="#"><i class="uil uil-twitter"></i></a>
+											<a href="#"><i class="uil uil-facebook-f"></i></a>
+											<a href="#"><i class="uil uil-dribbble"></i></a>
+										</nav>
+									</div>
+									<div class="me-8">
+										<nav class="nav social">
+											<a href="#"><i class="uil uil-twitter"></i></a>
+											<a href="#"><i class="uil uil-facebook-f"></i></a>
+											<a href="#"><i class="uil uil-dribbble"></i></a>
+										</nav>
+									</div>
+								</div>
+							</div>
+							<!--/.card-body -->
+							<div class="card-footer position-relative">
+								<a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-social">View example's code</a>
+							</div>
+							<!--/.card-footer -->
+							<div id="collapse-social" class="card-footer bg-dark p-0 accordion-collapse collapse">
+								<div class="code-wrapper">
+									<div class="code-wrapper-inner">
+										<pre class="language-html"><code>&lt;nav class=&quot;nav social&quot;&gt;
+	&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-sm btn-twitter&quot;&gt;
+		&lt;i class=&quot;uil uil-twitter&quot;&gt;&lt;/i&gt;
+	&lt;/a&gt;
+	&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-sm btn-facebook&quot;&gt;
+		&lt;i class=&quot;uil uil-facebook-f&quot;&gt;&lt;/i&gt;
+	&lt;/a&gt;
+	&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-sm btn-dribbble&quot;&gt;
+		&lt;i class=&quot;uil uil-dribbble&quot;&gt;&lt;/i&gt;
+	&lt;/a&gt;
+&lt;/nav&gt;
+										
+&lt;nav class=&quot;nav social social-muted&quot;&gt;
+	&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;uil uil-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;uil uil-facebook-f&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;uil uil-dribbble&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/nav&gt;
+										
+&lt;nav class=&quot;nav social&quot;&gt;
+	&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;uil uil-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;uil uil-facebook-f&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+	&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;uil uil-dribbble&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+																		</div>
+									<!--/.code-wrapper-inner -->
+								</div>
+								<!--/.code-wrapper -->
+							</div>
+							<!--/.card-footer -->
+						</div>
+						<!--/.card -->
+					</section>
+					<!-- /section -->
+					<section id="play" class="wrapper py-16">
+						<h2 class="mb-5">Play</h2>
+						<div class="card">
+							<div class="card-body">
+								<a href="#" class="btn btn-circle btn-primary btn-play ripple me-5"><i class="icn-caret-right"></i></a>
+								<a href="#" class="btn btn-circle btn-soft-primary btn-play ripple"><i class="icn-caret-right"></i></a>
+							</div>
+							<!--/.card-body -->
+							<div class="card-footer position-relative">
+								<a class="collapse-link collapsed stretched-link" data-bs-toggle="collapse" href="#collapse-play">View example's code</a>
+							</div>
+							<!--/.card-footer -->
+							<div id="collapse-play" class="card-footer bg-dark p-0 accordion-collapse collapse">
+								<div class="code-wrapper">
+									<div class="code-wrapper-inner">
+<pre class="language-html"><code>&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-primary btn-play ripple&quot;&gt;
+	&lt;i class=&quot;icn-caret-right&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+	
+&lt;a href=&quot;#&quot; class=&quot;btn btn-circle btn-soft-primary btn-play ripple&quot;&gt;
+	&lt;i class=&quot;icn-caret-right&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;</code></pre>
+									</div>
+									<!--/.code-wrapper-inner -->
+								</div>
+								<!--/.code-wrapper -->
+							</div>
+							<!--/.card-footer -->
+						</div>
+						<!--/.card -->
+					</section>
+				</div>
+				<!-- /column -->
+			</div>
+			<!-- /.row -->
+		</div>
+		<!-- /.container -->
+	</div>
+	<!-- /.content-wrapper -->
+	@@include('docs/_footer.html')
+	@@include('_page-progress.html')
+	@@include('_scripts.html')
+</body>
+</html>
