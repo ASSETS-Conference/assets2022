@@ -80,6 +80,46 @@
     text-decoration: none;
 }
 
+.navbar-nav {
+    display       : flex;
+    flex-direction: column;
+    padding-left  : 0;
+    margin-bottom : 0;
+    list-style    : none;
+}
+
+.navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left : 0;
+}
+
+.navbar-nav .dropdown-menu {
+    position: static;
+}
+
+.navbar-text {
+    padding-top   : 1.2rem;
+    padding-bottom: 1.2rem;
+}
+
+.dropdown-menu {
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    min-width: 4rem;
+    padding: 1rem 0;
+    margin: 0;
+    font-size: 0.75rem;
+    color: #343f52;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.4rem;
+    box-shadow: 0rem 0rem 1.25rem rgba(30, 34, 40, 0.04);
+  }
+
 /* JUMBOTRON IMAGE BACKGROUND SECTION ---------------------------------------------------------------------------- */
 
 #jumbotron {
