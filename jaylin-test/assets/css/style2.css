@@ -72,69 +72,34 @@
 
 /* NAVBAR SECTION ------------------------------------------------------------------------------------------------ */
 
-#navbar {
-    z-index: 1;
-}
-
-#navbar a {
-    text-decoration: none;
+#navbar-transparent {
+    background: rgba(255, 255, 255, 0.0);
+    z-index   : 2;
 }
 
 /* JUMBOTRON IMAGE BACKGROUND SECTION ---------------------------------------------------------------------------- */
 
-#jumbotron {
-    background-image: url(../img/athens-bg-test-1.jpeg);
-}
-
-.image-wrapper {
-    background     : no-repeat center center;
-    background-size: cover;
-    position       : relative;
-    z-index        : 0;
+#top-jumbotron {
+    background        : url('../img/athens-bg-test-1.jpeg') center center no-repeat;
+    /*background      : no-repeat center center;*/
+    background-size   : cover;
+    position          : relative;
+    z-index           : 0;
 }
 
 .image-wrapper:not(.mobile) {
     background-attachment: fixed !important;
 }
 
-.image-wrapper.bg-auto {
-    background-size      : auto;
-    background-position  : center center;
-    background-repeat    : no-repeat;
-    background-attachment: scroll !important;
-}
-
-.image-wrapper.bg-full {
-    background-size      : 100%;
-    background-position  : center center;
-    background-repeat    : no-repeat;
-    background-attachment: scroll !important;
-}
-
-.image-wrapper.bg-cover {
-    background-size      : cover;
-    background-position  : center center;
-    background-repeat    : no-repeat;
-    background-attachment: scroll !important;
-}
-
 .image-wrapper.bg-overlay:before {
-    content   : "";
-    display   : block;
-    position  : absolute;
-    top       : 0;
-    left      : 0;
-    z-index   : 1;
+    content : "";
+    display : block;
+    position: absolute;
+    top     : 0;
+    left    : 0;
+
     width     : 100%;
     height    : 100%;
-    background: rgba(30, 34, 40, 0.5);
-}
-
-.image-wrapper.bg-overlay-300:before {
-    background: rgba(30, 34, 40, 0.3);
-}
-
-.image-wrapper.bg-overlay-400:before {
     background: rgba(30, 34, 40, 0.4);
 }
 
@@ -142,15 +107,4 @@
 .image-wrapper.bg-overlay.bg-content .content {
     position: relative;
     z-index : 2;
-}
-
-
-.image-wrapper.card:before {
-    border-radius: 0.4rem !important;
-}
-
-@media (max-width: 991.98px) {
-    .image-wrapper.bg-full {
-        background-size: cover !important;
-    }
 }
