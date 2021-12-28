@@ -1,0 +1,23 @@
+.committee_member {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.committee_member_img img {
+    height: 120px;
+    width: 120px;
+    display: inline;
+    border-radius: 50%;
+    border: 0.1px solid #e6dfce;
+    margin-right: 20px;
+}
+
+.committee_member p {
+    display: table-cell;
+    font-size: 16pt;
+    font-weight: 400;
+    color: rgb(33, 33, 51);
+    vertical-align: middle;
+    padding: 5px;
+}

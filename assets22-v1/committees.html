@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="generator" content="">
+    <title>ASSETS 2022</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+
+        #navbar_transparent ul {
+            list-style-type: none;
+        }
+
+        #navbar_transparent a {
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        .nav_item > a {
+            color: white;
+        }
+
+        .dropdown_menu {
+            position: absolute;
+            z-index: 1000;
+            display: none;
+            min-width: 4rem;
+            padding: 1rem 0;
+            margin: 0;
+            margin-top: 5px;
+            font-size: 0.85rem;
+            color: #343f52;
+            text-align: left;
+            list-style: none;
+            background-color: white;
+            background-clip: padding-box;
+            border: 1px solid white;
+            border-radius: 0.4rem;
+            box-shadow: 0rem 0rem 1.25rem rgba(30, 34, 40, 0.04);
+        }
+
+        .dropdown_menu a {
+            color: #343f52;
+        }
+
+
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <link href="./assets/css/committees.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+
+<body>
+    <main>
+
+        <!--Navigation bar-->
+		<div id="navbar"></div>
+		<script>
+		$(function(){
+		  $("#navbar").load("navbar.html");
+		});
+		</script>
+		<!--Navigation bar-->
+
+        <!-- Jumbotron -->
+        <div id="top-jumbotron" class="jumbotron jumbotron-fluid text-light bg-overlay image-wrapper">
+            <div class="container px-4 py-5 text-center content">
+                <img class="d-block my-5 mx-auto mb-4" src="./assets/img/logo-mockup.png" alt="" width="300">
+                <h1 class="display-4 fw-bold">ASSETS 2022</h1>
+                <p class="lead mb-1">Athens, Greece</p>
+                <p class="lead mb-1">October 23 to October 26 2022</p>
+                <p class="lead mb-4">The 24th International ACM SIGACCESS Conference on Computers and Accessibility</p>
+            </div>
+        </div>
+        <!-- Jumbotron -->
+ 
+        <!-- Content -->
+        <section class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-lg-8 mt-4">
+
+                    <!-- General Chair -->
+                    <h2 class="text-center" tabindex="0">General Chair</h2>
+                    <div class="committee_member">
+                        <p class="committee_member_img">
+                            <img id="committee_member_img" src='assets/img/headshots/GeneralChair_JF.jpeg'
+                            alt="Jon Froehlich is a white man with brown hair wearing a purple 'Makeability Lab' t-shirt and a gray sports coat"/>
+                        </p>
+                        <p class="committee_member_info">
+                            Jon E. Froehlich, University of Washington, USA
+                            <br>
+                            <a id="organizing_committe_email" 
+                                href="mailto:generalchair-assets22@acm.org">generalchair-assets22@acm.org</a>
+                        </p>
+                    </div>
+                    <!-- General Chair -->
+
+                    <!-- Web and Graphics Design Chairs -->
+                    <h2 class="text-center" tabindex="1">Web and Graphics Design Chairs</h2>
+                    <div class="committee_member">
+                        <p class="committee_member_img">
+                            <img id="committee_member_img" src='assets/img/headshots/WebChair_LH.jpeg'
+                            alt="Liang He is a Chinese man wearing a blue sweater"/>
+                        </p>
+                        <p class="committee_member_info">
+                            Liang He, University of Washington, USA
+                            <br>
+                            <a id="organizing_committe_email" 
+                                href="mailto:generalchair-assets22@acm.org">web-assets22@acm.org</a>
+                        </p>
+                    </div>
+                    <div class="committee_member">
+                        <p class="committee_member_img">
+                            <img id="committee_member_img" src='assets/img/headshots/WebChair_JK.jpeg'
+                            alt="Junhan 'Judy' Kong is an Asian woman with shoulder-length black hair wearing a white T-shirt"/>
+                        </p>
+                        <p class="committee_member_info">
+                            Junhan (Judy) Kong, University of Washington, USA
+                            <br>
+                            <a id="organizing_committe_email" 
+                                href="mailto:generalchair-assets22@acm.org">web-assets22@acm.org</a>
+                        </p>
+                    </div>
+                    <div class="committee_member">
+                        <p class="committee_member_img">
+                            <img id="committee_member_img" src='assets/img/headshots/WebChair_JH.jpeg'
+                            alt="Jaylin Herskovitz is a white woman with brown hair, sitting on a boat, she wears a blue jacket and blue baseball cap"/>
+                        </p>
+                        <p class="committee_member_info">
+                            Jaylin Herskovitz, University of Michigan, USA
+                            <br>
+                            <a id="organizing_committe_email" 
+                                href="mailto:generalchair-assets22@acm.org">web-assets22@acm.org</a>
+                        </p>
+                    </div>
+                    <!-- Web and Graphics Design Chairs -->
+                </div>
+            </div>
+        </section>
+        <!-- Content -->
+
+    </main>
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
