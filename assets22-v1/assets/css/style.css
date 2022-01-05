@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700");
 
+@font-face {
+  font-family:  LogoTilteFont;
+  src:          url(fonts/Abys-Regular.otf);
+}
+.confTitle{
+    font-family: LogoTilteFont;
+}
+
 :root {
     --bs-gray-100        : #f8f9fa;
     --bs-gray-200        : #e9ecef;
