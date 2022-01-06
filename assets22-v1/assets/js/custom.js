@@ -84,4 +84,13 @@ $( document ).ready(function() {
     // close layer when click-out
     document.onclick = close_menu; 
 
+    $("#menu_button").click(function() {
+        if ($("#menu_items").css("display") == "none") {
+            $("#menu_items").css("display", "block")
+        }
+        else if ($("#menu_items").css("display") == "block") {
+            $("#menu_items").css("display", "none")
+        }
+    })
+
 });
