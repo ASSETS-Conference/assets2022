@@ -26,6 +26,7 @@ $( document ).ready(function() {
     }
     function menu_close_timer() {
 
+        console.log("start close timer");
         if (!close_timer) {
             close_timer = setTimeout(close_menu, timeout)
         }
@@ -45,12 +46,23 @@ $( document ).ready(function() {
     $(".nav_item.has_dropdown > a").focus(function(){
         open_menu($(this).parent().find(".dropdown_menu"))
     });
+    $(".nav_item.has_dropdown").on('click touchstart', function() {
+        open_menu($(this).find(".dropdown_menu"))
+        cancel_menu_close_timer();
+    });
 
     $(".nav_item.has_dropdown").mouseleave(function(){
+        console.log("mouseleave");
         menu_close_timer()
     });
     $(".nav_item.has_dropdown > a").blur(function(){
+        console.log("blur");
         menu_close_timer()
+    });
+    $(".nav_item.has_dropdown").on('click touchend', function() {
+        console.log("touchend");
+        console.log(close_timer);
+        cancel_menu_close_timer();
     });
 
     // EVENTS ON DROPDOWN
@@ -60,6 +72,7 @@ $( document ).ready(function() {
     $(".dropdown_menu").focus(function() {
         cancel_menu_close_timer();
     });
+
     $(".dropdown_menu").mouseleave(function(){
         menu_close_timer()
     });
@@ -82,7 +95,7 @@ $( document ).ready(function() {
     });
 
     // close layer when click-out
-    document.onclick = close_menu; 
+    /*document.onclick = close_menu; */
 
     $("#menu_button").click(function() {
         if ($("#menu_items").css("display") == "none") {

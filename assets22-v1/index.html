@@ -45,6 +45,7 @@
         #menu_items {
             display: none;
             background-color: #343f52;
+            transition: .5s;
         }
         .dropdown_menu {
             display: none;
@@ -98,11 +99,11 @@
         <!-- NAVBAR 2 -->
         <nav id="navbar_transparent" class="position-absolute w-100" aria-label="nav bar" role="navigation">
 
-            <button id="menu_button" type="button" class="btn btn-outline-light m-3 d-lg-none">
+            <div id="menu_button" class="m-3 d-lg-none" type="button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list text-light" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                 </svg>
-            </button>
+            </div>
 
             <div class="container-fluid p-lg-3 p-0">
                 <ul id="menu_items" class="d-lg-flex flex-row justify-content-center flex-wrap">
