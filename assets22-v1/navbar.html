@@ -1,7 +1,14 @@
 <!-- NAVBAR 2 -->
 <nav id="navbar_transparent" class="position-absolute w-100" aria-label="nav bar" role="navigation">
-    <div class="container-fluid p-3">
-        <ul class="d-flex flex-row justify-content-center flex-wrap">
+
+    <div id="menu_button" class="m-3 d-lg-none" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list text-light" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+        </svg>
+    </div>
+
+    <div class="container-fluid p-lg-3 p-0">
+        <ul id="menu_items" class="d-lg-flex flex-row justify-content-center flex-wrap">
             <li class="nav_item">
                 <a aria-current="page" href="#">Home</a>
             </li>
@@ -43,9 +50,9 @@
             <li class="nav_item has_dropdown">
                 <a href="#">Committees</a>
                 <ul class="dropdown_menu">
-                    <li><a href="committees.html">Organizing Committee</a></li>
-                    <li><a href="#">Program Committee</a></li>
-                    <li><a href="#">Policy on Program Committees</a></li>
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
                 </ul>
             </li>
             <li class="nav_item has_dropdown">
