@@ -29,7 +29,7 @@
 /* MOBILE VERSION */
 #menu_items {
     display: none;
-    background-color: #343f52;
+    background-color: #38183c;
     transition: .5s;
 }
 .dropdown_menu {
@@ -56,7 +56,7 @@
         margin: 0;
         margin-top: 5px;
         font-size: 0.85rem;
-        color: #343f52;
+        color: #38183c;
         text-align: left;
         list-style: none;
         background-color: white;
@@ -67,6 +67,6 @@
     }
 
     .dropdown_menu a {
-        color: #343f52;
+        color: #38183c;
     }
 }

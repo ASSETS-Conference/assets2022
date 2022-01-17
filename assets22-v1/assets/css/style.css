@@ -88,7 +88,15 @@
 /* JUMBOTRON IMAGE BACKGROUND SECTION ---------------------------------------------------------------------------- */
 
 #top-jumbotron {
-    background        : url('../img/athens-royalty-free.jpeg') center center no-repeat;
+    background        : url('../img/athens-royalty-free-1.jpeg') center center no-repeat;
+    /*background      : no-repeat center center;*/
+    background-size   : cover;
+    position          : relative;
+    z-index           : 0;
+}
+
+#top-jumbotron-small {
+    background        : url('../img/athens-royalty-free-2.jpeg') center center no-repeat;
     /*background      : no-repeat center center;*/
     background-size   : cover;
     position          : relative;
@@ -108,11 +116,15 @@
 
     width     : 100%;
     height    : 100%;
-    background: rgba(30, 34, 40, 0.4);
+    background: rgba(30, 34, 40, 0.3);
 }
 
 .image-wrapper.bg-overlay:not(.bg-content) *,
 .image-wrapper.bg-overlay.bg-content .content {
     position: relative;
     z-index : 2;
+}
+
+#jumbotron_bottom_text {
+    margin-bottom: 4em;
 }
