@@ -22,6 +22,10 @@
     margin: 10px;
 }
 
+#navbar_transparent li {
+    margin-bottom: 10px;
+}
+
 .nav_item > a {
     color: white;
 }
@@ -31,6 +35,7 @@
     display: none;
     background-color: #38183c;
     transition: .5s;
+    padding: 10px;
 }
 .dropdown_menu {
     display: none;
