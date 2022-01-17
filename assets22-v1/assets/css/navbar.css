@@ -79,3 +79,23 @@
         margin-bottom: 3px;
     }
 }
+
+/*----- Styles for skip navigation link -----*/
+#skip_nav a
+{
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow: hidden;
+    z-index: 999;
+}
+
+#skip_nav a:focus
+{
+    height:auto;
+    width: auto;
+    left: auto;
+    overflow: auto;
+}
