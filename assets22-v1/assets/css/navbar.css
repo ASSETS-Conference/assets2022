@@ -22,10 +22,6 @@
     margin: 10px;
 }
 
-#navbar_transparent li {
-    margin-bottom: 10px;
-}
-
 .nav_item > a {
     color: white;
 }
@@ -42,6 +38,10 @@
 }
 .dropdown_menu a {
     color: white;
+}
+
+#navbar_transparent li {
+    margin-bottom: 10px;
 }
 
 /* DESKTOP VERSION */
@@ -73,5 +73,9 @@
 
     .dropdown_menu a {
         color: #38183c;
+    }
+
+    #navbar_transparent li {
+        margin-bottom: 3px;
     }
 }
