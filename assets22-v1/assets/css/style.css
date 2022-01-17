@@ -129,6 +129,12 @@
     margin-bottom: 4em;
 }
 
-.callout_section {
+/* CALLOUT SECTION ---------------------------------------------------------------------------- */
+
+.callout_section_1 {
     background: #f5f5fc
+}
+
+.callout_section_2 {
+    background: #ECECF9
 }
