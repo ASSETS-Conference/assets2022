@@ -1,6 +1,6 @@
 .committee_member {
     display: block;
-    margin-top: 20px;
+    margin-top: 5px;
     margin-bottom: 20px;
 }
 
@@ -15,9 +15,9 @@
 
 .committee_member p {
     display: table-cell;
-    font-size: 16pt;
-    font-weight: 400;
-    color: rgb(33, 33, 51);
+    font-size: 15pt;
+    /*font-weight: 400;*/
+    /*color: rgb(33, 33, 51);*/
     vertical-align: middle;
     padding: 5px;
 }
