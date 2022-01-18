@@ -131,10 +131,19 @@
 
 /* CALLOUT SECTION ---------------------------------------------------------------------------- */
 
+.callout_section_0 {
+}
+
 .callout_section_1 {
     background: #f5f5fc
 }
 
 .callout_section_2 {
     background: #ECECF9
+}
+
+h3 {
+    color: #65446D;
+    margin-top: 5px;
+    margin-bottom: 20px;
 }

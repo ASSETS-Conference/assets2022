@@ -1,7 +1,7 @@
 .committee_member {
     display: block;
-    margin-top: 5px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 .committee_member_img img {
@@ -15,7 +15,7 @@
 
 .committee_member p {
     display: table-cell;
-    font-size: 15pt;
+    font-size: 14pt;
     /*font-weight: 400;*/
     /*color: rgb(33, 33, 51);*/
     vertical-align: middle;
