@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="generator" content="">
+    <title>ASSETS 2022</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <link href="./assets/css/navbar.css" rel="stylesheet">
+    <link href="./assets/css/committees.css" rel="stylesheet">
+
+    <!-- Javascript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+
+<body>
+    <main>
+
+        <!--Navigation bar-->
+		<div id="navbar"></div>
+		<script>
+		$(function(){
+		  $("#navbar").load("navbar.html");
+		});
+		</script>
+		<!--Navigation bar-->
+
+        <div id="content">
+
+        <!-- Jumbotron -->
+        <div id="top-jumbotron-small" class="jumbotron jumbotron-fluid text-light bg-overlay image-wrapper">
+            <div class="container px-4 py-5 text-center content">
+                <div class="d-flex justify-content-center align-items-center my-3">
+                    <img class="d-block my-0 mx-1" src="./assets/img/logo-mockup.png" alt="" width="125">
+                    <h1 class="display-4 confTitle mt-4 mb-0 mx-1">ASSETS 2022</h1>
+                </div>
+                <h1 class="display-6">Organizing Committee</h1>
+            </div>
+        </div>
+        <!-- Jumbotron -->
+ 
+        <!-- Content -->
+        <section class="p-3">
+            <div class="row justify-content-md-center">
+                <div class="col-lg-8 mt-4">
+
+                    <!-- General Chair -->
+                    <h3 class="text-center" tabindex="0">General Chair</h3>
+                    <div class="committee_member">
+                        <p class="committee_member_img">
+                            <img id="committee_member_img" src='assets/img/headshots/generalchair_JEF.jpeg'
+                            alt="Jon Froehlich is a white man with brown hair wearing a purple 'Makeability Lab' t-shirt and a gray sports coat"/>
+                        </p>
+                        <p class="committee_member_info">
+                            Jon E. Froehlich, University of Washington, USA
+                            <br>
+                            <a id="organizing_committe_email" 
+                                href="mailto:generalchair-assets22@acm.org">generalchair-assets22@acm.org</a>
+                        </p>
+                    </div>
+                    <!-- General Chair -->
+
+                </div>
+            </div>
+        </section>
+
+        </div> <!-- Content -->
+
+    </main>
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
