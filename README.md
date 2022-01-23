@@ -11,7 +11,7 @@ ASSETS 2022 Website
 - Test on mobile
 
 ## Bugs/ Fixes:
-- On mobile VO, navbar links all say ‘visited’
+- ~~On mobile VO, navbar links all say ‘visited’~~
 - ~~Dropdown arrow indicator next to links~~
 - Ability to close dropdown menu on mobile by tapping again
 - Mobile menu not keyboard accessible?
@@ -25,5 +25,5 @@ ASSETS 2022 Website
 
 ## Content:
 - ~~Add callout section type~~
-- Add remaining pages to navbar
+- ~~Add remaining pages to navbar~~
 - Add remaining pages
