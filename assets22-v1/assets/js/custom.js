@@ -41,10 +41,14 @@ $( document ).ready(function() {
 
     // EVENTS ON MAIN MENU ITEMS
     $(".nav_item.has_dropdown").mouseenter(function(){
-        open_menu($(this).find(".dropdown_menu"))
+        if ($(window).width() > 991) {
+            open_menu($(this).find(".dropdown_menu"))
+        }
     });
     $(".nav_item.has_dropdown > a").focus(function(){
-        open_menu($(this).parent().find(".dropdown_menu"))
+        if ($(window).width() > 991) {
+            open_menu($(this).parent().find(".dropdown_menu"))
+        }
     });
     $(".nav_item.has_dropdown").on('click touchstart', function() {
         open_menu($(this).find(".dropdown_menu"))
@@ -52,12 +56,16 @@ $( document ).ready(function() {
     });
 
     $(".nav_item.has_dropdown").mouseleave(function(){
-        console.log("mouseleave");
-        menu_close_timer()
+        if ($(window).width() > 991) {
+            console.log("mouseleave");
+            menu_close_timer()
+        }
     });
     $(".nav_item.has_dropdown > a").blur(function(){
-        console.log("blur");
-        menu_close_timer()
+        if ($(window).width() > 991) {
+            console.log("blur");
+            menu_close_timer()
+        }
     });
     $(".nav_item.has_dropdown").on('click touchend', function() {
         console.log("touchend");
@@ -67,31 +75,47 @@ $( document ).ready(function() {
 
     // EVENTS ON DROPDOWN
     $(".dropdown_menu").mouseenter(function() {
-        cancel_menu_close_timer();
+        if ($(window).width() > 991) {
+            cancel_menu_close_timer();
+        }
     });
     $(".dropdown_menu").focus(function() {
-        cancel_menu_close_timer();
+        if ($(window).width() > 991) {
+            cancel_menu_close_timer();
+        }
     });
 
     $(".dropdown_menu").mouseleave(function(){
-        menu_close_timer()
+        if ($(window).width() > 991) {
+            menu_close_timer();
+        }
     });
     $(".dropdown_menu").blur(function(){
-        menu_close_timer()
+        if ($(window).width() > 991) {
+            menu_close_timer();
+        }
     });
 
     // EVENTS ON DROPDOWN LINKS
     $(".dropdown_menu a").mouseenter(function() {
-        cancel_menu_close_timer();
+        if ($(window).width() > 991) {
+            cancel_menu_close_timer();
+        }
     });
     $(".dropdown_menu a").focus(function() {
-        cancel_menu_close_timer();
+        if ($(window).width() > 991) {
+            cancel_menu_close_timer();
+        }
     });
     $(".dropdown_menu a").mouseleave(function(){
-        menu_close_timer()
+        if ($(window).width() > 991) {
+            menu_close_timer();
+        }
     });
     $(".dropdown_menu a").blur(function(){
-        menu_close_timer()
+        if ($(window).width() > 991) {
+            menu_close_timer();
+        }
     });
 
     // close layer when click-out
