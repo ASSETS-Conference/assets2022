@@ -104,6 +104,17 @@ $( document ).ready(function() {
         else if ($("#menu_items").css("display") == "block") {
             $("#menu_items").css("display", "none")
         }
-    })
+    });
+
+    $("#menu_button").keydown(function( e ) {
+        if (e.key === " " || e.key === "Enter" || e.key === "Spacebar") {
+            if ($("#menu_items").css("display") == "none") {
+                $("#menu_items").css("display", "block")
+            }
+            else if ($("#menu_items").css("display") == "block") {
+                $("#menu_items").css("display", "none")
+            }
+        }
+    });
 
 });
