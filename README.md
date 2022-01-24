@@ -14,7 +14,7 @@ ASSETS 2022 Website
 - ~~On mobile VO, navbar links all say ‘visited’~~
 - ~~Dropdown arrow indicator next to links~~
 - Ability to close dropdown menu on mobile by tapping again
-- Mobile menu not keyboard accessible?
+- ~~Mobile menu not keyboard accessible?~~
 - Mobile menu works oddly on desktop
 
 ## Styling:
