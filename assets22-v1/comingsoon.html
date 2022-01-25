@@ -39,23 +39,32 @@
         <div id="content">
 
         <!-- Jumbotron -->
-        <div class="jumbotron jumbotron-fluid text-light bg-overlay image-wrapper">
+        <div id="top-jumbotron-cfp" class="jumbotron jumbotron-fluid text-light bg-overlay image-wrapper">
             <div class="container px-4 py-5 text-center content">
-                <div class="row justify-content-md-center">
-                    <div class="justify-content-center align-items-center my-5 col-lg-8">
-                        <img class="my-0 mx-1" src="./assets/img/large/logo-integrated.png" alt="ASSETS 2022 logo" style="padding-top: 10%;">
-                    </div>
-                    <div class="col-lg-8 mt-4">
-                        <h1 class="text-center confTitle" tabindex="0" style="color:white;">Coming Soon!</h1>
-                    </div>
-                    <div class="col-lg-8 mt-2">
-                        <p class="text-center">Stay tuned for more details</p>
-                    </div>
-                </div>
+                <span class="d-flex justify-content-center align-items-center mt-5">
+                    <img class="d-block my-0 mx-4" src="./assets/img/large/logo-integrated-header-large.png" alt="" width="125">
+                    <h1 class="display-6 confTitle mt-4 mb-0">COMING SOON</h1>
+                </span>
             </div>
         </div>
         <!-- Jumbotron -->
 
+        <section class="callout_section_0 p-3">
+            <div class="container">
+            <div class="row justify-content-md-center">
+            <div class="col-lg-8 mt-4">
+                <p class="text-center" style="padding-top: 30%; padding-bottom: 30%;">Stay tuned for more details!</p>
+            </div>
+            </div>
+            </div>
+        </section>
+
+        <div id="footer"></div>
+        <script>
+        $(function(){
+          $("#footer").load("footer.html");
+        });
+        </script>
 
         </div> <!-- Content -->
 
