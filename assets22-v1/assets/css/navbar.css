@@ -26,6 +26,14 @@
     color: white;
 }
 
+.nav_item > a:not([href]) {
+    color: white;
+}
+
+.nav_item > a:not([href]):hover {
+    color: white;
+}
+
 /* MOBILE VERSION */
 #menu_items {
     display: none;
