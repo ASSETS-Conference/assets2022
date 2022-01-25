@@ -50,14 +50,14 @@ $( document ).ready(function() {
             open_menu($(this).parent().find(".dropdown_menu"))
         }
     });
-    $(".nav_item.has_dropdown").on('click touchstart', function( event ) {
+    $(".nav_item.has_dropdown > a").on('click touchstart', function( event ) {
         event.preventDefault();
         console.log("click");
-        if ($(this).find(".dropdown_menu").css("display") == "none") {
-            open_menu($(this).find(".dropdown_menu"))
+        if ($(this).parent().find(".dropdown_menu").css("display") == "none") {
+            open_menu($(this).parent().find(".dropdown_menu"))
             cancel_menu_close_timer();
         }
-        else if ($(this).find(".dropdown_menu").css("display") == "block") {
+        else if ($(this).parent().find(".dropdown_menu").css("display") == "block") {
             close_menu();
         }
         /*
