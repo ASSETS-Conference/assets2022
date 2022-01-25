@@ -162,15 +162,22 @@
     background: #f5f5fc
 }
 
-.footer {
-    color:              white;
-    text-align:         center;
-    background:   url('../img/footer-bg/footer-bg-large.png') center center no-repeat;
-}
-
 .callout_section_2 {
     background: #ECECF9
 }
+
+/* FOOTER ---------------------------------------------------------------------------- */
+
+.footer {
+    color:              white;
+    text-align:         center;
+    background:   url('../img/footer-bg/footer-bg-tint.png') center center no-repeat;
+    background-size   : cover;
+    position          : relative;
+    z-index           : 0;
+}
+
+/* OTHER ---------------------------------------------------------------------------- */
 
 h3 {
     color: #65446D;
