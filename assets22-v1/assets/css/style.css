@@ -88,7 +88,7 @@
 /* JUMBOTRON IMAGE BACKGROUND SECTION ---------------------------------------------------------------------------- */
 
 #top-jumbotron {
-    background        : url('../img/athens-royalty-free-1.jpeg') center center no-repeat;
+    background        : url('../img/large/athens-royalty-free-1-large.jpeg') center center no-repeat;
     /*background      : no-repeat center center;*/
     background-size   : cover;
     position          : relative;
@@ -96,7 +96,31 @@
 }
 
 #top-jumbotron-small {
-    background        : url('../img/athens-royalty-free-2.jpeg') center center no-repeat;
+    background        : url('../img/large/athens-royalty-free-2-large.jpeg') center center no-repeat;
+    /*background      : no-repeat center center;*/
+    background-size   : cover;
+    position          : relative;
+    z-index           : 0;
+}
+
+#top-jumbotron-committee {
+    background        : url('../img/large/athens-committees-bg-large.jpeg') center center no-repeat;
+    /*background      : no-repeat center center;*/
+    background-size   : cover;
+    position          : relative;
+    z-index           : 0;
+}
+
+#top-jumbotron-cfp {
+    background        : url('../img/large/athens-cfp-bg-large.jpeg') center center no-repeat;
+    /*background      : no-repeat center center;*/
+    background-size   : cover;
+    position          : relative;
+    z-index           : 0;
+}
+
+#top-jumbotron-a11y {
+    background        : url('../img/large/athens-accessibility-bg-large.jpeg') center center no-repeat;
     /*background      : no-repeat center center;*/
     background-size   : cover;
     position          : relative;
