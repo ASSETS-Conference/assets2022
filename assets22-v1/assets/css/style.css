@@ -138,6 +138,13 @@
     background: #f5f5fc
 }
 
+.footer {
+    
+    color:              white;
+    text-align:         center;
+    background:   url('../img/footer-bg/footer-bg-large.png') center center no-repeat;
+}
+
 .callout_section_2 {
     background: #ECECF9
 }
