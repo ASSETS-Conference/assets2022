@@ -150,7 +150,11 @@
 }
 
 #jumbotron_bottom_text {
+    margin-top: 0.5em;
     margin-bottom: 4em;
+}
+#jumbotron_bottom_text div {
+    margin-bottom: -1em;
 }
 
 /* CALLOUT SECTION ---------------------------------------------------------------------------- */
