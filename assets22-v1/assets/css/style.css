@@ -170,6 +170,11 @@
     background: #ECECF9
 }
 
+.main-callout {
+    background: #ECECF9;
+    padding-top: 20px;
+}
+
 /* FOOTER ---------------------------------------------------------------------------- */
 
 .footer {
