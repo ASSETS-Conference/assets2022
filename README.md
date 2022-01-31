@@ -1,5 +1,5 @@
 # assets2022
-ASSETS 2022 Website 
+ASSETS 2022 Website, which is currently hosted [here](https://edigahe.github.io/assets2022/assets22-v1/index.html) but will eventually be hosted here: [https://assets22.sigaccess.org/](https://assets22.sigaccess.org/). 
 
 ## General accessibility:
 - Image descriptions
