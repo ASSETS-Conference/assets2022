@@ -16,6 +16,8 @@
 #navbar_transparent{
     background: rgba(0,0,0,0.4);
 }
+
+/* BOTH NAVBARS */
 #navbar_transparent ul {
     list-style-type: none;
 }
@@ -44,6 +46,7 @@
     transition: .5s;
     padding: 10px;
 }
+
 .dropdown_menu {
     display: none;
 }
