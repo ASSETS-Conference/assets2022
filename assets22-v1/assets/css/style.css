@@ -8,6 +8,15 @@
     font-family: LogoTilteFont;
 }
 
+.footer button{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+.footer button img{
+    cursor: pointer;
+}
+
 :root {
     --bs-gray-100        : #f8f9fa;
     --bs-gray-200        : #e9ecef;
