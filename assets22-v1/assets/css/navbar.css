@@ -17,6 +17,10 @@
     #navbar_transparent{
         background: rgba(0,0,0,0.6);
     }
+
+    #menu_button{
+        background: transparent;
+    }
 }
 
 
