@@ -12,10 +12,9 @@
     }
 }
 
-@media (max-width: 576px) {
-    #navbar_transparent{
-        background: rgba(0,0,0,0.7);
-    }
+/* BOTH NAVBARS */
+#navbar_transparent{
+    background: rgba(0,0,0,0.4);
 }
 
 /* BOTH NAVBARS */
@@ -43,7 +42,7 @@
 /* MOBILE VERSION */
 #menu_items {
     display: none;
-    background: rgba(0,0,0,0);
+    background: rgba(0,0,0,0.9);
     transition: .5s;
     padding: 10px;
 }
