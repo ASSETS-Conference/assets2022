@@ -12,6 +12,7 @@
     border: none;
     cursor: pointer;
     background-color: transparent;
+    width: 40;
 }
 .footer button img{
     cursor: pointer;
