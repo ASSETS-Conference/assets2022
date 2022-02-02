@@ -13,9 +13,12 @@
 }
 
 /* BOTH NAVBARS */
-#navbar_transparent{
-    background: rgba(0,0,0,0.4);
+@media (max-width: 768px) {
+    #navbar_transparent{
+        background: rgba(0,0,0,0.6);
+    }
 }
+
 
 /* BOTH NAVBARS */
 #navbar_transparent ul {
@@ -42,7 +45,7 @@
 /* MOBILE VERSION */
 #menu_items {
     display: none;
-    background: rgba(0,0,0,0.9);
+    background: rgba(0,0,0,0);
     transition: .5s;
     padding: 10px;
 }
