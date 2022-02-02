@@ -14,7 +14,7 @@
 
 /* BOTH NAVBARS */
 #navbar_transparent{
-    background: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.4);
 }
 #navbar_transparent ul {
     list-style-type: none;
@@ -40,7 +40,7 @@
 /* MOBILE VERSION */
 #menu_items {
     display: none;
-    background: rgba(0,0,0,0);
+    background: rgba(0,0,0,0.9);
     transition: .5s;
     padding: 10px;
 }
