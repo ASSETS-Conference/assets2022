@@ -204,6 +204,14 @@ h3 {
     margin-bottom: 20px;
 }
 
+p {
+    font-size: 18px;
+}
+
+li {
+    font-size: 18px;
+}
+
 .sponsor-img img {
     
     display: inline;
