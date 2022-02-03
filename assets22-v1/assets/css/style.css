@@ -4,47 +4,8 @@
   font-family:  LogoTilteFont;
   src:          url(fonts/Abys-Regular.otf);
 }
-
-@font-face {
-  font-family:  SFCompactDisplay-Semibold;
-  src:          url(fonts/SFCompactDisplay-Semibold.otf);
-}
-@font-face {
-  font-family:  SFCompactDisplay-Thin;
-  src:          url(fonts/SFCompactDisplay-Thin.otf);
-}
-@font-face {
-  font-family:  SFCompactDisplay-Ultralight;
-  src:          url(fonts/SFCompactDisplay-Ultralight.otf);
-}
-@font-face {
-  font-family:  SFCompactDisplay-Heavy;
-  src:          url(fonts/SFCompactDisplay-Heavy.otf);
-}
-@font-face {
-  font-family:  SFCompactDisplay-Light;
-  src:          url(fonts/SFCompactDisplay-Light.otf);
-}
-@font-face {
-  font-family:  SFCompactDisplay-Medium;
-  src:          url(fonts/SFCompactDisplay-Medium.otf);
-}
-@font-face {
-  font-family:  SFCompactDisplay-Regular;
-  src:          url(fonts/SFCompactDisplay-Regular.otf);
-}
-@font-face {
-  font-family:  SFCompactDisplay-Black;
-  src:          url(fonts/SFCompactDisplay-Black.otf);
-}
-@font-face {
-  font-family:  SFCompactDisplay-Bold;
-  src:          url(fonts/SFCompactDisplay-Bold.otf);
-}
-
-
 .confTitle{
-    font-family: SFCompactDisplay-Medium;
+    font-family: LogoTilteFont;
 }
 
 .footer button{
