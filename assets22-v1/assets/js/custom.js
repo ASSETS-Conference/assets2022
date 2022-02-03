@@ -41,17 +41,19 @@ $( document ).ready(function() {
 
     // EVENTS ON MAIN MENU ITEMS
     $(".nav_item.has_dropdown").mouseenter(function(){
+        if (event.cancelable) event.preventDefault();
         if ($(window).width() > 991) {
             open_menu($(this).find(".dropdown_menu"))
         }
     });
     $(".nav_item.has_dropdown > a").focus(function(){
+        if (event.cancelable) event.preventDefault();
         if ($(window).width() > 991) {
             open_menu($(this).parent().find(".dropdown_menu"))
         }
     });
     $(".nav_item.has_dropdown > a").on('click touchstart', function( event ) {
-        event.preventDefault();
+        if (event.cancelable) event.preventDefault();
         console.log("click");
         if ($(this).parent().find(".dropdown_menu").css("display") == "none") {
             open_menu($(this).parent().find(".dropdown_menu"))
@@ -67,18 +69,21 @@ $( document ).ready(function() {
     });
 
     $(".nav_item.has_dropdown").mouseleave(function(){
+        if (event.cancelable) event.preventDefault();
         if ($(window).width() > 991) {
             console.log("mouseleave");
             menu_close_timer();
         }
     });
     $(".nav_item.has_dropdown > a").blur(function(){
+        if (event.cancelable) event.preventDefault();
         if ($(window).width() > 991) {
             console.log("blur");
             menu_close_timer();
         }
     });
     $(".nav_item.has_dropdown").on('click touchend', function() {
+        if (event.cancelable) event.preventDefault();
         /*
         console.log("touchend");
         console.log(close_timer);
