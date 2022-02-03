@@ -62,6 +62,12 @@
 .footer button img{
     cursor: pointer;
 }
+.fix-landing-logo{
+    height: 272px;
+    width: 300px;
+    max-height: 272px;
+    max-width: 300px;
+}
 
 :root {
     --bs-gray-100        : #f8f9fa;
