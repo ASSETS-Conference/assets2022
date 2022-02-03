@@ -41,10 +41,16 @@
   font-family:  SFCompactDisplay-Bold;
   src:          url(fonts/SFCompactDisplay-Bold.otf);
 }
-
+@font-face {
+  font-family:  Avenir-Next;
+  src:          url(fonts/Avenir-Next.ttc);
+}
 
 .confTitle{
-    font-family: SFCompactDisplay-Medium;
+    font-family: Avenir-Next;
+}
+.confTitle_landing{
+    font-family: LogoTilteFont;
 }
 
 .footer button{
