@@ -213,9 +213,9 @@ li {
 }
 
 .sponsor-img img {
-    
     display: inline;
     max-height: 100px;
+    max-width: 100%;
     /*border-radius: 50%;*/
 }
 
