@@ -1,6 +1,6 @@
 $( document ).ready(function() {
     
-    var timeout = 300; //500
+    var timeout = 600; //500
     var close_timer = 0;
     var current_dropdown = null;
 

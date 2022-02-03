@@ -13,7 +13,7 @@
 }
 
 /* BOTH NAVBARS */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     #navbar_transparent{
         background: rgba(0,0,0,0.8);
     }
@@ -34,6 +34,10 @@
     margin: 10px;
 }
 
+.nav_item {
+    padding: 10px;
+}
+
 .nav_item > a {
     color: white;
 }
@@ -44,6 +48,10 @@
 
 .nav_item > a:not([href]):hover {
     color: white;
+}
+
+.nav_item:hover {
+    text-decoration: underline;
 }
 
 /* MOBILE VERSION */
@@ -94,6 +102,10 @@
 
     .dropdown_menu a {
         color: #38183c;
+    }
+
+    .dropdown_menu li:hover {
+        text-decoration: underline;
     }
 
     #navbar_transparent li {
