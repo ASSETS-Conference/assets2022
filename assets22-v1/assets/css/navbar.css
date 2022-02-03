@@ -50,10 +50,6 @@
     color: white;
 }
 
-.nav_item:hover {
-    text-decoration: underline;
-}
-
 /* MOBILE VERSION */
 #menu_items {
     display: none;
@@ -102,6 +98,10 @@
 
     .dropdown_menu a {
         color: #38183c;
+    }
+
+    .nav_item:hover {
+        text-decoration: underline;
     }
 
     .dropdown_menu li:hover {
