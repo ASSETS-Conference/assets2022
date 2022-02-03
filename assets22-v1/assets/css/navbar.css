@@ -15,7 +15,7 @@
 /* BOTH NAVBARS */
 @media (max-width: 768px) {
     #navbar_transparent{
-        background: rgba(0,0,0,0.6);
+        background: rgba(0,0,0,0.8);
     }
 
     #menu_button{
