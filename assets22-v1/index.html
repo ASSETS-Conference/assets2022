@@ -42,7 +42,7 @@
             margin: 10px;
         }
 
-        .nav_item > a {
+        .nav_item>a {
             color: white;
         }
 
@@ -52,9 +52,11 @@
             background-color: #343f52;
             transition: .5s;
         }
+
         .dropdown_menu {
             display: none;
         }
+
         .dropdown_menu a {
             color: white;
         }
@@ -90,8 +92,6 @@
                 color: #343f52;
             }
         }
-
-
     </style>
 
     <!-- Custom styles for this template -->
@@ -102,7 +102,9 @@
     <!-- Javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -111,37 +113,41 @@
         <!--Navigation bar-->
         <div id="navbar"></div>
         <script>
-        $(function(){
-          $("#navbar").load("navbar.html");
-        });
+            $(function () {
+                $("#navbar").load("navbar.html");
+            });
         </script>
         <!--Navigation bar-->
 
         <div id="content">
 
-        <!-- Jumbotron -->
-        <div id="top-jumbotron" class="jumbotron jumbotron-fluid text-light bg-overlay image-wrapper" role="img" aria-label="The background image for the landing page is a photo of the well-known Parthenon landmark with mixed blue and purple paints in the sky.">
-            <div class="container px-4 py-5 text-center content" width="300">
-                <img class="d-block mt-5 mx-auto mb-1" src="./assets/img/large/logo-landing-large.png" alt="ASSETS 2022 logo. It is composed of a PCB-style Parthenon outline with three people standing and communicating with each other in the Parthenon, repsenting three main iconic disabilities: blind, mobility impaired, deaf and hard of hearing." width="300">
-                <h1 class="display-4 confTitle_landing">ASSETS 2022</h1>
-                <p class="lead mb-1">The 24th International ACM SIGACCESS Conference on Computers and Accessibility</p>
-                <div id="jumbotron_bottom_text" class="lead row justify-content-center">
+            <!-- Jumbotron -->
+            <div id="top-jumbotron" class="jumbotron jumbotron-fluid text-light bg-overlay image-wrapper" role="img"
+                aria-label="The background image for the landing page is a photo of the well-known Parthenon landmark with mixed blue and purple paints in the sky.">
+                <div class="container px-4 py-5 text-center content" width="300">
+                    <img class="d-block mt-5 mx-auto mb-1" src="./assets/img/large/logo-landing-large.png"
+                        alt="ASSETS 2022 logo. It is composed of a PCB-style Parthenon outline with three people standing and communicating with each other in the Parthenon, repsenting three main iconic disabilities: blind, mobility impaired, deaf and hard of hearing."
+                        width="300">
+                    <h1 class="display-4 confTitle_landing">ASSETS 2022</h1>
+                    <p class="lead mb-1">The 24th International ACM SIGACCESS Conference on Computers and Accessibility
+                    </p>
+                    <div id="jumbotron_bottom_text" class="lead row justify-content-center">
 
-                    <div class="col-md-3 col-sm-12">
-                        <p><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Athens, Greece</p>
+                        <div class="col-md-3 col-sm-12">
+                            <p><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Athens, Greece</p>
+                        </div>
+                        <div class="col-md-3 col-sm-12">
+                            <p><i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;October 23-26, 2022</p>
+                        </div>
+
                     </div>
-                    <div class="col-md-3 col-sm-12">
-                        <p><i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;October 23-26, 2022</p>
-                    </div>
-                  
+
                 </div>
-                
             </div>
-        </div>
-        <!-- Jumbotron -->
- 
-        <!-- Content -->
-<!--         <section class="callout_section_2 p-3">
+            <!-- Jumbotron -->
+
+            <!-- Content -->
+            <!--         <section class="callout_section_2 p-3">
             <div class="container">
             <div class="row justify-content-md-center">
             <div id="main-callout" class="col-lg-8 mt-4">
@@ -154,8 +160,8 @@
             </div>
         </section> -->
 
-        <!-- RESERVED FOR FLYER -->
-        <!-- <section class="callout_section_1 p-3">
+            <!-- RESERVED FOR FLYER -->
+            <!-- <section class="callout_section_1 p-3">
             <div class="container">
             <div class="row justify-content-md-center">
             <div class="col-lg-8 mt-4">
@@ -164,194 +170,234 @@
             </div>
             </div>
         </section> -->
-        
-        <section class="callout_section_1 p-3">
-            <div class="container">
-            <div class="row justify-content-md-center">
-            <div class="main-callout col-lg-8 mt-4">
-            	<div class="container">
-                    <p>Welcome 👋,</p>
-                    
-                    <p>Acknowledging the impact the pandemic has had on all of us and the transformation in how people access and expect to access information and interact together, ASSETS’22 will be the first-ever “hybrid” conference in its 24 years. During the conference dates (Oct 24-26), we will host a full, on-site conference experience in Athens, Greece and a complementary, lighter-weight virtual experience online. ASSETS'22 also introduces our first-ever 
-                        workshop track, which will take place Oct 23 and is intended to further grow and diversify our community and foster additional scholarship and discussion. </p>
 
-                    <p>Shifting to a hybrid format brings forth new opportunities and challenges in making conferences accessible, building community, and broadening participation. We currently do not plan on streaming content but will, instead, provide prerecorded videos of content with captions and opportunities for virtual and on-site attendees to interact via online tools. At least one author of technical papers, posters and demonstrations, and other artifact-based tracks must travel to Athens to present their work (other co-authors can choose to attend on-site or virtually).</p>
-                    <p>On behalf of the organizing committee,</p>
-                    <p>
-                        Jon E. Froehlich, General Chair<br/> 
-                        Kristen Shinohara and Stephanie Ludi, Technical Program Chairs<br/> 
-                        Christian Vogler, Hybrid Experiences Chair
-                    </p>
+            <section class="callout_section_1 p-3">
+                <div class="container">
+                    <div class="row justify-content-md-center">
+                        <div class="main-callout col-lg-8 mt-4">
+                            <div class="container">
+                                <p>Welcome 👋,</p>
+
+                                <p>Acknowledging the impact the pandemic has had on all of us and the transformation in
+                                    how people access and expect to access information and interact together, ASSETS’22
+                                    will be the first-ever “hybrid” conference in its 24 years. During the conference
+                                    dates (Oct 24-26), we will host a full, on-site conference experience in Athens,
+                                    Greece and a complementary, lighter-weight virtual experience online. ASSETS'22 also
+                                    introduces our first-ever
+                                    workshop track, which will take place Oct 23 and is intended to further grow and
+                                    diversify our community and foster additional scholarship and discussion. </p>
+
+                                <p>Shifting to a hybrid format brings forth new opportunities and challenges in making
+                                    conferences accessible, building community, and broadening participation. We
+                                    currently do not plan on streaming content but will, instead, provide prerecorded
+                                    videos of content with captions and opportunities for virtual and on-site attendees
+                                    to interact via online tools. At least one author of technical papers, posters and
+                                    demonstrations, and other artifact-based tracks must travel to Athens to present
+                                    their work (other co-authors can choose to attend on-site or virtually).</p>
+                                <p>On behalf of the organizing committee,</p>
+                                <p>
+                                    Jon E. Froehlich, General Chair<br />
+                                    Kristen Shinohara and Stephanie Ludi, Technical Program Chairs<br />
+                                    Christian Vogler, Hybrid Experiences Chair
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-md-center">
+                        <div class="col-lg-8 mt-4">
+                            <p>The ASSETS conference is the premier forum for presenting research on the design,
+                                evaluation, use, and education
+                                related to computing for people with disabilities and older adults. We invite
+                                high-quality original submissions on
+                                topics relevant to computing and accessibility. ASSETS is considered a <a
+                                    href="http://portal.core.edu.au/conf-ranks/?search=ASSETS&by=all&source=CORE2021&sort=atitle&page=1">Core
+                                    A conference</a>, which is a conference database widely used in Europe and Oceania
+                                for ranking top publication venues in computing, used for assessing academic performance
+                                and scientific impact evaluation. ASSETS is now considered an "excellent conference,
+                                highly respected in a discipline area" (Core A; top 16%).</p>
+
+                            <p>All contributions are peer-reviewed by an international Program Committee. Accepted
+                                papers and the abstracts for
+                                posters and demonstrations, experience reports, and the student research competition
+                                will be archived in the ACM
+                                Digital Library. Authors of selected papers will be invited to submit extended versions
+                                of their papers to a special
+                                issue of the
+                                <a href="http://www.rit.edu/gccis/taccess/index.html">ACM Transactions on Accessible
+                                    Computing (TACCESS).</a>
+                            </p>
+
+                        </div>
+                    </div>
                 </div>
-            </div>
-            </div>
-            
-            <div class="row justify-content-md-center">
-            <div class="col-lg-8 mt-4">
-                <p>The ASSETS conference is the premier forum for presenting research on the design, evaluation, use, and education
-                related to computing for people with disabilities and older adults. We invite high-quality original submissions on
-                topics relevant to computing and accessibility. ASSETS is considered a <a href="http://portal.core.edu.au/conf-ranks/?search=ASSETS&by=all&source=CORE2021&sort=atitle&page=1">Core A conference</a>, which is a conference database widely used in Europe and Oceania for ranking top publication venues in computing, used for assessing academic performance and scientific impact evaluation. ASSETS is now considered an "excellent conference, highly respected in a discipline area" (Core A; top 16%).</p>
-            
-                <p>All contributions are peer-reviewed by an international Program Committee. Accepted papers and the abstracts for
-                posters and demonstrations, experience reports, and the student research competition will be archived in the ACM
-                Digital Library. Authors of selected papers will be invited to submit extended versions of their papers to a special
-                issue of the 
-                <a href="http://www.rit.edu/gccis/taccess/index.html">ACM Transactions on Accessible Computing (TACCESS).</a></p>
+            </section>
 
-            </div>
-            </div>
-            </div>
-        </section>
-
-        <section class="callout_section_0 p-3">
-            <div class="container">
-            <div class="row justify-content-md-center">
-                <div class="col-lg-8 mt-4">
-                    <h1 class="text-center" tabindex="0">Important Dates</h1>
-                    <p>
-                    <ul>
-                        <li><b>Tuesday, February 15, 2022</b> - Mentoring request deadline</li>
-                        <li><b>Thursday, April 14, 2022 </b> - Technical Paper submission deadline</li>
-                        <li><b>Thursday, May 26, 2022</b> - Initial Technical Paper reviews sent to authors, rebuttal phase opens</li>
-                        <li><b>Thursday, June 2, 2022</b> - Rebuttal phase closes</li>
-                        <li><b>Thursday, June 16, 2022</b> - Technical Paper acceptance decisions sent to authors</li>
-                        <li><b>Thursday, June 23, 2022</b> - Student Volunteer deadline</li>
-                        <li><b>Thursday, June 23, 2022</b> - Submission deadline for:
+            <section class="callout_section_0 p-3">
+                <div class="container">
+                    <div class="row justify-content-md-center">
+                        <div class="col-lg-8 mt-4">
+                            <h1 class="text-center" tabindex="0">Important Dates</h1>
+                            <p>
                             <ul>
-                                <li>Posters</li>
-                                <li>Demonstrations</li>
-                                <li>Doctoral Consortium</li>
-                                <li>Experience Reports</li>
-                                <li>Student Research Competition</li>
-                                <li>Workshop Proposals</li>
+                                <li><b>Tuesday, February 15, 2022</b> - Mentoring request deadline</li>
+                                <li><b>Thursday, April 14, 2022 </b> - Technical Paper submission deadline</li>
+                                <li><b>Thursday, May 26, 2022</b> - Initial Technical Paper reviews sent to authors,
+                                    rebuttal phase opens</li>
+                                <li><b>Thursday, June 2, 2022</b> - Rebuttal phase closes</li>
+                                <li><b>Thursday, June 16, 2022</b> - Technical Paper acceptance decisions sent to
+                                    authors</li>
+                                <li><b>Thursday, June 23, 2022</b> - Student Volunteer deadline</li>
+                                <li><b>Thursday, June 23, 2022</b> - Submission deadline for:
+                                    <ul>
+                                        <li>Posters</li>
+                                        <li>Demonstrations</li>
+                                        <li>Doctoral Consortium</li>
+                                        <li>Experience Reports</li>
+                                        <li>Student Research Competition</li>
+                                        <li>Workshop Proposals</li>
+                                    </ul>
+                                </li>
+                                <li><b>Thursday, July 7, 2022</b> - Final versions of accepted papers due. Following
+                                    this deadline, authors will receive instructions for completing their eRights forms,
+                                    validating and submitting their paper to TAPS, and submitting their final accessible
+                                    pdf.</li>
+                                <li><b>Thursday, July 14, 2022</b> - 8-Minute Technical Paper Video Presentations due
+                                </li>
+                                <li><b>Friday, July 15, 2022</b> - Acceptance decisions for:
+                                    <ul>
+                                        <li>Posters</li>
+                                        <li>Demonstrations</li>
+                                        <li>Doctoral Consortium</li>
+                                        <li>Experience Reports</li>
+                                        <li>Student Research Competition</li>
+                                        <li>Workshop Proposals</li>
+                                    </ul>
+                                </li>
+
+                                <li><b>Friday, July 29, 2022</b> - Final versions of accepted Posters, Demonstrations,
+                                    Experience Reports, Student Research Competition, and Workshop papers due. Following
+                                    this deadline, authors will receive instructions for completing their eRights forms,
+                                    validating and submitting their paper to TAPS, and submitting their final accessible
+                                    pdf.</li>
+                                <li><b>Friday, August 5, 2022</b> - Video presentations due for Posters, Demonstrations,
+                                    Experience Reports, Student Research Competition, Doctoral Consortium.</li>
                             </ul>
-                        </li>
-                        <li><b>Thursday, July 7, 2022</b> - Final versions of accepted papers due. Following this deadline, authors will receive instructions for completing their eRights forms, validating and submitting their paper to TAPS, and submitting their final accessible pdf.</li>
-                        <li><b>Thursday, July 14, 2022</b> - 8-Minute Technical Paper Video Presentations due</li>
-                        <li><b>Friday, July 15, 2022</b> - Acceptance decisions for:
-                            <ul>
-                                <li>Posters</li>
-                                <li>Demonstrations</li>
-                                <li>Doctoral Consortium</li>
-                                <li>Experience Reports</li>
-                                <li>Student Research Competition</li>
-                                <li>Workshop Proposals</li>
-                            </ul>
-                        </li>
-                        
-                        <li><b>Friday, July 29, 2022</b> - Final versions of accepted Posters, Demonstrations, Experience Reports, Student Research Competition, and Workshop papers due. Following this deadline, authors will receive instructions for completing their eRights forms, validating and submitting their paper to TAPS, and submitting their final accessible pdf.</li>
-                        <li><b>Friday, August 5, 2022</b> - Video presentations due for Posters, Demonstrations, Experience Reports, Student Research Competition, Doctoral Consortium.</li>
-                    </ul>
-                    </p>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="callout_section_1 p-3">
-            <div class="container">
-            <div class="row justify-content-md-center">
-            <div class="col-lg-8 mt-4">
-                <h1 class="text-center" style="margin-bottom: 30px">Committees</h1>
+            <section class="callout_section_1 p-3">
+                <div class="container">
+                    <div class="row justify-content-md-center">
+                        <div class="col-lg-8 mt-4">
+                            <h1 class="text-center" style="margin-bottom: 30px">Committees</h1>
 
-                <!-- General Chair -->
-                <h3 tabindex="0">General Chair</h3>
-                <div class="committee_member">
-                    <p class="committee_member_img">
-                        <img id="committee_member_img" src='assets/img/headshots/generalchair_JEF.jpeg'
-                        alt="Jon Froehlich is a white man with brown hair wearing a purple 'Makeability Lab' t-shirt and a gray sports coat"/>
-                    </p>
-                    <p class="committee_member_info">
-                        Jon E. Froehlich, University of Washington, USA
-                        <br>
-                        <a id="organizing_committe_email" 
-                            href="mailto:generalchair-assets22@acm.org">generalchair-assets22@acm.org</a>
-                    </p>
+                            <!-- General Chair -->
+                            <h3 tabindex="0">General Chair</h3>
+                            <div class="committee_member">
+                                <p class="committee_member_img">
+                                    <img id="committee_member_img" src='assets/img/headshots/generalchair_JEF.jpeg'
+                                        alt="Jon Froehlich is a white man with brown hair wearing a purple 'Makeability Lab' t-shirt and a gray sports coat" />
+                                </p>
+                                <p class="committee_member_info">
+                                    Jon E. Froehlich, University of Washington, USA
+                                    <br>
+                                    <a id="organizing_committe_email"
+                                        href="mailto:generalchair-assets22@acm.org">generalchair-assets22@acm.org</a>
+                                </p>
+                            </div>
+                            <!-- General Chair -->
+
+                            <!-- Technical Program Chairs -->
+                            <h3 tabindex="0">Technical Program Chairs</h3>
+                            <div class="committee_member">
+                                <p class="committee_member_img">
+                                    <img id="committee_member_img" src='assets/img/headshots/tpc_KS.jpeg'
+                                        alt="Portrait of Kristen Shinohara, a Japanese American woman wearing a black blouse." />
+                                </p>
+                                <p class="committee_member_info">
+                                    Kristen Shinohara, Rochester Institute of Technology, USA
+                                    <br>
+                                    <a id="organizing_committe_email"
+                                        href="mailto:tpc-assets22@acm.org">tpc-assets22@acm.org</a>
+                                </p>
+                            </div>
+                            <div class="committee_member">
+                                <p class="committee_member_img">
+                                    <img id="committee_member_img" src='assets/img/headshots/tpc_SL.jpeg'
+                                        alt="Headshot of Dr. Stephanie Ludi, a Hispanic women with short black hair and brown eyes" />
+                                </p>
+                                <p class="committee_member_info">
+                                    Stephanie Ludi, University of North Texas, USA
+                                    <br>
+                                    <a id="organizing_committe_email"
+                                        href="mailto:tpc-assets22@acm.org">tpc-assets22@acm.org</a>
+                                </p>
+                            </div>
+                            <!-- Technical Program Chairs -->
+
+                            <!-- Treasurer and Registration Chairs -->
+                            <h3 tabindex="0">Treasurer and Registration Chairs</h3>
+                            <div class="committee_member">
+                                <p class="committee_member_img">
+                                    <img id="committee_member_img" src='assets/img/headshots/treasurer_KR.jpeg'
+                                        alt="A professional headshot of Kyle Rector, a white woman with brown hair and eyes" />
+                                </p>
+                                <p class="committee_member_info">
+                                    Kyle Rector, University of Iowa, USA
+                                    <br>
+                                    <a id="organizing_committe_email"
+                                        href="mailto:treasurer-assets22@acm.org">treasurer-assets22@acm.org</a>
+                                </p>
+                            </div>
+                            <div class="committee_member">
+                                <p class="committee_member_img">
+                                    <img id="committee_member_img" src='assets/img/headshots/treasurer_MM.jpeg'
+                                        alt="Martez Mott, a Black man with a beard and short black hair, wearing a blue shirt" />
+                                </p>
+                                <p class="committee_member_info">
+                                    Martez Mott, Microsoft Research, USA
+                                    <br>
+                                    <a id="organizing_committe_email"
+                                        href="mailto:treasurer-assets22@acm.org">treasurer-assets22@acm.org</a>
+                                </p>
+                            </div>
+                            <!-- Treasurer and Registration Chairs -->
+
+                            <p>Please visit the <a href="organizing-committee.html">Organizing Committee page</a> to see
+                                the entire list.</p>
+                        </div>
+                    </div>
                 </div>
-                <!-- General Chair -->
+            </section>
 
-                <!-- Technical Program Chairs -->
-                <h3 tabindex="0">Technical Program Chairs</h3>
-                <div class="committee_member">
-                    <p class="committee_member_img">
-                        <img id="committee_member_img" src='assets/img/headshots/tpc_KS.jpeg'
-                        alt="Portrait of Kristen Shinohara, a Japanese American woman wearing a black blouse."/>
-                    </p>
-                    <p class="committee_member_info">
-                        Kristen Shinohara, Rochester Institute of Technology, USA
-                        <br>
-                        <a id="organizing_committe_email" 
-                            href="mailto:tpc-assets22@acm.org">tpc-assets22@acm.org</a>
-                    </p>
+            <section class="callout_section_2 p-3">
+                <div class="container">
+                    <div class="row justify-content-md-center">
+                        <div class="col-lg-8 mt-4">
+                            <h3 class="text-center">Champion Sponsors</h3>
+                            <img class="sponsor-img img-center" src='assets/img/sponsors/fable.png' alt="Fable logo" />
+                            <h4>Become a Sponsor</h4>
+                            <p>The ASSETS 2022 conference committee welcomes organizations and companies interested in
+                                reaching our prominent accessibility researchers, practitioners, developers, and
+                                policy-makers. Check <a href="become-a-sponsor.html">Become a Sponsor</a> for more
+                                detail.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="committee_member">
-                    <p class="committee_member_img">
-                        <img id="committee_member_img" src='assets/img/headshots/tpc_SL.jpeg'
-                        alt="Headshot of Dr. Stephanie Ludi, a Hispanic women with short black hair and brown eyes"/>
-                    </p>
-                    <p class="committee_member_info">
-                        Stephanie Ludi, University of North Texas, USA
-                        <br>
-                        <a id="organizing_committe_email" 
-                            href="mailto:tpc-assets22@acm.org">tpc-assets22@acm.org</a>
-                    </p>
-                </div>
-                <!-- Technical Program Chairs -->
+            </section>
 
-                <!-- Treasurer and Registration Chairs -->
-                <h3 tabindex="0">Treasurer and Registration Chairs</h3>
-                <div class="committee_member">
-                    <p class="committee_member_img">
-                        <img id="committee_member_img" src='assets/img/headshots/treasurer_KR.jpeg'
-                        alt="A professional headshot of Kyle Rector, a white woman with brown hair and eyes"/>
-                    </p>
-                    <p class="committee_member_info">
-                        Kyle Rector, University of Iowa, USA
-                        <br>
-                        <a id="organizing_committe_email" 
-                            href="mailto:treasurer-assets22@acm.org">treasurer-assets22@acm.org</a>
-                    </p>
-                </div>
-                <div class="committee_member">
-                    <p class="committee_member_img">
-                        <img id="committee_member_img" src='assets/img/headshots/treasurer_MM.jpeg'
-                        alt="Martez Mott, a Black man with a beard and short black hair, wearing a blue shirt"/>
-                    </p>
-                    <p class="committee_member_info">
-                        Martez Mott, Microsoft Research, USA
-                        <br>
-                        <a id="organizing_committe_email" 
-                            href="mailto:treasurer-assets22@acm.org">treasurer-assets22@acm.org</a>
-                    </p>
-                </div>
-                <!-- Treasurer and Registration Chairs -->
-
-                <p>Please visit the <a href="organizing-committee.html">Organizing Committee page</a> to see the entire list.</p>
-            </div>
-            </div>
-            </div>
-        </section>
-
-        <section class="callout_section_2 p-3">
-            <div class="container">
-            <div class="row justify-content-md-center">
-            <div class="col-lg-8 mt-4">
-                <h3 class="text-center">Champion Sponsors</h3>
-                <img class="sponsor-img img-center" src='assets/img/sponsors/fable.png' alt="Fable logo"/>
-                <h4>Become a Sponsor</h4>
-                <p>The ASSETS 2022 conference committee welcomes organizations and companies interested in reaching our prominent accessibility researchers, practitioners, developers, and policy-makers. Check <a href="become-a-sponsor.html">Become a Sponsor</a> for more detail.</p>
-            </div>
-            </div>
-            </div>
-        </section>
-
-        <div id="footer"></div>
-        <script>
-        $(function(){
-          $("#footer").load("footer.html");
-        });
-        </script>
+            <div id="footer"></div>
+            <script>
+                $(function () {
+                    $("#footer").load("footer.html");
+                });
+            </script>
 
     </main>
 </body>
+
 </html>
