@@ -1,5 +1,0 @@
-Title: Design and Analysis of Interoperable Data Logs for Augmentative Communication Practice
-Clinicians use a variety of data collection methods to capture the language use and communication performance of clients with complex communication needs. One solution for collecting and analyzing augmentative and alternative communication (AAC) data is through automatic data logging from high-tech AAC devices. However, there is no interoperable method to analyze data logs across various SGDs. To address this, our work presents an interoperable data log format and a parser as a prototype solution. The prototype was used successfully to analyze two common AAC data log formats, and can easily be extended to other formats. This approach has significant potential to improve AAC outcome measurement for individual users, as well as comparison of outcomes across multiple users and devices.
-
-
-

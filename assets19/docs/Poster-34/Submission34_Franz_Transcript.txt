@@ -1,3 +1,0 @@
-Performace-based tests are frequently used for determining optimal settings but can lead to fatigue. We investigated whether people can identify their optimal touchscreen target sizes by asking 7 older adults, with a mean age of 67.4, and 12 younger adults, with a mean age of 39.2, to identify optimal target sizes on a questionnaire. We then compared these chosen sizes to performance on a target acquisition task. 
-
-We found that older individuals (60+) were better than younger adults at choosing their optimal target sizes. In fact, younger adults underestimated the smallest target size they could accurately touch by almost 6mm. Older adults might not need performance assessments for determining their optimal target sizes, while younger adults might.

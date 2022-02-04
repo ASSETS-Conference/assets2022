@@ -1,7 +1,0 @@
-Poster title: Our perspectives matter. Using Universal Design Goals to Guide Technology Design in the Global South. 
-
-My name is Lynn Kirabo, my research focuses on using Universal Design goals to design technologies that improve the mobility of persons with disabilities in the Global South. Using Universal design goals like Cultural Appropriateness, Social Integration, Personalization, and Understanding, I hope to understand the needs that exist among this user group, and implement mobile solutions that can impact these needs. 
-
-I have completed the first exploratory phase of this work using ethnographic methods and interviews in Kampala, Uganda and Kigali, Rwanda. The next two phases of this work include 1) A collaboration phase in which we hope to partner with two stakeholders: a disability advocacy group and a smart transportation agency. We will do this in order to implement findings from our exploration phase. 2) A recommendation phase in which we will document specific design strategies and changes in interaction techniques and behaviors observed among users. 
-
-This work will contribute to the gap between Universal Design Goals and interaction design for the Global South. This is especially important today due to the increase in smartphone proliferation and push towards the development of smart city policies in various cities in the Global South

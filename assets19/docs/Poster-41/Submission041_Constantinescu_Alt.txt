@@ -1,7 +1,0 @@
-Towards a Standardized Grammar for Navigation Systems for Persons with Visual Impairments
-
-Figure 1: An overview of the complete system: a smartphone, backpack with the laptop inside, ZED mini camera and bone conduction headphones
-Figure 2: A participant wearing the test system and a screenshot from the routing screen of the app.
-Figure 3: Two images (cars and bycicles outdoor) showing the depth determination of the camera. Lighter tones (yellow) are closer, darker tones (dark blue) are further away.
-Figure 4: Bar Chart showing the results of the NASA-TLX score for the navigation task only, with the computer vision system and the overall score for both. The mental demand was especially high for both systems, around 7.5 and 8. The other scores are around 3-5 for both systems, no signifanct differences are found. The overall score for both systems ist around 4.8.
-Figure 5: QR Code from website

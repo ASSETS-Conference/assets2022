@@ -1,6 +1,0 @@
-Affordable rapid 3D printing technologies have become key enablers of the Maker Movement by giving individuals the ability to create physical finished products. However, existing computer-aided design (CAD) tools that allow authoring and editing of 3D models are mostly visually reliant and limit access to people with blindness and visual impairment (BVI). In my thesis, I outline three areas of research that I'm conducting towards my PhD thesis towards the goal of  bridging a gap between blind and sighted makers. 
-The broad research questions I seek to answer are: 
-1. How can complex 3D information be effectively encoded through tactile representations?
-2. What are the interaction techniques necessary to create and manipulate 3D models on tactile displays with limited resolution? and 
-3. How does access to 3D design and printing in the wild for BVI people change their self efficacy of making and their attitudes towards STEM?
-So far I have conducted interviews towards understanding accessibility challenges and preliminary studies to understand how multimodal tactile representations can be leveraged to effectively communicate 3D information. And last, I've co-designed a 3D modelling workflow that allows blind and visually impaired users to ideate and desing 3D models by programming and obtaining dynamic tactile feedback through a 2.5D shape display.

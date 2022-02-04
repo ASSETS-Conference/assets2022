@@ -1,5 +1,0 @@
-Figure 1: Top Left. Tactile Code Skimming Device hardware with labels pointing out navigation buttons and sliding tactors.
-
-Figure 2: Top Right. Sample code snippet with labels pointing out the cursor, the first line displayed on the tactile skimming device, and the last line displayed.
-
-Figure 3: Middle Right. A participant interacting with the tactile code skimming device.

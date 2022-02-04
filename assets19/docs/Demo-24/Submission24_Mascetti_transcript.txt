@@ -1,4 +1,0 @@
-Primary school educational tools, including educational applications used for improving children literacy skills, often use graphical content as a means to engage the students, which makes them inaccessible to children with visual impairments or blindness.
-To address these issues we present WordMelodies, an inclusive, cross-platform, mobile application to support children in the acquisition of basic literacy skills.
-App analysis, design and evaluation were guided by three domain experts with a participatory approach, resulting in an accessible and entertaining system.
-Limits in the cross platform engine, which cause inconsistencies in the order of UI elements encountered during sequential exploration using the screen reader, will be addressed as future work, by implementing native cross-platform components.

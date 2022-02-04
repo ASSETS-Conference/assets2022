@@ -1,7 +1,0 @@
-Dueto: Accessible, Gaze-Operated Musical Expression
-
-Using gaze as input poses challenges for interactions that require visual planning, like playing a digital instrument.
-
-We explore how multimodality can support eye-controlled musical expression by designing different multi-modal gaze interactions around a digital instrument we call Dueto.
-
-Dueto can be played with eye-gaze alone, gaze and switch, or gaze and multi-touch, where multi-touch input is carried out by a partner.

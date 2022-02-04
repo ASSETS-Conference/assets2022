@@ -1,8 +1,0 @@
-There are currently few options for seamless indoor to outdoor navigation and vice-versa for people who are blind or visually impaired.  Thus, there is a great need to provide a low-cost, easy to use, and reliable wayfinding system to serve them.
-
-This work presents the CityGuide wayfinding system and smartphone application that can be used by blind and low vision individuals to navigate their surroundings beyond what is possible with just a GPS-based system. CityGuide enables an individual to query and get turn-by-turn shortest route directions from an indoor location to an outdoor location (and vice-versa).
-
-CityGuide utilizes Bluetooth Low Energy beacons in indoor environments to understand a user's location and how they should navigate. Similarly it uses GPS in outdoor locations. The CityGuide application integrates both these technologies to provide seamless handover between technologies allowing an individual to navigate without having to switch applications.
-
-Preliminary test results with six visually impaired individuals show CityGuide to be reasonably effective and convenient with most users finding it much more useful and effective than commodity applications built for people with vision impairments. 
-

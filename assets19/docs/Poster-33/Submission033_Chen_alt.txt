@@ -1,7 +1,0 @@
-Table 1 summarizes the data log formats included in the review. The variables include 1) Time: timestamp with support for varying resolution. A timestamp is a digital record of the time of occurrence of an entry. 2) Text output: any text output associated with an entry. 3) Access: type of access device used for produced entries. For example, touchscreen, mouse, joystick, eye tracker, etc. 4) Source: type of source that produces an entry. For example, word list, pages, commands, language representation methods etc. 5) Keyboard functions: type of actions that users performed such as enter, select, delete and etc. 6) Coordination: coordinate position of an entry. 7) Position label: label of the position. 8) Page label: name of the page. 
-
-Figure 1 shows log file examples of two formats we worked on in this project. The examples show those different log formats. 
-
-Figure 2 shows the proposed analysis interface with the option to enter inputs for different fields (such as File ID, User, Date and Task) if statistics pertaining to specific conditions need to be returned. By default, no filters are used on the data, and results are shown for all records in the database. 
-
-Figure 3 shows an example of the displayed analysis results which are returned as statistics (number of words, number of unique words, communication rate etc.) both at an aggregated level and per file, given a certain set of filters.

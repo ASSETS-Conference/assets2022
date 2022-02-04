@@ -1,6 +1,0 @@
-Hello this is Jared Duval, a PHD student at University of California Santa Cruz in the computational media department advised by Sri Kurniawan and Katherine Isbister. My research is called approaches for creating therapy games. Therapy games have the potential to offer people with disabilities a cost effective, personalized, data driven, and connected context for otherwise tedious and repetitive therapy. The challenge is creating a motivating experience that translates into improved health outcomes. I explore creating 3 therapy games for various populations to identify best practices, unique insights, and suggestions for future therapy game creators. The first game is called SpokeIt, at a speech therapy game for children with cleft speech.
-
- The second game is called CirKus a physical rehabilitation game for children with sensory based motor disorder and the third game is called spell casters a multiplayer physical rehabilitation game for stroke survivors using virtual reality reality. All three games are on spectrums.
-
-To identify different approaches taken for example some approaches are game first or therapy first, game or play, single player or multiplayer, symmetrical or asymmetrical, collaborative or competitive, and simultaneous or sequential.
-

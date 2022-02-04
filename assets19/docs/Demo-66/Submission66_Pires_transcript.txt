@@ -1,5 +1,0 @@
-Figure 1 represents our device iCETA. This figure shows a PC with a mirror in the camera to detect the blocks when located above the keyboard, in the "working area". Blocks ranged from 1 to 5 are located in a "storage box" next to the PC and headphones are connected to the PC so the student could have auditory feedback. Children used the blocks to solve additive composition tasks. 
-
-Figure 2 shows a boy with low vision sitting on a chair while playing with the blocks to solve the additive composition tasks by using the system iCETA. The iCETA setup is located on the table.
-
-Figure 3 shows a blind girl sitting on a chair while playing with the blocks to solve the additive composition tasks by using the system iCETA. The iCETA setup is located on the table.

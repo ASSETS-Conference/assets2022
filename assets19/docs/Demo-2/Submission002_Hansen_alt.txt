@@ -1,3 +1,0 @@
-The poster has a rainbowish background to attrackt attention and a logo for Oslo Metropolitan University, the ACM and a QR-code with a link to the online tool (also available from the paper).
-
-The poster has one illustration showing a colour wheel wtith to complementary colours (cyan and red) and shows that colour contrast adjustments are performed by adjusting the intensity and not the hue of the colour which is kept fixed. 

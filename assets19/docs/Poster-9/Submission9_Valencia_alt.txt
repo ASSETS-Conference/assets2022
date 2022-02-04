@@ -1,8 +1,0 @@
-Alt text description Dueto Poster
-
-
-The poster shows Dueto’s user interface. On the upper part, Dueto has the following buttons in order from left to right:  settings for modality selection, scroll to navigate the piano keyboard,  and two buttons to control the type of gaze point visualization called “show cursor” and “show vector button”. Below this row of buttons, we find Dueto’s scrollable piano keyboard. At the bottom  of the interface we find the harmony ladder as well as the record, play, and repeat buttons that enable the looper, and the Chords and key selection buttons that enable turning chords on and changing the root key for the harmony ladder.
-
-In the middle of the poster, there are 3 figures each representing the 3 modalities that Dueto allows. For the gaze only modality there is an image of the harmony ladder. For the gaze + switch there is an image of the Xbox adaptive controller. Lastly for the gaze + partner mode there is an image showing a drawing of two individuals facing each other and a musical note between them.
-
-Eye Gesture Shapes Diagram shows the shape of the eye gestures needed to create minor and major triad chords. The eye gestures follow a triangular pattern with 3 fixation points. The first step is to look at the root key and then look up and down to complete a mountain shape gesture to play a minor chord or look down and then up to complete a V-shape gesture that will play a major chord. The major chord example is labelled with the notes C-E-G.

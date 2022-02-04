@@ -1,5 +1,0 @@
-Jido: A Conversational Tactile Map for visually impaired People. Jido is a tactile map that aims at improving the orientation and mobility of visually impaired people through a touch aware tactile map and a conversational agent in a mobile device. Users can verbally interact with the agent and request information on points of interest, receive step-by-step instructions to facilitate navigation, and get feedback when using the tactile map. 
-
-Through a feasibility study participants stressed the importance of being able to get guidance and confirmation when exploring and looking for point of interest on the map. Some participants expressed that receiving audio feedback and confirmation boosted their confidence of understanding the map layout and reaching the point of interest on their own. 
-
-This work presents a preliminary study we would use the feedback received to improve the usability and make it available to the public. 
