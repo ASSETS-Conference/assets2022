@@ -109,7 +109,8 @@
     }
 
     #navbar_transparent li {
-        margin-bottom: 3px;
+        margin-bottom: 2px;
+        padding: 3px;
     }
 }
 
@@ -131,4 +132,5 @@
     width: auto;
     left: auto;
     overflow: auto;
+    background-color: white;
 }

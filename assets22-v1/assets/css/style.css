@@ -69,6 +69,10 @@
     max-width: 300px;
 }
 
+a {
+  color: #2F68BD;
+}
+
 :root {
     --bs-gray-100        : #f8f9fa;
     --bs-gray-200        : #e9ecef;
@@ -135,7 +139,7 @@
     --bs-body-font-size  : 1rem;
     --bs-body-font-weight: 500;
     --bs-body-line-height: 1.7;
-    --bs-body-color      : #60697b;
+    --bs-body-color      : #444D5F;
     --bs-body-bg         : #fefefe;
 }
 
