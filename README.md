@@ -6,6 +6,6 @@ ASSETS 2022 Website, which is currently hosted [here](https://assets-conference.
 - Update the text on the Mentoring page
 - Add a visual of multilingual versions of "accessibility" to the CFP page
 
+## Running Locally
 
-
-
+Use the command 'http-server -c-1'
