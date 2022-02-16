@@ -12,3 +12,5 @@ Install node.js from [https://nodejs.org/en/download/](https://nodejs.org/en/dow
 In command line, 
 * `cd` into the folder that contains `index.html` (e.g. `cd ~/Documents/assets2022/assets22-v1/`) 
 * run `http-server -c-1`
+
+Open [http://localhost:8080/](http://localhost:8080/) in your browswer. 
