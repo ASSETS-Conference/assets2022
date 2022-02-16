@@ -10,5 +10,5 @@ The ASSETS2022 website was built on the [Sandbox Bootstrap 5 template](https://t
 Install node.js from [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
 
 In command line, 
-* `cd` into the folder that contains `index.html` (e.g. `cd Documents/assets2022/assets22-v1/`) 
+* `cd` into the folder that contains `index.html` (e.g. `cd ~/Documents/assets2022/assets22-v1/`) 
 * run `http-server -c-1`
