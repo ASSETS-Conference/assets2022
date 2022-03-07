@@ -176,6 +176,22 @@ a {
     z-index           : 0;
 }
 
+#top-jumbotron-conduct{
+    background        : url('../img/large/athens-sponsor-bg-large.jpeg') center center no-repeat;
+    /*background      : no-repeat center center;*/
+    background-size   : cover;
+    position          : relative;
+    z-index           : 0;
+}
+
+#top-jumbotron-sponsor{
+    background        : url('../img/large/athens-conduct-bg-large.jpeg') center center no-repeat;
+    /*background      : no-repeat center center;*/
+    background-size   : cover;
+    position          : relative;
+    z-index           : 0;
+}
+
 #top-jumbotron-cfp {
     background        : url('../img/large/athens-cfp-bg-large.jpeg') center center no-repeat;
     /*background      : no-repeat center center;*/
