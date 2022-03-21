@@ -23,13 +23,14 @@
     <link href="./assets/css/navbar.css" rel="stylesheet">
     <link href="./assets/css/committees.css" rel="stylesheet">
 
-    <!-- TOCBot CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.css" rel="stylesheet">
+    <!-- Bootstrap TOC -->
+    <link href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css" rel="stylesheet">/>
 
     <!-- Javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </head>
 
 
@@ -61,10 +62,16 @@
         </div>
         <!-- Jumbotron -->
  
+       
         <!-- Content -->
-
-        <nav class="toc toc-right js-toc relative z-1 transition--300 absolute pa4 pt5"></nav>
-        <div class="js-toc-content">
+        <div data-spy="scroll" data-toggle="#toc">
+            <div class="containernope">
+            <div class="row">
+                <div class="col-sm-3">
+                    <!-- Bootstrap TOC -->
+                    <nav id="toc" data-toggle="toc"></nav>
+                </div>
+                <div class="col-sm-6">
             <section class="callout_section_2 p-3">
                 <div class="container">
                 <div class="row justify-content-md-center">
@@ -242,6 +249,9 @@
                 </div>
                 </div>
             </section>
+            </div>
+            <div class="col-sm-3"></div>
+            </div>
         </div>
         
         <div id="footer"></div>
@@ -255,20 +265,7 @@
         <!-- Content -->
     </main>
     <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- TOCBot Javascript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.min.js"></script>
-    <script type="text/javascript">
-        tocbot.init({
-        // Where to render the table of contents.
-        tocSelector: '.js-toc',
-        // Where to grab the headings to build the table of contents.
-        contentSelector: '.js-toc-content',
-        // Which headings to grab inside of the contentSelector element.
-        headingSelector: 'h1, h2, h3',
-        // For headings inside relative or absolute positioned containers within content.
-        hasInnerContainers: true,
-        });
-    </script>
+    <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
 </body>
 
 </html>
