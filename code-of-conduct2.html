@@ -93,6 +93,8 @@
                     position: absolute;
                     margin-top: 10px;
                     margin-left: 15px;
+
+                    display: none;
                 }
                 .toc-div p {
                     padding-left: 20px;
@@ -101,18 +103,34 @@
                 @media (max-width: 1250px) {
                     .toc-div {
                         display: none;
-                        /* position: relative; */
+                        /* position: relative; TODO */
                     }
                 }
             </style>
 
             <script>
+                function place_sidebar() {
+                    var target = $(".col-lg-8").first().offset().left - 275;
+                    if (target < 0) {
+                        $(".toc-div").css({
+                            "display": "none"
+                        });
+                    }
+                    else {
+                        $(".toc-div").css({
+                            "display": "block"
+                        });
+                    }
+                    $(".toc-div").css({
+                        "left": target + "px"
+                    });
+                }
+
                 $(function () {
                     var offsetPixels = 277; // navbar height
-                    // Todo: 
+                    place_sidebar();
+
                     $(window).scroll(function () {
-                        console.log("test")
-                        console.log($(window).scrollTop())
                         if ($(window).scrollTop() > offsetPixels) {
                             $(".toc-div").css({
                                 "position": "fixed",
@@ -124,6 +142,9 @@
                                 "top": "277px"
                             });
                         }
+                    });
+                    $(window).on('resize', function(){
+                        place_sidebar();
                     });
                 });
             </script>
