@@ -83,78 +83,78 @@
 
       <style>
         .toc-div {
-            background-color: white;
-            border-radius: 25px;
-            border: 2px solid #DCDAE9;
-            width: 225px;
-            padding: 10px;
+          background-color: white;
+          border-radius: 25px;
+          border: 2px solid #DCDAE9;
+          width: 225px;
+          padding: 10px;
 
-            position: absolute;
-            margin-top: 10px;
-            margin-left: 15px;
+          position: absolute;
+          margin-top: 10px;
+          margin-left: 15px;
 
-            display: none;
+          display: none;
         }
 
         .toc-div p {
-            padding-left: 20px;
-            color: #65446D;
+          padding-left: 20px;
+          color: #65446D;
         }
 
         @media (max-width: 1250px) {
-            .toc-div {
-                display: none;
-                /* position: relative; TODO */
-            }
+          .toc-div {
+            display: none;
+            /* position: relative; TODO */
+          }
         }
-    </style>
+      </style>
 
-    <script>
+      <script>
         function place_sidebar() {
-            var target = $(".col-lg-8").first().offset().left - 275;
-            if (target < 0) {
-                $(".toc-div").css({
-                    "display": "none"
-                });
-            }
-            else {
-                $(".toc-div").css({
-                    "display": "block"
-                });
-            }
+          var target = $(".col-lg-8").first().offset().left - 275;
+          if (target < 0) {
             $(".toc-div").css({
-                "left": target + "px"
+              "display": "none"
             });
+          }
+          else {
+            $(".toc-div").css({
+              "display": "block"
+            });
+          }
+          $(".toc-div").css({
+            "left": target + "px"
+          });
         }
 
         $(function () {
-            var offsetPixels = 277; // navbar height
+          var offsetPixels = 277; // navbar height
+          place_sidebar();
+
+          $(window).scroll(function () {
+            if ($(window).scrollTop() > offsetPixels) {
+              $(".toc-div").css({
+                "position": "fixed",
+                "top": "0px"
+              });
+            } else {
+              $(".toc-div").css({
+                "position": "absolute",
+                "top": "277px"
+              });
+            }
+          });
+          $(window).on('resize', function () {
             place_sidebar();
-
-            $(window).scroll(function () {
-                if ($(window).scrollTop() > offsetPixels) {
-                    $(".toc-div").css({
-                        "position": "fixed",
-                        "top": "0px"
-                    });
-                } else {
-                    $(".toc-div").css({
-                        "position": "absolute",
-                        "top": "277px"
-                    });
-                }
-            });
-            $(window).on('resize', function () {
-                place_sidebar();
-            });
+          });
         });
-    </script>
+      </script>
 
-    <div class="toc-div" aria-hidden="true">
+      <div class="toc-div" aria-hidden="true">
         <!-- Bootstrap TOC -->
         <p class="h5" tabindex="0">On This Page</p>
         <nav id="toc" data-toggle="toc" class="bd-links sticky-top"></nav>
-    </div>
+      </div>
 
       <!-- Content -->
 
@@ -182,13 +182,15 @@
             <div class="col-lg-8 mt-4">
               <h3 class="text-center">Conference Location</h3>
               <p>ASSETS 2022 will be held at the newly renovated <a href="https://www.titania.gr/">Hotel Titania</a> in
-                the heart of Athens, Greece between Syntagma and Omonia squares and Metro stations Panepistimio & Omonia.
-              To get to the hotel, you can take the Metro, which provides accessible transit from the airport.
+                the heart of Athens, Greece between Syntagma and Omonia squares and Metro stations Panepistimio &
+                Omonia.
+                To get to the hotel, you can take the Metro, which provides accessible transit from the airport.
                 See our <a href="#travel">travel information below</a>.
               </p>
               <p>
-                To protect the health and safety of our community, we require that all on-site attendees have proof of 
-                full vaccination or a legitimate medical or religious exemption. Additionally, we will be requiring masks at all conference events. 
+                To protect the health and safety of our community, we require that all on-site attendees have proof of
+                full vaccination or a legitimate medical or religious exemption. Additionally, we will be requiring
+                masks at all conference events.
                 We strongly encourage a well-fitting, high filtration mask such as a N95, KF94, FFP2, or KN95 mask.
                 See our <a href="#covid-safety">COVID Information and Safety Plan</a> section below.
               </p>
@@ -208,13 +210,14 @@
               <h3 class="text-center">Accommodations</h3>
               <p>
                 Hotel Titania offers Standard Rooms, Superior Rooms, Executive Rooms, Deluxe Rooms, and Suites.
-                As part of the conference, we have negotiated <strong>Superior Room rates for 150€ per night</strong>, which includes breakfast
-                at the hotel's designated areas as well as local taxes and VAT. 
+                As part of the conference, we have negotiated <strong>Superior Room rates for 150€ per night</strong>,
+                which includes breakfast
+                at the hotel's designated areas as well as local taxes and VAT.
               </p>
 
               <p>Recall that lunch is provided as part of your conference
                 registration as well as dinners on Mon, Oct 24th and Tues, Oct 25th.</p>
-              
+
               <p>
                 <img src="assets/img/HotelTitaniaSuperiorRooms.jpg" style="max-width: 100%;"
                   alt="A small gallery of Hotel Titania room photos for the 'Superior Room' option." />
@@ -222,25 +225,42 @@
 
               <h4>Room Reservations</h4>
               <p>
-                To book a room, please use this <a href="https://titania.reserve-online.net/?checkin=2022-10-22&rooms=1&nights=1&adults=1&src=11&bkcode=ASSETS">
+                To book a room, please use this <a
+                  href="https://titania.reserve-online.net/?checkin=2022-10-22&rooms=1&nights=1&adults=1&src=11&bkcode=ASSETS">
                   special booking link</a> created specifically for ASSETS'22 by Hotel Titania.
-                <ul> 
-                  <li>You must book by <strong>Oct 1, 2022</strong> to receive the guaranteed price and for us to meet our
+              <ul>
+                <li>You must book by <strong>Oct 1, 2022</strong> to receive the guaranteed price and for us to meet our
                   contractual obligations to the hotel.</li>
-                  <li>If you find a lower rate than <strong>150€</strong> online, please let us know. All lower rates will be honored by the hotel and
-                    counted towards fulfilling our room block commitments.</li>
-                  <li>You can receive the group rate (<strong>150€/night</strong>) for three days before/after the conference, subject upon availability</li>
-                </ul>
+                <li>If you find a lower rate than <strong>150€</strong> online, please let us know. All lower rates will
+                  be honored by the hotel and
+                  counted towards fulfilling our room block commitments.</li>
+                <li>You can receive the group rate (<strong>150€/night</strong>) for three days before/after the
+                  conference, subject upon availability</li>
+              </ul>
               </p>
-             
+
               <h4>Accessible Rooms</h4>
-              <p>The hotel features 15 accessible rooms on the 4th, 5th, and 6th floors with wheelchair-accessible bathrooms.
-              If you require an accessible room, please select the checkbox "Room for people with disability needs"
-              when booking and add in additional information in the "Special requests/remarks" text field. </p>
-              
-              <p>Please also 
-              do not hesitate to reach out to the <a href="mailto:access-assets22@acm.org">Accessibility Chairs</a> for questions
-              or additional help.</p>
+              <p>The hotel features 15 accessible rooms on the 4th, 5th, and 6th floors with wheelchair-accessible
+                bathrooms.</p>
+
+              <ul>
+                <li>If you require an accessible room, please select the checkbox "Room for people with disability
+                  needs"
+                  when booking and add in additional information in the "Special requests/remarks" text field.
+                </li>
+                <li>
+                  For the wheelchair accessible bathrooms, there is a roll-in shower, hand-held shower heads and grab
+                  bars.
+                </li>
+                <li>
+                  Unfortunately, the hotel alarm system does not have a visual notification system.
+                </li>
+              </ul>
+
+              <p>Please also
+                do not hesitate to reach out to the <a href="mailto:access-assets22@acm.org">Accessibility Chairs</a>
+                for questions
+                or additional help.</p>
             </div>
           </div>
         </div>
@@ -253,25 +273,30 @@
               <h3 class="text-center" id="travel">Travel</h3>
               <p></p>
               <h4>From The Airport to Hotel Titania</h4>
-              <p>The easiest way to get to Hotel Titania is from the Athens Metro (train), which takes roughly an hour. Here's the link
-                to the <a href="https://goo.gl/maps/vYivcouE6NScTip49">airport-to-hotel route on Google Maps</a> (and the screenshot below).
+              <p>The easiest way to get to Hotel Titania is from the Athens Metro (train), which takes roughly an hour.
+                Here's the link
+                to the <a href="https://goo.gl/maps/vYivcouE6NScTip49">airport-to-hotel route on Google Maps</a> (and
+                the screenshot below).
               </p>
-              
+
               <p>
                 <img src="assets/img/AthensAirportToHotelTitania_Zoom3.jpg" style="max-width: 100%;"
                   alt="A map of the metro route from the airport to Hotel Titania." />
               </p>
               <p>
                 Directions:
-                <ul>
-                  <li>From the airport, take the Blue Line (Line 3 - direction ‘Egaleo’) and get off at Syntagma station.</li>
-                  <li>From Syntagma station you can either take:
-                    <ul>
-                      <li>The Red Metro Line (Line 2 - direction ‘Aghios Antonios’) and get off at Panepistimiou station (Exit: National Library).
-                          From Panepistimiou station, walk/roll to Titania Hotel</li>
-                      <li>Walk/roll from Syntagma Square to Titania Hotel. It is approximately 1km (<a href="https://goo.gl/maps/zghKwjqKLXy5fFNRA">Google Maps link</a>)</li>
+              <ul>
+                <li>From the airport, take the Blue Line (Line 3 - direction ‘Egaleo’) and get off at Syntagma station.
+                </li>
+                <li>From Syntagma station you can either take:
+                  <ul>
+                    <li>The Red Metro Line (Line 2 - direction ‘Aghios Antonios’) and get off at Panepistimiou station
+                      (Exit: National Library).
+                      From Panepistimiou station, walk/roll to Titania Hotel</li>
+                    <li>Walk/roll from Syntagma Square to Titania Hotel. It is approximately 1km (<a
+                        href="https://goo.gl/maps/zghKwjqKLXy5fFNRA">Google Maps link</a>)</li>
                   </ul>
-                </ul>
+              </ul>
               </p>
             </div>
           </div>
@@ -326,27 +351,37 @@
               </ul>
               <p>We will continuously monitor COVID information in Athens and international health recommendations. The
                 above list is subject to change.</p>
-              </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-	<section class="callout_section_1 p-3">
+      <section class="callout_section_1 p-3">
         <div class="container">
           <div class="row justify-content-md-center">
             <div class="col-lg-8 mt-4">
               <h3 class="text-center" id="travel">Visa Support Letter</h3>
-                <p>ACM is able to provide <a href="https://www.acm.org/special-interest-groups/volunteer-resources/conference-planning/conference-registration#Visa">visa support letters</a> to attendees as well as authors with accepted papers, posters, or members of the conference committee.</p>
-                <p>For visa support letters, refer all requests to <a href="mailto:supportletters@acm.org">supportletters@acm.org</a>. Please allow up to 10 business days to receive a letter. All requests are handled in the order they are received. The information below should be included with the request:</p>
-                <ul>
-                	<li>Your name as it appears on your passport</li>
-                	<li>Your current postal mailing address</li>
-                	<li>The name of the conference you are registering for. Only accepted authors may request a visa support letter prior to registering for the conference.</li>
-                	<li>Your registration confirmation number</li>
-                	<li>If you have any papers accepted for the conference, please provide the title and indicate whether you are the “sole author” or a “co-author”.</li>
-                	<li>Authors may indicate their paper title. If no paper, speakers can provide the title of their presentation.</li>
-                </ul>
-                <p>ACM does not provide letters for transport of vendor or presenter equipment. ACM suggests shipping the materials insured to the conference facility.</p>
+              <p>ACM is able to provide <a
+                  href="https://www.acm.org/special-interest-groups/volunteer-resources/conference-planning/conference-registration#Visa">visa
+                  support letters</a> to attendees as well as authors with accepted papers, posters, or members of the
+                conference committee.</p>
+              <p>For visa support letters, refer all requests to <a
+                  href="mailto:supportletters@acm.org">supportletters@acm.org</a>. Please allow up to 10 business days
+                to receive a letter. All requests are handled in the order they are received. The information below
+                should be included with the request:</p>
+              <ul>
+                <li>Your name as it appears on your passport</li>
+                <li>Your current postal mailing address</li>
+                <li>The name of the conference you are registering for. Only accepted authors may request a visa support
+                  letter prior to registering for the conference.</li>
+                <li>Your registration confirmation number</li>
+                <li>If you have any papers accepted for the conference, please provide the title and indicate whether
+                  you are the “sole author” or a “co-author”.</li>
+                <li>Authors may indicate their paper title. If no paper, speakers can provide the title of their
+                  presentation.</li>
+              </ul>
+              <p>ACM does not provide letters for transport of vendor or presenter equipment. ACM suggests shipping the
+                materials insured to the conference facility.</p>
               </p>
             </div>
           </div>
