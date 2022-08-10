@@ -41,6 +41,9 @@
   <link href="./assets/css/navbar.css" rel="stylesheet">
   <link href="./assets/css/committees.css" rel="stylesheet">
 
+  <!-- Bootstrap TOC -->
+  <link href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css" rel="stylesheet">
+
   <!-- Javascript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
@@ -50,7 +53,7 @@
 </head>
 
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#toc">
   <main>
 
     <!--Navigation bar-->
@@ -77,6 +80,81 @@
         </div>
       </div>
       <!-- Jumbotron -->
+
+      <style>
+        .toc-div {
+            background-color: white;
+            border-radius: 25px;
+            border: 2px solid #DCDAE9;
+            width: 225px;
+            padding: 10px;
+
+            position: absolute;
+            margin-top: 10px;
+            margin-left: 15px;
+
+            display: none;
+        }
+
+        .toc-div p {
+            padding-left: 20px;
+            color: #65446D;
+        }
+
+        @media (max-width: 1250px) {
+            .toc-div {
+                display: none;
+                /* position: relative; TODO */
+            }
+        }
+    </style>
+
+    <script>
+        function place_sidebar() {
+            var target = $(".col-lg-8").first().offset().left - 275;
+            if (target < 0) {
+                $(".toc-div").css({
+                    "display": "none"
+                });
+            }
+            else {
+                $(".toc-div").css({
+                    "display": "block"
+                });
+            }
+            $(".toc-div").css({
+                "left": target + "px"
+            });
+        }
+
+        $(function () {
+            var offsetPixels = 277; // navbar height
+            place_sidebar();
+
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > offsetPixels) {
+                    $(".toc-div").css({
+                        "position": "fixed",
+                        "top": "0px"
+                    });
+                } else {
+                    $(".toc-div").css({
+                        "position": "absolute",
+                        "top": "277px"
+                    });
+                }
+            });
+            $(window).on('resize', function () {
+                place_sidebar();
+            });
+        });
+    </script>
+
+    <div class="toc-div" aria-hidden="true">
+        <!-- Bootstrap TOC -->
+        <p class="h5" tabindex="0">On This Page</p>
+        <nav id="toc" data-toggle="toc" class="bd-links sticky-top"></nav>
+    </div>
 
       <!-- Content -->
       <section class="callout_section_1 p-3">
@@ -292,6 +370,7 @@
     <!-- Content -->
   </main>
   <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
 </body>
 
 </html>
