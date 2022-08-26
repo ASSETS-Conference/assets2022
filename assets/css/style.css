@@ -153,7 +153,7 @@ a {
 /* JUMBOTRON IMAGE BACKGROUND SECTION ---------------------------------------------------------------------------- */
 
 #top-jumbotron {
-    background        : url('../img/large/athens-royalty-free-1-large.jpeg') no-repeat center;
+    background        : url('../img/large/athens-royalty-free-1-large.jpeg') center center no-repeat;
     /*background      : no-repeat center center;*/
     background-size   : cover;
     position          : relative;
@@ -211,9 +211,17 @@ a {
     z-index           : 0;
 }
 
-.image-wrapper:not(.mobile) {
+@media (min-width: 768px) {
+  /* for desktop ony */
+  .image-wrapper {
     background-attachment: fixed !important;
+  }
 }
+
+/* 
+.image-wrapper:not(.mobile) {
+    
+} */
 
 .image-wrapper.bg-overlay:before {
     content : "";
@@ -243,8 +251,10 @@ a {
 
 /* CALLOUT SECTION ---------------------------------------------------------------------------- */
 
+/*
 .callout_section_0 {
-}
+
+} */
 
 .callout_section_1 {
     background: #f5f5fc
