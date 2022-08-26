@@ -158,6 +158,9 @@ a {
     background-size   : cover;
     position          : relative;
     z-index           : 0;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
 }
 
 #top-jumbotron-small {
