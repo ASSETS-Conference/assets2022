@@ -13,17 +13,6 @@
 }
 
 /* BOTH NAVBARS */
-@media (max-width: 992px) {
-    #navbar_transparent{
-        background: rgba(0,0,0,0.8);
-    }
-
-    #menu_button{
-        background: transparent;
-    }
-}
-
-/* BOTH NAVBARS */
 #navbar_transparent ul {
     list-style-type: none;
 }
@@ -33,39 +22,23 @@
     margin: 10px;
 }
 
-.nav_item {
-    padding: 10px;
-}
-
-.nav_item > a {
-    color: white;
-}
-
-.nav_item > a:not([href]) {
-    color: white;
-}
-
-.nav_item > a:not([href]):hover {
+.nav_item>a {
     color: white;
 }
 
 /* MOBILE VERSION */
 #menu_items {
     display: none;
-    background: rgba(0,0,0,0);
+    background-color: #343f52;
     transition: .5s;
-    padding: 10px;
 }
 
 .dropdown_menu {
     display: none;
 }
+
 .dropdown_menu a {
     color: white;
-}
-
-#navbar_transparent li {
-    margin-bottom: 10px;
 }
 
 /* DESKTOP VERSION */
@@ -85,7 +58,7 @@
         margin: 0;
         margin-top: 5px;
         font-size: 0.85rem;
-        color: #38183c;
+        color: #343f52;
         text-align: left;
         list-style: none;
         background-color: white;
@@ -96,40 +69,6 @@
     }
 
     .dropdown_menu a {
-        color: #38183c;
+        color: #343f52;
     }
-
-    .nav_item:hover {
-        text-decoration: underline;
-    }
-
-    .dropdown_menu li:hover {
-        text-decoration: underline;
-    }
-
-    #navbar_transparent li {
-        margin-bottom: 2px;
-        padding: 3px;
-    }
-}
-
-/*----- Styles for skip navigation link -----*/
-#skip_nav a
-{
-    position:absolute;
-    left:-10000px;
-    top:auto;
-    width:1px;
-    height:1px;
-    overflow: hidden;
-    z-index: 999;
-}
-
-#skip_nav a:focus
-{
-    height:auto;
-    width: auto;
-    left: auto;
-    overflow: auto;
-    background-color: white;
 }

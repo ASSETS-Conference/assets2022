@@ -77,75 +77,6 @@
         </div>
         <!-- Jumbotron -->
 
-        <style>
-            .toc-div {
-                background-color: white;
-                border-radius: 25px;
-                border: 2px solid #DCDAE9;
-                width: 225px;
-                padding: 10px;
-
-                position: absolute;
-                margin-top: 10px;
-                margin-left: 15px;
-
-                display: none;
-            }
-
-            .toc-div p {
-                padding-left: 20px;
-                color: #65446D;
-            }
-
-            @media (max-width: 1250px) {
-                .toc-div {
-                    display: none;
-                    /* position: relative; TODO */
-                }
-            }
-        </style>
-
-        <script>
-            function place_sidebar() {
-                var target = $(".col-lg-8").first().offset().left - 275;
-                if (target < 0) {
-                    $(".toc-div").css({
-                        "display": "none"
-                    });
-                }
-                else {
-                    $(".toc-div").css({
-                        "display": "block"
-                    });
-                }
-                $(".toc-div").css({
-                    "left": target + "px"
-                });
-            }
-
-            $(function () {
-                var offsetPixels = 277; // navbar height
-                place_sidebar();
-
-                $(window).scroll(function () {
-                    if ($(window).scrollTop() > offsetPixels) {
-                        $(".toc-div").css({
-                            "position": "fixed",
-                            "top": "0px"
-                        });
-                    } else {
-                        $(".toc-div").css({
-                            "position": "absolute",
-                            "top": "277px"
-                        });
-                    }
-                });
-                $(window).on('resize', function () {
-                    place_sidebar();
-                });
-            });
-        </script>
-
         <div class="toc-div" aria-hidden="true">
             <!-- Bootstrap TOC -->
             <p class="h5" tabindex="0">On This Page</p>
@@ -248,6 +179,9 @@
     </main>
     <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
+
+    <!-- Referencing the JS file for SIDEBAR -->
+    <script src="assets/js/sidebar.js"></script>
 </body>
 
 </html>

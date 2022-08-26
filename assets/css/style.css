@@ -321,3 +321,31 @@ table td {
   vertical-align: top;
   padding-bottom: 15px;
 }
+
+/* SIDEBAR ---------------------------------------------------------------------------- */
+
+.toc-div {
+  background-color: white;
+  border-radius   : 25px;
+  border          : 2px solid #DCDAE9;
+  width           : 225px;
+  padding         : 10px;
+
+  position   : absolute;
+  margin-top : 10px;
+  margin-left: 15px;
+
+  display: none;
+}
+
+.toc-div p {
+  padding-left: 20px;
+  color       : #65446D;
+}
+
+@media (max-width: 1250px) {
+  .toc-div {
+    display    : none;
+    /* position: relative; TODO */
+  }
+}

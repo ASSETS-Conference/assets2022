@@ -1,3 +1,5 @@
+// This file controls the top navbar
+
 $( document ).ready(function() {
     
     var timeout = 600; //500
@@ -177,5 +179,4 @@ $( document ).ready(function() {
             }
         }
     });
-
 });
