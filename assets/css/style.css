@@ -158,6 +158,9 @@ a {
     background-size   : cover;
     position          : relative;
     z-index           : 0;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
 }
 
 #top-jumbotron-small {
@@ -208,9 +211,17 @@ a {
     z-index           : 0;
 }
 
-.image-wrapper:not(.mobile) {
+@media (min-width: 768px) {
+  /* for desktop ony */
+  .image-wrapper {
     background-attachment: fixed !important;
+  }
 }
+
+/* 
+.image-wrapper:not(.mobile) {
+    
+} */
 
 .image-wrapper.bg-overlay:before {
     content : "";
@@ -240,8 +251,10 @@ a {
 
 /* CALLOUT SECTION ---------------------------------------------------------------------------- */
 
+/*
 .callout_section_0 {
-}
+
+} */
 
 .callout_section_1 {
     background: #f5f5fc
@@ -320,4 +333,32 @@ table thead {
 table td {
   vertical-align: top;
   padding-bottom: 15px;
+}
+
+/* SIDEBAR ---------------------------------------------------------------------------- */
+
+.toc-div {
+  background-color: white;
+  border-radius   : 25px;
+  border          : 2px solid #DCDAE9;
+  width           : 225px;
+  padding         : 10px;
+
+  position   : absolute;
+  margin-top : 10px;
+  margin-left: 15px;
+
+  display: none;
+}
+
+.toc-div p {
+  padding-left: 20px;
+  color       : #65446D;
+}
+
+@media (max-width: 1250px) {
+  .toc-div {
+    display    : none;
+    /* position: relative; TODO */
+  }
 }

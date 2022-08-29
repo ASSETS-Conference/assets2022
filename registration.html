@@ -81,73 +81,8 @@
       </div>
       <!-- Jumbotron -->
 
-      <style>
-        .toc-div {
-            background-color: white;
-            border-radius: 25px;
-            border: 2px solid #DCDAE9;
-            width: 225px;
-            padding: 10px;
-
-            position: absolute;
-            margin-top: 10px;
-            margin-left: 15px;
-
-            display: none;
-        }
-
-        .toc-div p {
-            padding-left: 20px;
-            color: #65446D;
-        }
-
-        @media (max-width: 1250px) {
-            .toc-div {
-                display: none;
-                /* position: relative; TODO */
-            }
-        }
-    </style>
-
     <script>
-        function place_sidebar() {
-            var target = $(".col-lg-8").first().offset().left - 275;
-            if (target < 0) {
-                $(".toc-div").css({
-                    "display": "none"
-                });
-            }
-            else {
-                $(".toc-div").css({
-                    "display": "block"
-                });
-            }
-            $(".toc-div").css({
-                "left": target + "px"
-            });
-        }
 
-        $(function () {
-            var offsetPixels = 277; // navbar height
-            place_sidebar();
-
-            $(window).scroll(function () {
-                if ($(window).scrollTop() > offsetPixels) {
-                    $(".toc-div").css({
-                        "position": "fixed",
-                        "top": "0px"
-                    });
-                } else {
-                    $(".toc-div").css({
-                        "position": "absolute",
-                        "top": "277px"
-                    });
-                }
-            });
-            $(window).on('resize', function () {
-                place_sidebar();
-            });
-        });
     </script>
 
     <div class="toc-div" aria-hidden="true">
@@ -162,8 +97,10 @@
           <div class="row justify-content-md-center">
             <div class="main-callout col-lg-8 mt-4">
               <div class="container">
-                <p><strong>Registration is now open!</strong> Register for the ASSETS'22 conference and workshops 
-                  on the <a href="https://cvent.me/lEDdoB">CVENT Registration Site.</a> We can't wait to have you join us at ASSETS'22!</p>
+                <p><strong>Early-bird registration extended to Sept 1st!</strong> Register on the <a href="https://cvent.me/lEDdoB">CVENT 
+                  Registration Site.</a> We can't wait to have you join us at ASSETS'22!</p>
+                <!-- <p><strong>Registration is now open!</strong> Register for the ASSETS'22 conference and workshops 
+                  on the <a href="https://cvent.me/lEDdoB">CVENT Registration Site.</a> We can't wait to have you join us at ASSETS'22!</p> -->
               </div>
             </div>
           </div>
@@ -208,13 +145,15 @@
                 will be similar to previous in-person ASSETS conferences such as
                 <a href="https://assets18.sigaccess.org/">ASSETS'18 in Galway, Ireland</a> or <a
                   href="https://assets19.sigaccess.org/">ASSETS'19 in Pittsburgh, PA</a>.
-                There will be in-person talks, poster and demo sessions, and two
-                evening social events: one at <a href="https://www.titania.gr/">Hotel Titania</a> and 
-                one at the <a href="https://www.theacropolismuseum.gr/en">Acropolis Museum and Cafe</a>. 
-                Lunches will be provided Mon, Oct 24 - Wed, Oct 26. 
-                Similar to our virtual attendees, you will also have access to all pre-recorded,
-                captioned
-                content and our Discord server for text-based chats.
+                  <ul>
+                  <li>
+                There will be in-person talks, poster and demo sessions</li>
+                <li>Two evening social events with food: one at <a href="https://www.titania.gr/">Hotel Titania</a> and 
+                one at the <a href="https://www.theacropolismuseum.gr/en">Acropolis Museum and Cafe</a></li> 
+                <li>Lunches will be provided Mon, Oct 24 - Wed, Oct 26. </li>
+                <li>Similar to our virtual attendees, you will also have access to all pre-recorded,
+                captioned content and our Discord server for text-based chats.</li>
+              </ul>
               </p>
               <p>At least one author of accepted technical papers, posters and demonstrations, or other artifact-based
                 tracks is expected to travel to Athens to present their work. If traveling to ASSETS is inaccessible to
@@ -226,7 +165,7 @@
                 <thead>
                   <tr>
                     <th>Delegate Type</th>
-                    <th>Early Registration (8/22)</th>
+                    <th>Early Registration (9/1)</th>
                     <th>Regular Registration (10/3)</th>
                     <th>Late Registration</th>
                   </tr>
@@ -289,7 +228,7 @@
                 <thead>
                   <tr>
                     <th>Delegate Type</th>
-                    <th>Early Registration (8/22)</th>
+                    <th>Early Registration (9/1)</th>
                     <th>Regular Registration (10/3)</th>
                     <th>Late Registration</th>
                   </tr>
@@ -340,7 +279,7 @@
 
               <p>You must apply to participate in a workshop. Each workshop is being run independently by the respective
                 co-organizers along with support from the ASSETS'22 Workshop Co-chairs, Kyle Montague and Sowmya
-                Somanath.If you are accepted into a workshop, you must
+                Somanath. If you are accepted into a workshop, you must
                 register for the workshop track. We hope you will also choose to register for the conference but this is
                 not required.
                 Please email <a href="mailto:workshops-assets22@acm.org">workshops-assets22@acm.org</a> with questions
@@ -383,6 +322,9 @@
   </main>
   <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
+
+  <!-- Referencing the JS file for SIDEBAR -->
+  <script src="assets/js/sidebar.js"></script>
 </body>
 
 </html>
