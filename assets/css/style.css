@@ -362,3 +362,127 @@ table td {
     /* position: relative; TODO */
   }
 }
+
+/*===============================================*/
+/*             STYLES FOR PROGRAM PAGEs           */
+/*===============================================*/
+
+.program {
+    text-align: left;
+    vertical-align: top;
+    border-collapse: collapse;
+    border: 1px solid #262626;
+    max-width: 80%;
+    margin: auto;
+    /*display: block;*/
+
+}
+#content .program ul li {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+    padding-bottom: 1rem;
+}
+
+.program th,
+.program td {
+    padding: 0 25px;
+    border: 1px solid #262626;
+}
+
+#content .program th p {
+    font-weight: 700;
+}
+
+.list_chairs {
+    list-style: none;
+}
+
+a#monday,
+a#tuesday,
+a#wednesday {
+    font-size: 21pt;
+}
+
+#content .program_h2 {
+    color: #32394c;
+    /*font-size: 26pt;*/
+}
+
+/*#keynote_speaker{
+float: right; 
+padding-left: 10px; 
+max-width: 90%;
+}*/
+
+#keynote_speaker_profile_pic {
+    display: inline;
+}
+
+#keynote_speaker_profile_pic img {
+    float: left;
+    width: 40%;
+    padding: 5px;
+    padding-right: 20px;
+    max-height: 240px;
+    max-width: 240px;
+}
+
+#keynote_announcement {
+    display: block;
+    margin-bottom: 5px;
+    
+
+    /*border: solid 1px #ff0000;*/
+    zoom: 1;
+    /* IE6&7 */
+}
+
+#keynote_announcement:before,
+#keynote_announcement:after {
+    content: "";
+    display: table;
+}
+
+#keynote_announcement:after {
+    clear: both;
+}
+
+#about_speaker {
+    display: block;
+    margin-top: 5px;
+
+    /*border: solid 1px #ff0000;*/
+    zoom: 1;
+    /* IE6&7 */
+}
+
+#uxp_logos {
+    text-align: center;
+}
+
+#uxp_logos img {
+    display: inline-block;
+    max-width: 30%;
+}
+
+button {
+    font-weight: 700;
+    font-size: medium;
+    background-color: #a07cc5;
+    border-radius: 10px;
+    border-style: none;
+    padding: 10px;
+    color:#fff;
+    width: 100%;
+    /*font-size: 1.3em !important;*/
+
+}
+.button-content {
+    background-color: rgba(160, 124, 197, 0.33);
+    padding: 25px 65px;
+    /*font-size: 16pt;*/
+    display: none;  
+    overflow: auto;
+    /*font-size: 1.1em !important;*/
+}
