@@ -488,20 +488,18 @@ background-position: center;*/
 
 #content a {
     font-weight: 700;
-    color: #A83516;
+
 }
 
 #content h2,
 #content h3,
 #content h4,
 #content h5 {
-    color: #32394c;
     font-weight: 700;
 }
 
 #content h1 {
     font-size: 32pt;
-    color: rgb(33, 33, 51);
 }
 
 #content h2 {
@@ -509,9 +507,8 @@ background-position: center;*/
 }
 
 .main_title {
-    color: #e6dfce !important;
     font-weight: 700;
-    background-color: #445275;
+/*    background-color: #445275;*/
     padding: 25px 99px 100px 100px;
     text-align: center;
     margin-top: 0px;
