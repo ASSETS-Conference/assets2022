@@ -46,17 +46,6 @@
   src:          url(fonts/Avenir-Next.ttc);
 }
 
-/*============================*/
-/*  Additional Program Style  */
-/*============================*/
-.track-name {
-    color: #855e8f; /*#65446D;*/
-}
-
-/*============================*/
-/*END Additional Program Style*/
-/*============================*/
-
 .confTitle{
     font-family: Avenir-Next;
 }
@@ -397,13 +386,31 @@ table td {
 
 .program th,
 .program td {
-    padding: 0 25px;
-    border: 1px solid #262626;
+    padding: 10px 25px;
+    border: 2px solid white; /*#65446D;*/
+}
+
+.program button {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 #content .program th p {
     font-weight: 700;
 }
+
+tr:nth-child(odd) {
+  background-color: #ececf9;
+}
+
+tr:nth-child(even) {
+  background-color: #f5f5fc;
+}
+
+.track-name {
+    color: #855e8f; /*#65446D;*/
+}
+
 .back-to-top {
     margin-left: 10%;
 }
