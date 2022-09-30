@@ -377,12 +377,13 @@ table td {
     /*display: block;*/
 
 }
-#content .program ul li ul li {
+
+/*#content .program ul li ul li {
     list-style-type: disc;
-}
+}*/
 
 #content .program ul li {
-    list-style-type: none;
+    /*list-style-type: none;*/
     padding-left: 0;
     margin-left: 0;
     /*padding-bottom: 1rem;*/
@@ -390,7 +391,7 @@ table td {
 
 .program th,
 .program td {
-    padding: 10px 25px;
+    padding: 15px 20px;
     border: 2px solid white; /*#65446D;*/
 }
 
