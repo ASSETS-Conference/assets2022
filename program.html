@@ -31,6 +31,11 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     
+     <!-- Font Awesome (accessible) CSS -->
+    <link href="./assets/fonts/fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="./assets/fonts/fontawesome/css/brands.css" rel="stylesheet">
+    <link href="./assets/fonts/fontawesome/css/solid.css" rel="stylesheet"
+
     <!-- Bootstrap core CSS -->
     <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -143,8 +148,9 @@
                             	<td><p><b>11:00</b></p></td>
                             	<td>
                             		<!-- <p><b>Session 1: AR, VR and Games</b></p> -->
-                                    <button type="button" class="collapsible">
-                                        <b>Session 1: AR, VR and Games</b>
+                                    <button type="button" class="collapsible" onclick="ViewSession(1)">
+                                        <img id="session1" src="assets/img/large/tri_expand.png" alt="icon indicator for expanding the tab" />
+                                        <b> &nbsp;&nbsp;Session 1: AR, VR and Games</b>
                                     </button>
                                     <div class="content button-content paper">
 	                            		<b class="track-name">[Experience Report]</b> <b>Access on Demand: Real-time, Multi-modal Accessibility for the Deaf and Hard-of-Hearing based on Augmented-Reality</b>
@@ -208,7 +214,8 @@
                             	<td><p><b>13:50</b></p></td>
                             	<td>
                             		<!-- <p><b>Session 2: Representation and Inclusion</b></p> -->
-                                    <button type="button" class="collapsible">
+                                    <button type="button" class="collapsible" onclick="ViewSession(2)">
+                                        <img id="session2" src="assets/img/large/tri_expand.png" alt="icon indicator for expanding the tab" />&nbsp;&nbsp;
                                         <b>Session 2: Representation and Inclusion</b>
                                     </button>
                                     <div class="content button-content paper">
@@ -264,7 +271,8 @@
                             	<td><p><b>16:00</b></p></td>
                             	<td>
                             		<!-- <p><b>Session 3: Data for Modeling and Recognition</b></p> -->
-                                    <button type="button" class="collapsible">
+                                    <button type="button" class="collapsible" onclick="ViewSession(3)">
+                                        <img id="session3" src="assets/img/large/tri_expand.png" alt="icon indicator for expanding the tab" />&nbsp;&nbsp;
                                         <b>Session 3: Data for Modeling and Recognition</b>
                                     </button>
                                     <div class="content button-content paper">
@@ -359,7 +367,8 @@
                             	<td><p><b>10:45</b></p></td>
                             	<td>
                             		<!-- <p><b>Session 4: Composition in Music, Programming and Design</b></p> -->
-                                    <button type="button" class="collapsible">
+                                    <button type="button" class="collapsible" onclick="ViewSession(4)">
+                                        <img id="session4" src="assets/img/large/tri_expand.png" alt="icon indicator for expanding the tab" />&nbsp;&nbsp;
                                         <b>Session 4: Composition in Music, Programming and Design</b>
                                     </button>
                                     <div class="content button-content paper">
@@ -415,7 +424,8 @@
                             	<td><p><b>13:20</b></p></td>
                             	<td>
                             		<!-- <p><b>Student Research Competition Finalist Presentations</b></p> -->
-                            		<button type="button" class="collapsible">
+                            		<button type="button" class="collapsible" onclick="ViewSession(x)">
+                                        <img id="sessionx" src="assets/img/large/tri_expand.png" alt="icon indicator for expanding the tab" />&nbsp;&nbsp;
                                         <b>Student Research Competition Finalist Presentations</b>
                                     </button>
                                     <div class="content button-content paper">
@@ -441,7 +451,8 @@
                             	<td><p><b>14:00</b></p></td>
                             	<td>
                             		<!-- <p><b>Session 5: Communication</b></p> -->
-                                    <button type="button" class="collapsible">
+                                    <button type="button" class="collapsible" onclick="ViewSession(5)">
+                                        <img id="session5" src="assets/img/large/tri_expand.png" alt="icon indicator for expanding the tab" />&nbsp;&nbsp;
                                         <b>Session 5: Communication</b>
                                     </button>
                                     <div class="content button-content paper">
@@ -509,7 +520,8 @@
                             	<td><p><b>16:00</b></p></td>
                             	<td>
                             		<!-- <p><b>Session 6: Social Media and Media</b></p> -->
-                                    <button type="button" class="collapsible">
+                                    <button type="button" class="collapsible" onclick="ViewSession(6)">
+                                        <img id="session6" src="assets/img/large/tri_expand.png" alt="icon indicator for expanding the tab" />&nbsp;&nbsp;
                                         <b>Session 6: Social Media and Media</b>
                                     </button>
                                     <div class="content button-content paper">
@@ -602,7 +614,8 @@
                             	<td><p><b>9:00</b></p></td>
                             	<td>
                             		<!-- <p><b>Session 7: Tactile and Haptics</b></p> -->
-                                    <button type="button" class="collapsible">
+                                    <button type="button" class="collapsible" onclick="ViewSession(7)">
+                                        <img id="session7" src="assets/img/large/tri_expand.png" alt="icon indicator for expanding the tab" />&nbsp;&nbsp;
                                         <b>Session 7: Tactile and Haptics</b>
                                     </button>
                                     <div class="content button-content paper">
@@ -665,7 +678,8 @@
                             	<td><p><b>11:15</b></p></td>
                             	<td>
                             		<!-- <p><b>Session 8: Accessibility in Daily Living</b></p> -->
-                                    <button type="button" class="collapsible">
+                                    <button type="button" class="collapsible" onclick="ViewSession(8)">
+                                        <img id="session8" src="assets/img/large/tri_expand.png" alt="icon indicator for expanding the tab" />&nbsp;&nbsp;
                                         <b>Session 8: Accessibility in Daily Living</b>
                                     </button>
                                     <div class="content button-content paper">
@@ -713,7 +727,8 @@
                             	<td><p><b>13:50</b></p></td>
                             	<td>
                             		<!-- <p><b>Session 9: Safety, Rehabilitation, and Transportation</b></p> -->
-                                    <button type="button" class="collapsible">
+                                    <button type="button" class="collapsible" onclick="ViewSession(9)">
+                                        <img id="session9" src="assets/img/large/tri_expand.png" alt="icon indicator for expanding the tab" />&nbsp;&nbsp;
                                         <b>Session 9: Safety, Rehabilitation, and Transportation</b>
                                     </button>
                                     <div class="content button-content paper">
@@ -836,6 +851,22 @@
                 //$('#content').load('soon.html');
                 //$('#footer').load('footer.html');
             });
+
+            var ViewSession = function (n){
+                let imgID = 'session'+n;
+                let imgNode = document.getElementById(imgID);
+
+                if(imgNode.alt === "icon indicator for expanding the tab"){
+                    imgNode.src =  "assets/img/large/tri_collapse.png";
+                    imgNode.alt = "icon indicator for collapsing the tab";
+                }
+                else{
+                    imgNode.src =  "assets/img/large/tri_expand.png";
+                    imgNode.alt = "icon indicator for expanding the tab";
+                }
+                
+                
+            }
         </script>
 
         </div> <!-- Content -->
