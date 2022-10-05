@@ -413,7 +413,7 @@ tr:nth-child(even) {
 }
 
 .track-name {
-    color: #855e8f; /*#65446D;*/
+    color: #7b3f8a; /*855e8f*/ /*#65446D;*/
 }
 
 .back-to-top {
@@ -507,7 +507,7 @@ button {
 
 }
 .button-content {
-    background-color: rgba(160, 124, 197, 0.33);
+    background-color: rgba(160, 124, 197, 0.12);
     padding: 25px 65px;
     /*font-size: 16pt;*/
     display: none;  
