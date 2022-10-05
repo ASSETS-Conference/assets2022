@@ -494,8 +494,10 @@ max-width: 90%;
 
 button {
     font-weight: 700;
-    font-size: medium;
-    background-color: #a07cc5;
+    /*font-size: medium;*/
+    font-size:large;
+    /*background-color: #a07cc5;*/
+    background-color: #7953a0; /*#65446D*/
     border-radius: 10px;
     border-style: none;
     padding: 10px;
