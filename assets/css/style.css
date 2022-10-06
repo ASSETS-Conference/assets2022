@@ -53,12 +53,7 @@
     font-family: LogoTilteFont;
 }
 
-.footer button{
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
-    width: 40;
-}
+
 .footer button img{
     cursor: pointer;
 }
@@ -520,6 +515,9 @@ button:hover{
     cursor: pointer;
 }
 
-.social_button{
-    width:40;
+.footer button{
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    width: 40;
 }
