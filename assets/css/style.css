@@ -327,7 +327,8 @@ table th {
 
 table thead {
   background-color: #65446D;
-  color: white;
+  /*color: white;*/
+  color:  #444D5F;
 }
 
 table td {
