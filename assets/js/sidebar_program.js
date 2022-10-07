@@ -1,7 +1,7 @@
 $( document ).ready(function() {
 
     /* SIDEBAR */
-    function place_sidebar(offset=275) {
+    function place_sidebar(offset=350) {
         var target = $(".col-lg-8").first().offset().left - offset;
         if (target < 0) {
             $(".toc-div").css({

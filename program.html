@@ -43,10 +43,12 @@
     <link href="./assets/css/style.css?version=1" rel="stylesheet">
     <link href="./assets/css/navbar.css?version=1" rel="stylesheet">
     <link href="./assets/css/committees.css?version=1" rel="stylesheet">
+	
+	<!-- Bootstrap TOC -->
+	<link href="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.css" rel="stylesheet">
 
     <!-- Javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <link rel="stylesheet" href="https://use.typekit.net/zmi2bzm.css">
@@ -58,7 +60,7 @@
 
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#toc">
 
     <main>
          <!--Navigation bar-->
@@ -87,6 +89,13 @@
         </div>
         <!-- Jumbotron -->
 
+		<div class="toc-div" aria-hidden="true">
+			<!-- Bootstrap TOC -->
+			<p class="h5" tabindex="0">On This Page</p>
+			<nav id="toc" data-toggle="toc" class="bd-links sticky-top"></nav>
+		</div>
+
+		<!-- Content -->
         <section class="callout_section_2 p-3">
             <div class="container">
             <div class="row justify-content-md-center">
@@ -877,7 +886,11 @@
 
 
     </main>
+	<script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
 
+	<!-- Referencing the JS file for SIDEBAR -->
+	<script src="assets/js/sidebar_program.js"></script>
 </body>
 
 </html>
