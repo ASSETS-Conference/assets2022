@@ -379,6 +379,39 @@ table td {
 
 }
 
+.program-overview {
+  text-align: left;
+  vertical-align: top;
+  border-collapse: collapse;
+  max-width: 80%;
+  margin: auto;
+  
+}
+.program-overview th {
+  background-color: #f5f5fc;
+  padding-left: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: none;
+  border-left: 2px solid #ececf9;
+  border-right: 2px solid #ececf9;
+}
+
+.program-overview td {
+  border-bottom: none;
+  border-left: 2px solid #ececf9;
+  border-right: 2px solid#ececf9;
+  padding-left: 10px;
+}
+
+.program-overview tr:nth-child(odd) {
+  background-color: #fefefe;
+}
+
+.program-overview tr:nth-child(even) {
+  background-color: #f5f5fc;
+}
+
 /*#content .program ul li ul li {
     list-style-type: disc;
 }*/
