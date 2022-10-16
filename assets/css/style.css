@@ -387,8 +387,13 @@ table td {
   margin: auto;
   
 }
-.program-overview th {
+
+/* Table headers */
+.program-overview thead th {
   background-color: #f5f5fc;
+}
+
+.program-overview th {
   padding-left: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -397,6 +402,12 @@ table td {
   border-right: 2px solid #ececf9;
 }
 
+.program-overview tbody th {
+  vertical-align: top;
+  padding-top: 5px;
+}
+
+/* Rest of Table */
 .program-overview td {
   border-bottom: none;
   border-left: 2px solid #ececf9;
