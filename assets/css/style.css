@@ -567,3 +567,7 @@ button:hover{
 table button{
     width: 100%;
 }
+
+span button{
+    padding: 0px 10px;
+}
