@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400,700');
 
 @font-face {
   font-family:  LogoTilteFont;
@@ -50,7 +51,8 @@
     font-family: Avenir-Next;
 }
 .confTitle_landing{
-    font-family: LogoTilteFont;
+    font-weight: 700;
+    font-size: 5rem;
 }
 
 .footer button{
@@ -134,7 +136,7 @@ a {
     --bs-font-sans-serif : "Manrope", sans-serif;
     --bs-font-monospace  : SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --bs-gradient        : linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-    --bs-root-font-size  : 20px;
+    --bs-root-font-size  : 16px;
     --bs-body-font-family: var(--bs-font-sans-serif);
     --bs-body-font-size  : 1rem;
     --bs-body-font-weight: 500;
@@ -152,16 +154,36 @@ a {
 
 /* JUMBOTRON IMAGE BACKGROUND SECTION ---------------------------------------------------------------------------- */
 
-#top-jumbotron {
-    background        : url('../img/large/athens-royalty-free-1-large.jpeg') center center no-repeat;
-    /*background      : no-repeat center center;*/
-    background-size   : cover;
-    position          : relative;
-    z-index           : 0;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
+#top-jumbotron::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  
+    display: block;
+    background: url('../img/large/nyc-midjourney-large.png'), #000;
+    background-size: cover;
+    transform: scale(1.05);
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(10px) brightness(.7) grayscale(0.4);
 }
+
+#top-jumbotron {
+  min-height: 90vh;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 #top-jumbotron-small {
     background        : url('../img/large/athens-royalty-free-2-large.jpeg') center center no-repeat;
@@ -196,7 +218,7 @@ a {
 }
 
 #top-jumbotron-cfp {
-    background        : url('../img/large/athens-cfp-bg-large.jpeg') center center no-repeat;
+    background        : #000;
     /*background      : no-repeat center center;*/
     background-size   : cover;
     position          : relative;
@@ -251,17 +273,17 @@ a {
 
 /* CALLOUT SECTION ---------------------------------------------------------------------------- */
 
-/*
-.callout_section_0 {
 
-} */
+.callout_section_0 {
+  background: #fff;
+}
 
 .callout_section_1 {
-    background: #f5f5fc
+    background: #efeff0;
 }
 
 .callout_section_2 {
-    background: #ECECF9
+    background: #ECECF9;
 }
 
 .main-callout {
@@ -274,7 +296,7 @@ a {
 .footer {
     color:              white;
     text-align:         center;
-    background:   url('../img/footer-bg/footer-bg-tint.png') center center no-repeat;
+    background-color: #1f1f1f;
     background-size   : cover;
     position          : relative;
     z-index           : 0;
@@ -283,7 +305,7 @@ a {
 /* OTHER ---------------------------------------------------------------------------- */
 
 h3 {
-    color: #65446D;
+    color: #000;
     margin-top: 5px;
     margin-bottom: 20px;
 }
@@ -361,6 +383,53 @@ table td {
   .toc-div {
     display    : none;
     /* position: relative; TODO */
+  }
+}
+
+/*===============================================*/
+/*            STYLES FOR LANDING PAGEs           */
+/*===============================================*/
+
+#details {
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+#details span {
+  padding-right: 2em;
+}
+
+.subtitle {
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.description {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2rem 3rem 1rem 3rem;
+  border-radius: 20px;
+}
+
+.description a {
+  color: #d3d3d3;
+}
+
+@media only screen and (max-width: 600px) {
+  .confTitle_landing {
+    font-size: 3rem;
+  }
+
+  .subtitle {
+    font-size: 1.15rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+    line-height: 1.15rem;
+  }
+
+  .description {
+    padding: 1rem 2rem 0.5rem 1.5rem;
   }
 }
 
